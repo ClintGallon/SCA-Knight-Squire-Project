@@ -1,0 +1,421 @@
+<knight><title>Sir</title> Thorvald inn Grimmi (10/31/70)</knight>
+
+<knight><title>Duke</title> Merowald de Sylveaston (KSCA) (4/30/72)</knight>
+<knight><title>Sir</title> Mrethton the Rotund (8/16/81)</knight>
+<knight><title>Sir</title> Gareth the Russel (5/12/73)</knight>
+<knight><title>Count</title> Rolac the Wise (KSCA) (3/2/74)</knight>
+<knight><title>Sir</title> Coley Cuthbert (10/4/75)</knight>
+<knight><title>Sir</title> Randall d'Artinual (2/16/80)</knight>
+<knight><title>Sir</title> Grimowulf Hraerekson (8/21/83) (formerly Arbas)</knight>
+<knight><title>Sir</title> Brusten de Bearsuil (8/12/78) ( resigned )</knight>
+<knight><title>Sir</title> Fernanda de la Foret (8/17/85)</knight>
+<knight><title>Visount</title> Ternon de Caerleon (KSCA) (5/29/83)</knight>
+<knight><title>Sir</title> Erich Hlodowechsson (3/15/86)</knight>
+<knight><title>Duke</title> Valens of Flatrock (KSCA) (5/24/86)</knight>
+<knight><title>Count</title> Gilligan of Eire (KSCA) (1/25/92)</knight>
+<knight><title>Count</title> ess Ariel of Glastonbury Tor (KSCA) (7/15/00)</knight>
+<knight><title>Master</title> Pavel Iosevich (6/13/92)</knight>
+<knight><title>Duke</title> Joseph Angus Wilson of Clan Gunn (MSCA) (6/17/00)</knight>
+<knight><title>Duke</title> Conn MacNeill (KSCA) (12/6/86)</knight>
+<knight><title>Duke</title> Donagal Eiriksson (KSCA) (1/6/96)</knight>
+<knight><title>Sir</title> Theodorix Rufus the Goth (2/1/97)</knight>
+<knight><title>Sir</title> Urien ap Taliesin ( ???)</knight>
+<knight><title>Visount</title> Aubrey Swiftwater (KSCA) (12/9/00)</knight>
+<knight><title>Sir</title> Kenneqrae Gilchrist (5/20/78) (Kenecrai )</knight>
+<knight><title>Sir</title> Thomas du Chateau Noir (8/17/85)</knight>
+<knight><title>Sir</title> Kirk Fitzdavid (2/14/98)</knight>
+<knight><title>Visount</title> Wolfsagan von Ostensee (KSCA) (8/23/81)</knight>
+<knight><title>Visount</title> Dafydd ap Gwalchmai (KSCA) (1/7/95)</knight>
+<knight><title>Visount</title> Leif Haakonson the Gray Fox (KSCA) (12/9/00)</knight>
+<knight><title>Count</title> Volkmar Katzbalger (KSCA) (7/1/89)</knight>
+<knight><title>Duke</title> Eringlen Aldheim (KSCA) (4/1/95)</knight>
+<knight><title>Visount</title> Richard Gilchrist (KSCA) (12/21/91)</knight>
+<knight><title>Visount</title> Cian Conner McQuaid (KSCA) (7/3/93)</knight>
+<knight><title>Duke</title> Prothall Wulfbane (KSCA) (5/1/95)</knight>
+<knight><title>Duke</title> Sven Gunnarson of Drachenwald (KSCA) (10/30/93)</knight>
+<knight><title>Count</title> Gerhardt von Wustenburg (KSCA) (6/21/03)</knight>
+<knight><title>Visount</title> Cai de Lyon (KSCA) (???) (Gauis Aucklandus)</knight>
+<knight><title>Count</title> Jahn of Outmann (KSCA) (1/22/77)</knight>
+<knight><title>Visount</title> Raim y Hynnddyl (KSCA) (8/22/82)</knight>
+<knight><title>Sir</title> Anton von Haganstein (9/16/89)</knight>
+<knight><title>Sir</title> Rorik Galbraith (8/24/91)</knight>
+<knight><title>Visount</title> Wulfbrand Lurkr (KSCA) (8/16/86)</knight>
+<knight><title>Sir</title> Gideon MacLeod (7/28/01)</knight>
+Sean u'a Lochlain
+Gregory Kildare
+Catalina de Salamanca
+<knight><title>Sir</title> Polidor Haraldsson (10/27/74)</knight>
+<knight><title>Duke</title> Corin du Soleil (KSCA) (10/28/78)</knight>
+<knight><title>Visount</title> Saeric Scirham (KSCA) (7/9/94)</knight>
+<knight><title>Sir</title> Guillaume le Fort (8/20/83)</knight>
+<knight><title>Count</title> Brion Thornbird (KSCA) (9/6/87)</knight>
+<knight><title>Sir</title> William of Bellwood (11/7/81)</knight>
+<knight><title>Count</title> Aesgir Gunnarsson (KSCA) (6/29/85)</knight>
+<knight><title>Sir</title> Halidar Arnkellsson (6/13/92)</knight>
+<knight><title>Count</title> Thjothrekr Eiriksson (KSCA) (8/30/97)</knight>
+<knight><title>Sir</title> Hyrim de Guillon (8/16/96)</knight>
+<knight><title>Sir</title> Ixlilxochitl de los Indios (8/18/94)</knight>
+<knight><title>Sir</title> Robert Fitzhugh of Bannockburn (8/18/89)</knight>
+<knight><title>Duke</title> Thorbjorn Osis Brandsson of the Livery of Faeringold (KSCA) (1/29/94) (Deceased)</knight>
+<knight><title>Duke</title> Berus Wolfsonne (KSCA) (8/19/99)</knight>
+<knight><title>Master</title> Worrigan McGregor (2/3/01)</knight>
+<knight><title>Count</title> Aaron Preslee Worgensson (KSCA) (1/26/03)</knight>
+<knight><title>Sir</title> Lothar ( ???)</knight>
+<knight><title>Sir</title> Ropesle de Sylveaston (1/25/86)</knight>
+<knight><title>Visount</title> Guthram of the Wastelands</knight>
+<knight><title>Sir</title> Arthur d'Uriens (8/15/91) (Artorius Raedwulf)</knight>
+<knight><title>Visount</title> Menken Brechen (KSCA) (8/18/94)</knight>
+<knight><title>Sir</title> Jean Paul the Mace ( ???)</knight>
+<knight><title>Count</title> Ton the Traveler (KSCA) (8/19/72)</knight>
+</knight>
+<knight><title>Visount</title> Galen of Bristol (KSCA) (11/21/87) (also squired to <knight><title>Count</title> Simonn)</knight>
+<knight><title>Sir</title> Conor Mac Cinneide (3/4/95)</knight>
+<knight><title>Duke</title> Kein MacEwan (KSCA) (3/3/90) (also squired to <knight><title>Sir</title> Manfred von Halstern)</knight>
+Caladin Ironhearth</knight>
+Malcolm MacEwan</knight>
+Friedrich von Konigsburg</knight>
+Phelan MacEwan</knight>
+Raith Brandburn</knight>
+Alaric Styrr called Tuhtahl of the Moritu</knight>
+Jehan D'Aigle</knight>
+<knight><title>Sir</title> Ysfael Bryndu (11/17/07)</knight>
+Ricardo Esteban de Salamanca</knight>
+<knight><title>Sir</title> Sion Rhys of Badon (10/26/97)</knight>
+Daniel Stewart</knight>
+Hengist Redhand</knight>
+Armand Dragonetti</knight>
+Honour DuBois
+Wilim Penbras
+Caelin of the Isles
+Kenwrec Wulfe
+<knight><title>Sir</title> Sven of Vandelaven the Fierce (1/12/74)</knight>
+
+<knight><title>Sir</title> Balthazar of Endor (7/10/76)</knight>
+<knight><title>Count</title> Simonn of Amber Isle (KSCA) (6/26/77)</knight>
+<knight><title>Sir</title> Robert Hellmanstahl (2/24/79)</knight>
+<knight><title>Sir</title> Henri le Hibou du Bois (1/20/96)</knight>
+<knight><title>Sir</title> Giotto Giovanni (11/18/06)</knight>
+William
+Rayna
+Rosalinda
+Uther
+<knight><title>Sir</title> William of Weir (7/14/79)</knight>
+<knight><title>Count</title> Dinaris the Wanderer (KSCA) (5/30/82)</knight>
+<knight><title>Duke</title> Hector Philip Martel (KSCA) (5/1/86)</knight>
+<knight><title>Duke</title> Patrick Michael Gordonne (KSCA) (5/28/89)</knight>
+<knight><title>Duke</title> Jean Richard Malcomson (KSCA) (10/23/93)</knight>
+Askell de Loucelles
+<knight><title>Sir</title> Rhodri ap Gwythyr (10/2/93)</knight>
+<knight><title>Duke</title> Walstod the Unsteady (KSCA) (5/15/01) (Ulstead the Unsteady)</knight>
+Bowen Schuerer
+William of Welewen
+Centurion Michael of Gravesend
+Lord Bastion Eisengart
+<knight><title>Sir</title> Randall der Krieger (6/8/02)</knight>
+Eric Morrison
+Geoffrey Tailor
+Beathan MacDhuibh
+<knight><title>Sir</title> William de Molay (11/15/03)</knight>
+<knight><title>Duke</title> Albert von Drekenveldt (KSCA) (5/18/74)</knight>
+
+<knight><title>Count</title> Nathan von der RitzGregory (KSCA) (5/19/79)</knight>
+Bruce of Annandale
+<knight><title>Sir</title> Nubbin Keshran (8/12/78)</knight>
+<knight><title>Sir</title> Michael the Strange (5/26/85)</knight>
+<knight><title>Master</title> Eric Edmundsson</knight>
+Gerwyn y Tiegr
+Knut The Inflammable
+<knight><title>Duke</title> Olaf Bjornson (KSCA) (11/21/82)</knight>
+<knight><title>Sir</title> Bjarni Kenhelm (11/6/93)</knight>
+<knight><title>Sir</title> Haroun ibn al Dhi'b al Abyadh (9/16/89)</knight>
+<knight><title>Sir</title> Nasr ibn 'Isa (5/11/96)</knight>
+Don Santiago Carillo de Guadalupe
+<knight><title>Duke</title> Kerold Hoegaarden (KSCA) (9/12/98)</knight>
+<knight><title>Duke</title> Kynan of Wyre Forest (KSCA) (7/18/04)</knight>
+Kelsus
+<knight><title>Sir</title> Baqu (8/24/02)</knight>
+<knight><title>Sir</title> Mavrikkii (2/16/03)</knight>
+Stephen MacDougal
+Lucius Avisius Seneca
+Keridwen Androsoun
+Raedwolf
+Javier de la Santos
+Connor MacInnes
+Nicholas Kennington
+Isadora del Sol
+<knight><title>Sir</title> Thorvald Valdkrig (3/26/88)</knight>
+<knight><title>Sir</title> Rhys Afalwin (9/10/00) (OP OL)</knight>
+<knight><title>Master</title> Gwilim de Glamorgan</knight>
+Sabina Falise
+Eban Littlebrother
+<knight><title>Sir</title> Bjarki (8/3/03)</knight>
+Heinricus
+Septimus
+Leif
+Edward
+Torvald
+Helgar
+Sabrina
+Lothar vom Bergenwald
+Robert ap Blackwell
+Corwyn ap Dracca
+ThorvadR Thorolfsson
+Brutus
+<knight><title>Duke</title> Koris Natterhelm (KSCA) (4/29/75)</knight>
+
+<knight><title>Visount</title> Sean McFlamm of Ravenswaard (KSCA) (7/3/76)</knight>
+<knight><title>Sir</title> Andeleon of Axegarth (1/7/78)</knight>
+<knight><title>Duke</title> Jonathon Delaufyson Macebearer (KSCA) (4/2/78) ( Resigned KSCA and took MSCA on 03/02/1980 in Ansteorra)</knight>
+<knight><title>Sir</title> Lasguaard Aglanar the Red Fox (6/21/80)</knight>
+Ariko
+<knight><title>Sir</title> Thorkel Magnusson (1/5/85)</knight>
+Aldwin Greenleaf
+Wolf Waldenganger
+Roger Redhand
+Richard
+Jonathon the Younger
+<knight><title>Duke</title> Miguel Sebastion la Pantera de Oporto (KSCA) (11/20/99)</knight>
+<knight><title>Master</title> Airaklee Wolf (1/5/02)</knight>
+Alexander Marcellius
+Fearghus MacKenna
+Marmaduke Treebane
+<knight><title>Visount</title> Michael die Zauberzunge von Essen (KSCA) (12/17/83)</knight>
+<knight><title>Duke</title> Leif Ivarsson (KSCA) (5/24/87)</knight>
+<knight><title>Jarl</title> Torn Thornwald (KSCA) (4/5/92)</knight>
+Wolf Torinsson
+<knight><title>Earl</title> Joseph Cameron Blackswan (KSCA) (12/7/96)</knight>
+Ivar
+Brennainn MacDuffie
+Daniel of Mightrenwood
+<knight><title>Sir</title> Kragon of Land's End (2/19/89)</knight>
+<knight><title>Sir</title> Christof Gately (2/18/94)</knight>
+<knight><title>Duke</title> Hrothger Monomakh (KSCA) (2/17/96)</knight>
+<knight><title>Sir</title> Qara gon (7/17/04)</knight>
+Mordygan MacGregor
+<knight><title>Sir</title> Aric Raven (5/29/94)</knight>
+Conchobhar mac Maelain
+Coerten
+<knight><title>Sir</title> Michael of Raven's Keep (5/8/04)</knight>
+<knight><title>Sir</title> Tarl Mapt (5/24/75)</knight>
+
+<knight><title>Duke</title> Lloyd von Eaker (MSCA) (6/5/76)</knight>
+
+<knight><title>Sir</title> Karl der Gaenger (1/6/79)</knight>
+<knight><title>Count</title> William Miesko (KSCA) (11/23/91)</knight>
+<knight><title>Sir</title> Elza sif O'Donnell (7/4/81)</knight>
+<knight><title>Duke</title> Mikael of Monmouthshire (KSCA) (10/31/87)</knight>
+<knight><title>Duke</title> Richard de Chinon (KSCA) (5/24/92)</knight>
+<knight><title>Earl</title> Dafydd Whitacer (KSCA) (10/11/92)</knight>
+Krag
+Bronwyn
+<knight><title>Sir</title> William Cameron de Blakstan (02/??/07)</knight>
+<knight><title>Sir</title> Maximillian Muehleisen (4/27/97)</knight>
+<knight><title>Ritter</title> Asoph Hearts (KSCA) (2/12/00)</knight>
+Mediocrates
+Alton de Peto
+Evan der Fultime
+Yoshii
+<knight><title>Ritter</title> Erasmus Totengraber (KSCA) (7/13/02)</knight>
+Eleanor de Eresby
+<knight><title>Duke</title> Jean Paul de Sens (KSCA) (3/20/04)</knight>
+Julius de Orso
+<knight><title>Count</title>Vladislave Strelac</knight>
+<knight><title>Sir</title>Peter McIntyre</knight>
+<knight><title>Sir</title>Rikr Foetipper</knight>
+<knight><title>Earl</title> Barn Silveraxe (KSCA) (8/23/92)</knight>
+<knight><title>Sir</title><name>Equis Cassius Lepus</name><alias>Alrek Kanin</alias><date_elevated> 10/11/1997</date_elevated>
+Wiggen Johnson
+Angus MacDhaid Gunn
+Aldrek de Kerr
+Dougal
+Owen Stott
+<knight><title>Jarl</title><name>Timotheos Kalamanos</name><alias>Timotheos Mickaelsson</alias><date_elevated>05/29/1999</date_elevated></knight>
+Lucius
+Vivain de' Agincourt
+<knight><title>Riddari</title><name>Balvin Thorfinnsson</name><date_elevated>05/30/1998</date_elevated></knight>
+<knight><title>Sir</title><name>Brom o' Brin </name><date_elevated>10/11/2008</date_elevated></knight>
+Thorgrim Bjornson
+Geoffrey Makepeace
+Piotr Balomirov Syn Barsukov
+Tristan de Fallase
+<knight><title>Sir</title><name>Conrad of Castleton</name><date_elevated>03/18/1995</date_elevated></knight>
+<knight><title>Sir</title><name>Daniel de Burdon</name></knight>
+Holly
+Tor
+Elizabeth
+<knight><title>Duke</title><name>Gunthar Jonsson</name><date_elevated>05/26/1990</date_elevated></knight>
+<knight><title>Sir</title><name>Pendaran Glamorgan</name><date_elevated>05/27/1989</date_elevated></knight>
+<knight><title>Sir</title><name>Corwin von Xanten</name><date_elevated>10/25/1997</date_elevated></knight>
+<knight><title>Viscount</title><name>Anton Cwith</name><date_elevated>10/30/2004</date_elevated></knight>
+Nymondes
+Skjuldofr Thynning
+Jonathan Hogue
+Sven
+<knight><title>Sir</title><name>Evet von Drachenklaue</name><date_elevated>05/31/2008</date_elevated></knight>
+<knight><title>Sir</title><name>Kael</name><date_elevated>05/31/2008</date_elevated></knight>
+Sean
+<knight><title>Master</title><name>Torgatai Blackwolf</name><date_elevated>07/12/1976</date_elevated></knight>
+
+<knight><title>Visount</title><name>Randall von Nordlichwald</name><date_elevated>03/13/1977</date_elevated></knight>
+
+<knight><title>Count</title><name>Jan w Orzeldom</name><date_elevated>01/21/1979</date_elevated></knight>
+
+<knight><title>Sir</title><name>Riccardo di Pisa</name><date_elevated>06/13/1981</date_elevated><deceased>true</deceased><date_deceased></date_deceased></knight>
+<knight><title>Sir</title><name>Emrys Shaunnon</name><date_elevated>04/28/1985</date_elevated></knight>
+<knight><title>Sir</title><name>Tarquyn Gateslayer</name></knight>
+Dominic
+Jahlial
+<knight><title>Sir</title><name>John the Plain of Shearn</name><date_elevated>06/17/1979</date_elevated><deceased>true</deceased></knight>
+
+<knight><title>Count</title><name>Finn Kelly O'Donnell</name><date_elevated>05/17/1980</date_elevated></knight>
+
+<knight><title>Sir</title><name>Freana Geardson</name><date_elevated>05/17/1980</date_elevated><notes>( Resigned KSCA and took MSCA 05/29/82 in Ansteorra)</notes></knight>
+
+<knight><title>Sir</title><name>Dragomer Andropavich</name><date_elevated>12/7/1980</date_elevated><resigned>true</resigned></knight>
+
+<knight><title>Sir</title><name>Sean de Carew</name><date_elevated>07/18/1981</date_elevated></knight>
+
+<knight><title>Duke</title><name>Sigmund the Wingfooted</name><date_elevated>07/18/1981</date_elevated></knight>
+
+<knight><title>Sir</title><name>Rurick Ivarrson</name><date_elevated>09/15/1990</date_elevated><knight>
+Bors of Lothian
+<knight><title>Duke</title><name>Jason MacPherson</name><date_elevated>11/22/1997</date_elevated></knight>
+<knight><title>Sir</title><name>Torin Ertheshert</name><date_elevated>01/09/1982</date_elevated></knight>
+
+<knight><title>Master</title><name>Ivar Battleskald</name><date_elevated>03/14/1982</date_elevated></knight>
+
+<knight><title>Sir</title><name>Hrothgar of Farley</name><date_elevated>10/10/1982</date_elevated></knight>
+
+<knight><title>Sir</title><name>Harald Bodvarson</name><date_elevated>07/30/1983</date_elevated></knight>
+
+<knight><title>Sir</title><name>Richard ap Morgan</name><date_elevated>07/30/1983</date_elevated></knight>
+
+Aoelwulf of the Shining Axe
+<knight><title>Duke</title><name>Inman MacMoore<name><date_elevated>03/03/1984</date_elevated><notes>Resigned KSCA and took MSCA in 1/9/1988 and resigned MCSA and took KSCA in 09/15/1990</notes></knight>
+
+<knight><title>Duke</title><name>Seamus of the Cats</name><date_elevated>04/28/1985</date_elevated></knight>
+<knight><title>Sir</title><name>Ian MacBaird</name><date_elevated>02/15/1986</date_elevated></knight>
+<knight><title>Sir</title><name>Arenvald Kief av Kiersted</name><date_elevated>08/17/1991</date_elevated></knight>
+Brian du Val
+Hawk Blackthorn
+Dolfin of Cork
+Ivan the hedgehog
+Anas ibn Haroun
+William Skullsplitter
+Jean
+Harald Lackland
+Jonathon ap Morgan
+Lawrence the Rampant
+Almarr Bjarnklo av Kiersted
+Ramon
+Bjarki
+<knight><title>Master</title><name>Rossario inn Carboni</name></knight>
+Padruig
+Talon of Black Oak
+James le Crane
+<knight><title>Duchess</title><name>Alisha MacLeod</name><date_elevated>05/25/1997</date_elevated></knight>
+Thoron
+Morvin
+<knight><title>Sir</title><name>Hildebrand von Tiel</name><date_elevated>09/14/1985</date_elevated></knight>
+<knight><title>Countess</title><name>Katriona MacLaughlin</name></knight>
+Mistress Gunhilda Amberstar
+WeeLan McGregor
+Sigrun inn Harfagri
+<knight><title>Sir</title><name>Burke Kyriell MacDonald</name><date_elevated>09/04/1988</date_elevated></knight>
+Talon Gustar von Marienburg
+Treshen von Asselen
+Alaric von Thorne
+Mark von Manz
+<knight><title>Count</title><name>Owen ap Aeddan</name><date_elevated>09/19/2004</date_elevated></knight>
+Aethelred of the Broken Shield
+Dagr Osvaldrsson
+Marc Antoine de Larue
+<knight><title>Sir</title><name>Angus Macknockard</name><date_elevated>2008-04-05</date_elevated></knight>
+<knight><title>Sir</title><name>Morgan Black Dragon</name></knight>
+Thorvald Egilson
+<knight><title>Sir</title><name>Arthur of the Fen</name><date_elevated>09/27/1986</date_elevated></knight>
+<knight><title>Sir</title><name>Valerius Fidelis Camerinus</name><date_elevated>03/08/1987</date_elevated></knight>
+<knight><title>Sir</title><name>Jonathon MacNaughton</name><date_elevated>08/08/1987</date_elevated></knight>
+<knight><title>Count</title><name>Sutan Bloodaxe</name><date_elevated>09/24/1989</date_elevated></knight>
+<knight><title>Sir</title><name>Frederick von Sternwald</name><date_elevated>06/10/1989</date_elevated><notes>originally squired to Seamus</notes></knight>
+<knight><title>Sir</title><name>Galen Niccoli</name><date_elevated>11/14/1992</date_elevated></knight>
+<knight><title>Duke</title><name>Adb al-Mahdi Jamal ibn Hakim</name><date_elevated>01/08/1994</date_elevated></knight>
+<knight><title>Duke</title><name>Quintus Aurelius Dracontius</name><alias>Alaric Drake</alias><date_elevated>03/06/1999</date_elevated></knight>
+<knight><title>Sir</title><name>Daire de Haya</name></knight>
+Centurion Gustav Hastings
+<knight><title>Sir</title> Louis le Blareau (5/26/07)
+Centurion Curnan Ravenshaw
+Lord Lachlann Dunn
+Lord Morgunn McKenzie
+<knight><title>Sir</title> Virgil von Augsburg (7/12/03)
+Erik inn Danski
+Agilwulf the Loud
+Agnarr Svartormr Thorvaldsson
+Llywelyn Gruffydd of Elfsea
+Damon Xanthus
+Chiara Francesca Arianna d'Onofrio
+<knight><title>Sir</title> Lance de Courcy (5/28/95)
+<knight><title>Duke</title> Aaron MacGregor (KSCA) (5/23/98)
+Chiang Ti Lung
+Conor na Mara
+Jason Montgomery
+Aku
+Duchess Britta MacGregor (KSCA) (3/18/04)
+Gerold von Drachenhohle
+<knight><title>Visount</title> Axel Taavassalama of Taavista (KSCA) (8/19/84)
+
+Ritter Dietrich Kempenich von Alts (KSCA) (9/20/97)
+Equis Romanius Vesperianus (KSCA) (3/17/00)
+Armand Dragonetti
+Mistress Stella Silvana
+<knight><title>Sir</title> Johannes von Brueckenheim (1996)
+<knight><title>Sir</title> Doran MacCollom (12/2/84)
+
+<knight><title>Count</title> Gerard MacEanruig (KSCA) (12/2/84)
+
+<knight><title>Sir</title> Korwyn Marius Velis Ariannaid (5/26/85)
+
+<knight><title>Sir</title> Jurdi Throndsson (10/11/86)
+
+<knight><title>Sir</title> Olaf of Kharkov (10/31/87)
+
+Duchess Rowan Beatrice vom Kampfer (KSCA) (9/4/88)
+
+<knight><title>Duke</title> Stephan of Bellatrix (KSCA) (4/13/91)
+
+<knight><title>Sir</title> Guy Lestrrange (8/18/01)
+John Thorne
+<knight><title>Sir</title> Christian Richard Dupre (10/5/91)
+
+<knight><title>Count</title> Galen Edwin Kirchenbauer (KSCA) (7/4/92)
+
+<knight><title>Sir</title> Gareth MacGunter of Gordon (6/10/90)
+
+<knight><title>Sir</title> Kenneth MacQuarrie of Tobermory (1/1/94)
+
+Erik Clawhanded
+Kolskeggr Thorolfsson
+Finvladr In Grimi
+<knight><title>Master</title> Daniel Blackaxe (8/17/96) (resigned KSCA and took MSCA 9/28/96)
+
+<knight><title>Sir</title> Godwin of Edington (11/22/97)
+
+Laird Malcolm MacLean
+Lord Matthias von Tirol der wachter
+HL Alden Drake
+<knight><title>Sir</title> Alexis la Bouche (1/17/98)
+
+Don Wolfgang Van Dem Hoffen
+Eiric
+Jean Clisson
+Dallan
+<knight><title>Sir</title> Wilhelm von Buch (8/14/98)
+
+Earl Duncan Arthur Ross the Black (KSCA) (5/31/00)
+
+Richard of Durnsford
+<knight><title>Sir</title> Morgan Buchanan (5/28/2006)
+<knight><title>Sir</title> Tomas Nialligan (7/08/2006)
+Finnian Mac Leod
+<knight><title>Sir</title> Hrafn Olafsson (3/14/2008)
+<knight><title>Sir</title> John Peregrine of Restormel (6/15/02)
