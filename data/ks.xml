@@ -300,56 +300,127 @@
 							<knight>
 								<title>Viscount</title>
 								<name>Wolfsagan von Ostensee</name>
+								<alias>Wulf Sagen von Osten-See</alias>
 								<date_elevated>08/23/81</date_elevated>
+								<anno_societatous>16</anno_societatous>
+								<society_chiv_number>319</society_chiv_number>
+								<society_knight_number>288</society_knight_number>
+								<kingdom_of_elevation>West</kingdom_of_elevation>
+								<kingdom_chiv_number>114</kingdom_chiv_number>
 								<squires>
 									<knight>
 										<title>Viscount</title>
 										<name>Dafydd ap Gwalchmai</name>
 										<date_elevated>01/07/1995</date_elevated>
-									</knight>
+										<anno_societatous>29</anno_societatous>
+										<type>K</type>
+										<society_chiv_number>1022</society_chiv_number>
+										<society_knight_number>955</society_knight_number>
+										<kingdom_of_elevation>Middle</kingdom_of_elevation>
+										<kingdom_chiv_number>111</kingdom_chiv_number>
+										<squires/>
+									</knight> // Dafydd ap Gwalchmai
 									<knight>
 										<title>Viscount</title>
 										<name>Leif Haakonson the Gray Fox</name>
+										<alias>Leif the Greyfox</alias>
+										<type>K</type>
 										<date_elevated>12/09/2000</date_elevated>
-									</knight>
+										<anno_societatous>35</anno_societatous>
+										<society_chiv_number>1373</society_chiv_number>
+										<society_knight_number>1293</society_knight_number>
+										<kingdom_of_elevation>Middle</kingdom_of_elevation>
+										<kingdom_chiv_number>163</kingdom_chiv_number>
+										<squires/>
+									</knight> // Leif Haakonson the Gray Fox
 								</squires>
 							</knight> //Wolfsagan von Ostensee
 							<knight>
 								<title>Count</title>
 								<name>Volkmar Katzbalger</name>
+
 								<date_elevated>07/01/1989</date_elevated>
+								<anno_societatous>24</anno_societatous>
+								<type>K</type>
+								<society_chiv_number>675</society_chiv_number>
+								<society_knight_number>620</society_knight_number>
+								<kingdom_of_elevation>Calontir</kingdom_of_elevation>
+								<kingdom_chiv_number>22</kingdom_chiv_number>
 								<squires>
 									<knight>
 										<title>Duke</title>
 										<name>Eringlen Aldheim</name>
-										<date_elevated>04/01/1995</date_elevated>
-									</knight>
+										<alias>Eringlin Aldhelm</alias>
+										<type>K</type>
+										<date_elevated>04/01/95</date_elevated>
+										<anno_societatous>29</anno_societatous>
+										<society_chiv_number>1035</society_chiv_number>
+										<society_knight_number>968</society_knight_number>
+										<kingdom_of_elevation>Calontir</kingdom_of_elevation>
+										<kingdom_chiv_number>36</kingdom_chiv_number>
+										<squires/>
+									</knight> // Eringlen Aldheim
 								</squires>
 							</knight> //Volkmar Katzbalger
 							<knight>
 								<title>Viscount</title>
 								<name>Richard Gilchrist</name>
+								<alias>Richard Gilchrest</alias>
+								<type>K</type>
 								<date_elevated>12/21/1991</date_elevated>
+								<anno_societatous>26</anno_societatous>
+								<society_chiv_number>822</society_chiv_number>
+								<society_knight_number>763</society_knight_number>
+								<kingdom_of_elevation>East</kingdom_of_elevation>
+								<kingdom_chiv_number>96</kingdom_chiv_number>
 								<squires>
 									<knight>
 										<title>Viscount</title>
 										<name>Cian Conner McQuaid</name>
+										<alias>Cian Conor McQuaid</alias>
+										<type>K</type>
 										<date_elevated>07/03/1993</date_elevated>
+										<anno_societatous>28</anno_societatous>
+										<society_chiv_number>936</society_chiv_number>
+										<society_knight_number>871</society_knight_number>
+										<kingdom_of_elevation>Drachenwald</kingdom_of_elevation>
+										<kingdom_chiv_number>2</kingdom_chiv_number>
 										<squires>
 											<knight>
 												<title>Duke</title>
 												<name>Prothall Wulfbane</name>
+												<type>K</type>
 												<date_elevated>05/01/1995</date_elevated>
+												<anno_societatous>30</anno_societatous>
+												<society_chiv_number>1038</society_chiv_number>
+												<society_knight_number>971</society_knight_number>
+												<kingdom_of_elevation>Drachenwald</kingdom_of_elevation>
+												<kingdom_chiv_number>7</kingdom_chiv_number>
+												<squires/>
 											</knight>
 											<knight>
 												<title>Duke</title>
 												<name>Sven Gunnarson of Drachenwald</name>
+												<type>K</type>
 												<date_elevated>10/30/1993</date_elevated>
+												<anno_societatous>28</anno_societatous>
+												<society_chiv_number>958</society_chiv_number>
+												<society_knight_number>891</society_knight_number>
+												<kingdom_of_elevation>Drachenwald</kingdom_of_elevation>
+												<kingdom_chiv_number>3</kingdom_chiv_number>
+												<squires/>
 											</knight>
 											<knight>
 												<title>Count</title>
 												<name>Gerhardt von Wustenburg</name>
+												<type>K</type>
 												<date_elevated>06/21/2003</date_elevated>
+												<anno_societatous>38</anno_societatous>
+												<society_chiv_number>1534</society_chiv_number>
+												<society_knight_number>1449</society_knight_number>
+												<kingdom_of_elevation>Drachenwald</kingdom_of_elevation>
+												<kingdom_chiv_number>19</kingdom_chiv_number>
+												<squires/>
 											</knight>
 										</squires>
 									</knight> //Cian Conner McQuaid
@@ -358,39 +429,87 @@
 							<knight>
 								<title>Viscount</title>
 								<name>Cai de Lyon</name>
-								<alias>Gauis Aucklandus</alias>
+								<alias>Gaius Marcellus Liberius Auklandus</alias>
+								<type>K</type>
+								<date_elevated>03/21/87</date_elevated>
+								<anno_societatous>21</anno_societatous>
+								<society_chiv_number>555</society_chiv_number>
+								<society_knight_number>509</society_knight_number>
+								<kingdom_of_elevation>West</kingdom_of_elevation>
+								<kingdom_chiv_number>144</kingdom_chiv_number>
+								<date_deceased>10/01/2007</date_deceased>
+								<squires/>
 							</knight> //Cai de Lyon
 						</squires>
 					</knight> //Kenneqrae Gilchrist
 					<knight>
 						<title>Count</title>
 						<name>Jahn of Outmann</name>
+						<alias>Jahn of Outman</alias>
+						<type>K</type>
 						<date_elevated>01/22/1977</date_elevated>
+						<anno_societatous>11</anno_societatous>
+						<society_chiv_number>158</society_chiv_number>
+						<society_knight_number>141</society_knight_number>
+						<kingdom_of_elevation>Middle</kingdom_of_elevation>
+						<kingdom_chiv_number>21</kingdom_chiv_number>
 						<squires>
 							<knight>
 								<title>Viscount</title>
 								<name>Raim y Hynnddyl</name>
+								<type>K</type>
 								<date_elevated>08/22/1982</date_elevated>
+								<anno_societatous>17</anno_societatous>
+								<society_chiv_number>366</society_chiv_number>
+								<society_knight_number>328</society_knight_number>
+								<kingdom_of_elevation>East</kingdom_of_elevation>
+								<kingdom_chiv_number>39</kingdom_chiv_number>
 								<squires>
 									<knight>
 										<title>Sir</title>
 										<name>Anton von Haganstein</name>
+										<type>K</type>
 										<date_elevated>09/16/1989</date_elevated>
+										<anno_societatous>24</anno_societatous>
+										<society_chiv_number>695</society_chiv_number>
+										<society_knight_number>640</society_knight_number>
+										<kingdom_of_elevation>East</kingdom_of_elevation>
+										<kingdom_chiv_number>77</kingdom_chiv_number>
+										<squires/>
 									</knight> //Anton von Haganstein
 									<knight>
 										<title>Sir</title>
 										<name>Rorik Galbraith</name>
+										<type>K</type>
 										<date_elevated>08/24/1991</date_elevated>
+										<anno_societatous>26</anno_societatous>
+										<society_chiv_number>807</society_chiv_number>
+										<society_knight_number>748</society_knight_number>
+										<kingdom_of_elevation>Calontir</kingdom_of_elevation>
+										<kingdom_chiv_number>27</kingdom_chiv_number>
+									    <squires/>
 									</knight> //Rorik Galbraith
 									<knight>
 										<title>Viscount</title>
 										<name>Wulfbrand Lurkr</name>
+										<type>K</type>
 										<date_elevated>08/16/1986</date_elevated>
+										<anno_societatous>21</anno_societatous>
+										<society_chiv_number>529</society_chiv_number>
+										<society_knight_number>483</society_knight_number>
+										<kingdom_of_elevation>East</kingdom_of_elevation>
+										<kingdom_chiv_number>56</kingdom_chiv_number>
 										<squires>
 											<knight>
 												<title>Sir</title>
 												<name>Gideon MacLeod</name>
+												<type>K</type>
 												<date_elevated>07/28/2001</date_elevated>
+												<anno_societatous>36</anno_societatous>
+												<society_chiv_number>1412</society_chiv_number>
+												<society_knight_number>1330</society_knight_number>
+												<kingdom_of_elevation>Ansteorra</kingdom_of_elevation>
+												<kingdom_chiv_number>83</kingdom_chiv_number>
 												<squires>
 													<squire>
 														<name>Sean u'a Lochlain</name>
@@ -412,61 +531,137 @@
 					<knight>
 						<title>Sir</title>
 						<name>Polidor Haraldsson</name>
+						<alias>Polidore Haraldsson of the Dented Helm</alias>
+						<type>K</type>
 						<date_elevated>10/27/1974</date_elevated>
+						<anno_societatous>9</anno_societatous>
+						<society_chiv_number>100</society_chiv_number>
+						<society_knight_number>89</society_knight_number>
+						<kingdom_of_elevation>Middle</kingdom_of_elevation>
+						<kingdom_chiv_number>16</kingdom_chiv_number>
 						<squires>
 							<knight>
 								<title>Duke</title>
 								<name>Corin du Soleil</name>
+								<type>K</type>
 								<date_elevated>10/28/1978</date_elevated>
+								<anno_societatous>13</anno_societatous>
+								<society_chiv_number>209</society_chiv_number>
+								<society_knight_number>187</society_knight_number>
+								<kingdom_of_elevation>Middle</kingdom_of_elevation>
+								<kingdom_chiv_number>29</kingdom_chiv_number>
 								<squires>
 									<knight>
 										<title>Viscount</title>
 										<name>Saeric Scirham</name>
+										<type>K</type>
 										<date_elevated>07/09/1994</date_elevated>
+										<anno_societatous>29</anno_societatous>
+										<society_chiv_number>991</society_chiv_number>
+										<society_knight_number>924</society_knight_number>
+										<kingdom_of_elevation>Middle</kingdom_of_elevation>
+										<kingdom_chiv_number>102</kingdom_chiv_number>
+										<squires/>
 									</knight> //Saeric Scirham
 									<knight>
 										<title>Sir</title>
 										<name>Guillaume le Fort</name>
+										<type>K</type>
 										<date_elevated>08/20/1983</date_elevated>
+										<anno_societatous>18</anno_societatous>
+										<society_chiv_number>402</society_chiv_number>
+										<society_knight_number>362</society_knight_number>
+										<kingdom_of_elevation>Middle</kingdom_of_elevation>
+										<kingdom_chiv_number>52</kingdom_chiv_number>
+										<squires/>
 									</knight> //Guillaume le Fort
 									<knight>
 										<title>Count</title>
 										<name>Brion Thornbird</name>
+										<alias>Brion Thornbird ap Rhys</alias>
+										<type>K</type>
 										<date_elevated>09/06/1987</date_elevated>
+										<anno_societatous>22</anno_societatous>
+										<society_chiv_number>586</society_chiv_number>
+										<society_knight_number>539</society_knight_number>
+										<kingdom_of_elevation>Caid</kingdom_of_elevation>
+										<kingdom_chiv_number>26</kingdom_chiv_number>
+										<squires/>
 									</knight> //Brion Thornbird
 								</squires>
 							</knight> //Corin du Soleil
 							<knight>
 								<title>Sir</title>
 								<name>William of Bellwood</name>
+								<type>K</type>
 								<date_elevated>11/07/1981</date_elevated>
+								<anno_societatous>16</anno_societatous>
+								<society_chiv_number>333</society_chiv_number>
+								<society_knight_number>299</society_knight_number>
+								<kingdom_of_elevation>Middle</kingdom_of_elevation>
+								<kingdom_chiv_number>46</kingdom_chiv_number>
 								<squires>
 									<knight>
 										<title>Count</title>
 										<name>Aesgir Gunnarsson</name>
+										<alias>Asgeirr Gunnarsson</alias>
 										<date_elevated>06/29/1985</date_elevated>
+										<anno_societatous>20</anno_societatous>
+										<society_chiv_number>473</society_chiv_number>
+										<society_knight_number>429</society_knight_number>
+										<kingdom_of_elevation>Calontir</kingdom_of_elevation>
+										<kingdom_chiv_number>7</kingdom_chiv_number>
 										<squires>
 											<knight>
 												<title>Sir</title>
 												<name>Halidar Arnkellsson</name>
+												<alias>Halidor Arkellsson</alias>
+												<type>K</type>
 												<date_elevated>06/13/1992</date_elevated>
+												<anno_societatous>27</anno_societatous>
+												<society_chiv_number>852</society_chiv_number>
+												<society_knight_number>791</society_knight_number>
+												<kingdom_of_elevation>Calontir</kingdom_of_elevation>
+												<kingdom_chiv_number>30</kingdom_chiv_number>
 												<squires>
 													<knight>
 														<title>Count</title>
 														<name>Thjothrekr Eiriksson</name>
+														<alias>Thjodric Eiriksson</alias>
+														<type>K</type>
 														<date_elevated>08/30/1997</date_elevated>
+														<anno_societatous>32</anno_societatous>
+														<society_chiv_number>1173</society_chiv_number>
+														<society_knight_number>1097</society_knight_number>
+														<kingdom_of_elevation>Calontir</kingdom_of_elevation>
+														<kingdom_chiv_number>48</kingdom_chiv_number>
+														<squires/>
 													</knight> //Thjothrekr Eiriksson
 												</squires>
 											</knight> //Halidar Arnkellsson
 											<knight>
 												<title>Sir</title>
 												<name>Hyrim de Guillon</name>
+												<type>K</type>
 												<date_elevated>08/16/1996</date_elevated>
+												<anno_societatous>31</anno_societatous>
+												<society_chiv_number>1121</society_chiv_number>
+												<society_knight_number>1047</society_knight_number>
+												<kingdom_of_elevation>Calontir</kingdom_of_elevation>
+												<kingdom_chiv_number>41</kingdom_chiv_number>
 											</knight> //Hyrim de Guillon
 											<knight>
 												<title>Sir</title>
 												<name>Ixlilxochitl de los Indios</name>
+												<alias>Ixtlilxochtl Cacique</alias>
+												<type>K</type>
 												<date_elevated>08/18/1994</date_elevated>
+												<anno_societatous>29</anno_societatous>
+												<society_chiv_number>999</society_chiv_number>
+												<society_knight_number>932</society_knight_number>
+												<kingdom_of_elevation>Middle</kingdom_of_elevation>
+												<kingdom_chiv_number>106</kingdom_chiv_number>
+												<squires/>
 											</knight> //Ixlilxochitl										
 										</squires>
 									</knight> //Aesgir Gunnarsson
@@ -1007,14 +1202,14 @@
 							<knight>
 								<title>Sir</title>
 								<name>Cathal Finn O'Briain</name>
-								<date_elevated></date_elevated>
+								<date_elevated/>
 								<squires>
 									<squire>
 										<name>Ted</name>
 									</squire>
 									<knight>
 										<name>Devorix</name>
-										<date_elevated></date_elevated>
+										<date_elevated/>
 									</knight>
 								</squires>
 							</knight>
@@ -1409,7 +1604,7 @@
 				<name>Riccardo di Pisa</name>
 				<date_elevated>06/13/1981</date_elevated>
 				<deceased>true</deceased>
-				<date_deceased></date_deceased>
+				<date_deceased/>
 				<squires>
 					<knight>
 						<title>Sir</title>
@@ -1973,15 +2168,15 @@
 				<name>Wolfgang Van Dem Hoffen</name>
 			</squire>
 			<squire>
-				<title></title>
+				<title/>
 				<name>Eiric</name>
 			</squire>
 			<squire>
-				<title></title>
+				<title/>
 				<name>Jean Clisson</name>
 			</squire>
 			<squire>
-				<title></title>
+				<title/>
 				<name>Dallan</name>
 			</squire>
 		</squires>
