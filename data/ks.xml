@@ -668,28 +668,63 @@
 									<knight>
 										<title>Sir</title>
 										<name>Robert Fitzhugh of Bannockburn</name>
+										<type>K</type>
 										<date_elevated>08/18/1989</date_elevated>
+										<anno_societatous>24</anno_societatous>
+										<society_chiv_number>684</society_chiv_number>
+										<society_knight_number>629</society_knight_number>
+										<kingdom_of_elevation>Middle</kingdom_of_elevation>
+										<kingdom_chiv_number>73</kingdom_chiv_number>
 										<squires>
 											<knight>
 												<title>Duke</title>
 												<name>Thorbjorn Osis Brandsson of the Livery of Faeringold</name>
+												<alias>Thorbjorn Osis Brandsson</alias>
 												<date_elevated>01/29/1994</date_elevated>
+												<anno_societatous>28</anno_societatous>
+												<type>K</type>
+												<society_chiv_number>970</society_chiv_number>
+												<society_knight_number>903</society_knight_number>
+												<kingdom_of_elevation>Middle</kingdom_of_elevation>
+												<kingdom_chiv_number>99</kingdom_chiv_number>
 												<deceased>true</deceased>
 												<squires>
 													<knight>
 														<title>Duke</title>
 														<name>Berus Wolfsonne</name>
+														<type>K</type>
 														<date_elevated>08/19/1999</date_elevated>
+														<anno_societatous>34</anno_societatous>
+														<society_chiv_number>1304</society_chiv_number>
+														<society_knight_number>1225</society_knight_number>
+														<kingdom_of_elevation>Ealdormere</kingdom_of_elevation>
+														<kingdom_chiv_number>4</kingdom_chiv_number>
+														<squires/>
 													</knight> //Berus Wolfsonne
 													<knight>
 														<title>Master</title>
 														<name>Worrigan McGregor</name>
+														<alias>Worgan MacGregor</alias>
+														<type>M</type>
 														<date_elevated>02/03/2001</date_elevated>
+														<anno_societatous>35</anno_societatous>
+														<society_chiv_number>1378</society_chiv_number>
+														<society_master_number>81</society_master_number>
+														<kingdom_of_elevation>Ealdormere</kingdom_of_elevation>
+														<kingdom_chiv_number>6</kingdom_chiv_number>-
 														<squires>
 															<knight>
 																<title>Count</title>
 																<name>Aaron Preslee Worgensson</name>
+																<alias>Aaron Presley</alias>
+																<type>K</type>
 																<date_elevated>01/26/2003</date_elevated>
+																<anno_societatous>37</anno_societatous>
+																<society_chiv_number>1503</society_chiv_number>
+																<society_knight_number>1418</society_knight_number>
+																<kingdom_of_elevation>Ealdormere</kingdom_of_elevation>
+																<kingdom_chiv_number>10</kingdom_chiv_number>
+																<squires/>
 															</knight> //Aaron Preslee Worgensson
 														</squires>
 													</knight> //Worrigan McGregor
@@ -708,7 +743,14 @@
 					<knight>
 						<title>Sir</title>
 						<name>Ropesle de Sylveaston</name>
+						<type>K</type>
 						<date_elevated>01/25/1986</date_elevated>
+						<anno_societatous>20</anno_societatous>
+						<society_chiv_number>502</society_chiv_number>
+						<society_knight_number>456</society_knight_number>
+						<kingdom_of_elevation>Trimaris</kingdom_of_elevation>
+						<kingdom_chiv_number>1</kingdom_chiv_number>
+						<squires/>
 					</knight> //Ropesle de Sylveaston
 					<knight>
 						<title>Viscount</title>
@@ -716,14 +758,27 @@
 					</knight> //Guthram of the Wastelands
 					<knight>
 						<title>Sir</title>
-						<name>Arthur d'Uriens</name>
+						<name>Arthur d'Urience</name>
 						<alias>Artorius Raedwulf</alias>
 						<date_elevated>08/15/1991</date_elevated>
-					</knight> //Arthur d'Uriens
+						<anno_societatous>26</anno_societatous>
+						<society_chiv_number>801</society_chiv_number>
+						<society_knight_number>743</society_knight_number>
+						<kingdom_of_elevation>Trimaris</kingdom_of_elevation>
+						<kingdom_chiv_number>20</kingdom_chiv_number>
+						<squires/>
+					</knight> //Arthur d'Urience
 					<knight>
 						<title>Viscount</title>
 						<name>Menken Brechen</name>
+						<type>K</type>
 						<date_elevated>08/18/1994</date_elevated>
+						<anno_societatous>29</anno_societatous>
+						<society_chiv_number>996</society_chiv_number>
+						<society_knight_number>929</society_knight_number>
+						<kingdom_of_elevation>Middle</kingdom_of_elevation>
+						<kingdom_chiv_number>103</kingdom_chiv_number>
+						<squires/>
 					</knight> //Menken Brechen
 					<knight>
 						<title>Sir</title>
