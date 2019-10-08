@@ -52,7 +52,7 @@
       <body>
         <h2>Knight Squire Project - 2.0</h2>
         <p>
-          title | name | date elevated | A.S. | society chivalry # | society knight # | kingdom elevated | kingdom chivalry #
+          name | date elevated | A.S. | society chivalry # | society knight # | kingdom elevated | kingdom chivalry #
         </p>
         <xsl:apply-templates/>
         <script>
@@ -66,6 +66,10 @@
                 this.classList.toggle("caret-down");
               });
             }
+            for (i = 0; i < toggler.length; i++) {
+              toggler[i].click();
+            }
+
         ]]>
         </script>
 
@@ -80,97 +84,21 @@
   </xsl:template>
 
   <xsl:template match="knight">
-    <xsl:variable name="displayRed">|Duke|Duchess|</xsl:variable>
-    <xsl:variable name="displayOrange">|Count|Countess|Earl|Jarl|Comte|Comtessa|</xsl:variable>
-    <xsl:variable name="displayHotPink">|Viscount|Viscountess|</xsl:variable>
-    <xsl:variable name="displayWhite">|Sir|Ritter|Riddari|Equis|</xsl:variable>
-    <xsl:variable name="displayLime">|Master|Mistress|</xsl:variable>
     <li>
-      <xsl:choose>
-        <xsl:when test="contains($displayRed,title)">
-          <xsl:choose>
-            <xsl:when test=".//squires">
-              <span style="color:red; text-shadow: 2px 2px black;" class="caret">
-                <xsl:apply-templates select="title"/>
-              </span>
+        <xsl:choose>
+            <xsl:when test=".//squires/*">
+                <span style="color:pink; text-shadow: 2px 2px black;" class="caret">
+                    <xsl:apply-templates select="name"/>
+                </span>
             </xsl:when>
             <xsl:otherwise>
-              <span style="color:red; text-shadow: 2px 2px black;">
-                <xsl:apply-templates select="title"/>
-              </span>
+                <span style="color:white; text-shadow: 2px 2px black;">
+                    <xsl:apply-templates select="name"/>
+                </span>
             </xsl:otherwise>
-          </xsl:choose>
-        </xsl:when>
-        <xsl:when test="contains($displayOrange,title)">
-          <xsl:choose>
-            <xsl:when test=".//squires">
-              <span style="color:orange; text-shadow: 2px 2px black;" class="caret">
-                <xsl:apply-templates select="title"/>
-              </span>
-            </xsl:when>
-            <xsl:otherwise>
-              <span style="color:orange; text-shadow: 2px 2px black;">
-                <xsl:apply-templates select="title"/>
-              </span>
-            </xsl:otherwise>
-          </xsl:choose>
-        </xsl:when>
-        <xsl:when test="contains($displayHotPink,title)">
-          <xsl:choose>
-            <xsl:when test=".//squires">
-              <span style="color:hotpink; text-shadow: 2px 2px black;" class="caret">
-                <xsl:apply-templates select="title"/>
-              </span>
-            </xsl:when>
-            <xsl:otherwise>
-              <span style="color:hotpink; text-shadow: 2px 2px black;">
-                <xsl:apply-templates select="title"/>
-              </span>
-            </xsl:otherwise>
-          </xsl:choose>
-        </xsl:when>
-        <xsl:when test="contains($displayWhite,title)">
-          <xsl:choose>
-            <xsl:when test=".//squires">
-              <span style="color:White; text-shadow: 2px 2px black;" class="caret">
-                <xsl:apply-templates select="title"/>
-              </span>
-            </xsl:when>
-            <xsl:otherwise>
-              <span style="color:White; text-shadow: 2px 2px black;">
-                <xsl:apply-templates select="title"/>
-              </span>
-            </xsl:otherwise>
-          </xsl:choose>
-        </xsl:when>
-        <xsl:when test="contains($displayLime,title)">
-          <xsl:choose>
-            <xsl:when test=".//squires">
-              <span style="color:lime; text-shadow: 2px 2px black;" class="caret">
-                <xsl:apply-templates select="title"/>
-              </span>
-            </xsl:when>
-            <xsl:otherwise>
-              <span style="color:lime; text-shadow: 2px 2px black;">
-                <xsl:apply-templates select="title"/>
-              </span>
-            </xsl:otherwise>
-          </xsl:choose>
-        </xsl:when>        
-        <xsl:otherwise>
-          <span style="color:DodgerBlue; text-shadow: 2px 2px black;">
-            <xsl:apply-templates select="title"/>
-          </span>
-        </xsl:otherwise>
-      </xsl:choose>
-        <xsl:apply-templates select="name"/>
- |      <xsl:apply-templates select="date_elevated"/>
- |      <xsl:apply-templates select="anno_societatous"/>
- |      <xsl:apply-templates select="society_chiv_number"/>
- |      <xsl:apply-templates select="society_knight_number"/>
- |      <xsl:apply-templates select="kingdom_of_elevation"/>
- |      <xsl:apply-templates select="kingdom_chiv_number"/>
-      <xsl:apply-templates select="squires"/>
+        </xsl:choose>
+ | <xsl:apply-templates select="date_elevated"/> | <xsl:apply-templates select="anno_societatous"/> | <xsl:apply-templates select="society_chiv_number"/> | <xsl:apply-templates select="society_knight_number"/> | <xsl:apply-templates select="kingdom_of_elevation"/> | <xsl:apply-templates select="kingdom_chiv_number"/>
+        <xsl:apply-templates select="squires"/>
     </li>
   </xsl:template>
 
@@ -182,102 +110,20 @@
   </xsl:template>
 
   <xsl:template match="squire">
-    <xsl:variable name="displayRed">|Duke|</xsl:variable>
-    <xsl:variable name="displayOrange">|Count|Countess|Earl|Jarl|Comte|Comtessa|</xsl:variable>
-    <xsl:variable name="displayHotPink">|Viscount|Viscountess|</xsl:variable>
-    <xsl:variable name="displayWhite">|Sir|Ritter</xsl:variable>
-    <xsl:variable name="displayLime">|Master|Mistress|</xsl:variable>
     <li>
-      <xsl:choose>
-        <xsl:when test="contains($displayRed,title)">
-          <xsl:choose>
-            <xsl:when test=".//squires">
-              <span style="color:red; text-shadow: 2px 2px black;" class="caret">
-                <xsl:apply-templates select="title"/>
-              </span>
+        <xsl:choose>
+            <xsl:when test=".//squires/*">
+                <span style="color:red; text-shadow: 2px 2px black;" class="caret">
+                    <xsl:apply-templates select="name"/>
+                </span>
             </xsl:when>
             <xsl:otherwise>
-              <span style="color:red; text-shadow: 2px 2px black;">
-                <xsl:apply-templates select="title"/>
-              </span>
+                <span style="color:red; text-shadow: 2px 2px black;">
+                    <xsl:apply-templates select="name"/>
+                </span>
             </xsl:otherwise>
-          </xsl:choose>
-        </xsl:when>
-        <xsl:when test="contains($displayOrange,title)">
-          <xsl:choose>
-            <xsl:when test=".//squires">
-              <span style="color:orange; text-shadow: 2px 2px black;" class="caret">
-                <xsl:apply-templates select="title"/>
-              </span>
-            </xsl:when>
-            <xsl:otherwise>
-              <span style="color:orange; text-shadow: 2px 2px black;">
-                <xsl:apply-templates select="title"/>
-              </span>
-            </xsl:otherwise>
-          </xsl:choose>
-        </xsl:when>
-        <xsl:when test="contains($displayHotPink,title)">
-          <xsl:choose>
-            <xsl:when test=".//squires">
-              <span style="color:hotpink; text-shadow: 2px 2px black;" class="caret">
-                <xsl:apply-templates select="title"/>
-              </span>
-            </xsl:when>
-            <xsl:otherwise>
-              <span style="color:hotpink; text-shadow: 2px 2px black;">
-                <xsl:apply-templates select="title"/>
-              </span>
-            </xsl:otherwise>
-          </xsl:choose>
-        </xsl:when>
-        <xsl:when test="contains($displayWhite,title)">
-          <xsl:choose>
-            <xsl:when test=".//squires">
-              <span style="color:White; text-shadow: 2px 2px black;" class="caret">
-                <xsl:apply-templates select="title"/>
-              </span>
-            </xsl:when>
-            <xsl:otherwise>
-              <span style="color:White; text-shadow: 2px 2px black;">
-                <xsl:apply-templates select="title"/>
-              </span>
-            </xsl:otherwise>
-          </xsl:choose>
-        </xsl:when>
-        <xsl:when test="contains($displayLime,title)">
-          <xsl:choose>
-            <xsl:when test=".//squires">
-              <span style="color:lime; text-shadow: 2px 2px black;" class="caret">
-                <xsl:apply-templates select="title"/>
-              </span>
-            </xsl:when>
-            <xsl:otherwise>
-              <span style="color:lime; text-shadow: 2px 2px black;">
-                <xsl:apply-templates select="title"/>
-              </span>
-            </xsl:otherwise>
-          </xsl:choose>
-        </xsl:when>        
-        <xsl:otherwise>
-          <span style="color:DodgerBlue; text-shadow: 2px 2px black;">
-            <xsl:apply-templates select="title"/>
-          </span>
-        </xsl:otherwise>
-      </xsl:choose>
-      <xsl:apply-templates select="name"/>
- |      <xsl:apply-templates select="date_elevated"/>
- |      <xsl:apply-templates select="anno_societatous"/>
- |      <xsl:apply-templates select="society_chiv_number"/>
- |      <xsl:apply-templates select="society_knight_number"/>
- |      <xsl:apply-templates select="kingdom_of_elevation"/>
- |      <xsl:apply-templates select="kingdom_chiv_number"/>
+        </xsl:choose>
     </li>
-  </xsl:template>
-
-  <xsl:template match="title">
-    <xsl:value-of select="."/>
- - 
   </xsl:template>
 
   <xsl:template match="name">
