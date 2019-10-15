@@ -1,1 +1,5 @@
 /data/original/zweblist-converted.json
+venv
+.vscode
+.idea
+.idea
