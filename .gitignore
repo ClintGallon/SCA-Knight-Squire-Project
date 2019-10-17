@@ -2,4 +2,7 @@
 venv
 .vscode
 .idea
-.idea
+/programs/CreateKnightSquireXml/packages/
+/programs/CreateKnightSquireXml/.vs/
+/programs/CreateKnightSquireXml/CreateKnightSquireXml/bin/
+/programs/CreateKnightSquireXml/CreateKnightSquireXml/obj/
