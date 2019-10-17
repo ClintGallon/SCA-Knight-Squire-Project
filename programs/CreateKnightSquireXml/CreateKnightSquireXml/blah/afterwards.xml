@@ -266,7 +266,7 @@
                     <knight>
                         <society_precedence>71</society_precedence>
                         <name>Gareth the Russel</name>
-                        <type>Knight</type>
+                      <type>Knight</type>
                         <squires>
                             <knight>
                                 <society_precedence>87</society_precedence>
@@ -304,7 +304,6 @@
                     <knight>
                         <society_precedence>397</society_precedence>
                         <name>Ternon de Caerleon (Deceased)</name>
-                        <type>Knight</type>
                         <squires>
                             <knight>
                                 <society_precedence>507</society_precedence>
@@ -315,7 +314,7 @@
                             <knight>
                                 <society_precedence>519</society_precedence>
                                 <name>Valens of Flatrock</name>
-                                <type>Knight</type>
+                              <type>Knight</type>
                                 <squires>
                                     <knight>
                                         <society_precedence>831</society_precedence>
@@ -334,7 +333,7 @@
                             <knight>
                                 <society_precedence>853</society_precedence>
                                 <name>Pavel Iosefovich (Deceased)</name>
-                                <type>Knight</type>
+                              <type>Knight</type>
                                 <squires>
                                     <knight>
                                         <society_precedence>1348</society_precedence>
@@ -347,12 +346,12 @@
                             <knight>
                                 <society_precedence>542</society_precedence>
                                 <name>Conn MacNeill</name>
-                                <type>Knight</type>
+                              <type>Knight</type>
                                 <squires>
                                     <knight>
                                         <society_precedence>1079</society_precedence>
                                         <name>Dongal ErickssonDonegal Fitzroberts</name>
-                                        <type>Knight</type>
+                                      <type>Knight</type>
                                         <squires>
                                             <knight>
                                                 <society_precedence>2096</society_precedence>
@@ -381,12 +380,12 @@
                     <knight>
                         <society_precedence>194</society_precedence>
                         <name>Kenneqrae Gilchrest</name>
-                        <type>Knight</type>
+                      <type>Knight</type>
                         <squires>
                             <knight>
                                 <society_precedence>480</society_precedence>
                                 <name>Thomas de Chateau Noir</name>
-                                <type>Knight</type>
+                              <type>Knight</type>
                                 <squires>
                                     <knight>
                                         <society_precedence>1207</society_precedence>
@@ -399,7 +398,7 @@
                             <knight>
                                 <society_precedence>319</society_precedence>
                                 <name>Wulf Sagen von Osten-See</name>
-                                <type>Knight</type>
+                              <type>Knight</type>
                                 <squires>
                                     <knight>
                                         <society_precedence>1022</society_precedence>
@@ -418,7 +417,7 @@
                             <knight>
                                 <society_precedence>675</society_precedence>
                                 <name>Volkmar Katzbalger</name>
-                                <type>Knight</type>
+                              <type>Knight</type>
                                 <squires>
                                     <knight>
                                         <society_precedence>1035</society_precedence>
@@ -431,12 +430,12 @@
                             <knight>
                                 <society_precedence>822</society_precedence>
                                 <name>Richard Gilchrest</name>
-                                <type>Knight</type>
+                              <type>Knight</type>
                                 <squires>
                                     <knight>
                                         <society_precedence>936</society_precedence>
                                         <name>Cian Conor McQuaid</name>
-                                        <type>Knight</type>
+                                      <type>Knight</type>
                                         <squires>
                                             <knight>
                                                 <society_precedence>1038</society_precedence>
@@ -465,12 +464,12 @@
                     <knight>
                         <society_precedence>158</society_precedence>
                         <name>Jahn of Outman</name>
-                        <type>Knight</type>
+                      <type>Knight</type>
                         <squires>
                             <knight>
                                 <society_precedence>366</society_precedence>
                                 <name>Raim y Hynnddyl</name>
-                                <type>Knight</type>
+                              <type>Knight</type>
                                 <squires>
                                     <knight>
                                         <society_precedence>695</society_precedence>
@@ -487,30 +486,25 @@
                                     <knight>
                                         <society_precedence>529</society_precedence>
                                         <name>Wulfbrand Lurkr</name>
-                                        <type>Knight</type>
+                                      <type>Knight</type>
                                         <squires>
                                             <knight>
                                                 <society_precedence>1412</society_precedence>
                                                 <name>Gideon MacLeod</name>
-                                                <type>Knight</type>
+                                              <type>Knight</type>
                                                 <squires>
                                                     <knight>
-                                                        <society_precedence>-1</society_precedence>
-                                                        <type>squire</type>
+                                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
                                                         <name>Sean u'a Lochlain</name>
                                                         <squires/>
                                                     </knight>
                                                     <knight>
-                                                        <society_precedence>-1</society_precedence>
-                                                        <name>Gregory Kildare</name>
-                                                        <type>squire</type>
-                                                        <squires/>
+                                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                                        <name>Gregory Kildare</name><squires/>
                                                     </knight>
                                                     <knight>
-                                                        <society_precedence>-1</society_precedence>
-                                                        <name>Catalina de Salamanca</name>
-                                                        <type>squire</type>
-                                                        <squires/>
+                                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                                        <name>Catalina de Salamanca</name><squires/>
                                                     </knight>
                                                 </squires>
                                             </knight>
@@ -519,22 +513,20 @@
                                 </squires>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence>
-                                <name>Charles O'Connor</name>                                
-                                <type>squire</type>                              
-                                <squires/>
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Charles O'Connor</name><squires/>
                             </knight>
                         </squires>
                     </knight>
                     <knight>
                         <society_precedence>100</society_precedence>
                         <name>Polidore Haraldsson of the Dented Helm</name>
-                        <type>Knight</type>
+                      <type>Knight</type>
                         <squires>
                             <knight>
                                 <society_precedence>209</society_precedence>
                                 <name>Corin du Soleil</name>
-                                <type>Knight</type>
+                              <type>Knight</type>
                                 <squires>
                                     <knight>
                                         <society_precedence>991</society_precedence>
@@ -565,12 +557,12 @@
                             <knight>
                                 <society_precedence>473</society_precedence>
                                 <name>Asgeirr Gunnarsson</name>
-                                <type>Knight</type>
+                              <type>Knight</type>
                                 <squires>
                                     <knight>
                                         <society_precedence>852</society_precedence>
                                         <name>Halidor Arkellsson</name>
-                                        <type>Knight</type>
+                                      <type>Knight</type>
                                         <squires>
                                             <knight>
                                                 <society_precedence>1173</society_precedence>
@@ -597,12 +589,12 @@
                             <knight>
                                 <society_precedence>684</society_precedence>
                                 <name>Robert FitzHugh of Bannockburn</name>
-                                <type>Knight</type>
+                              <type>Knight</type>
                                 <squires>
                                     <knight>
                                         <society_precedence>970</society_precedence>
                                         <name>Thorbjorn Osis Brandsson (Deceased)</name>
-                                        <type>Knight</type>
+                                      <type>Knight</type>
                                         <squires>
                                             <knight>
                                                 <society_precedence>1304</society_precedence>
@@ -613,7 +605,7 @@
                                             <knight>
                                                 <society_precedence>1378</society_precedence>
                                                 <name>Worgan MacGregor</name>
-                                                <type>Knight</type>
+                                              <type>Knight</type>
                                                 <squires>
                                                     <knight>
                                                         <society_precedence>1503</society_precedence>
@@ -648,10 +640,9 @@
                         <squires/>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence>
-                        <type>squire</type>
-                        <name>Jean Paul the Mace</name>
-                        <squires/>
+                      <society_precedence>-1</society_precedence>
+                      <type>squire</type>
+                        <name>Jean Paul the Mace</name><squires/>
                     </knight>
                 </squires>
             </knight>
@@ -882,22 +873,22 @@
     <knight>
         <society_precedence>82</society_precedence>
         <name>Sven of Vandelaven, the Fierce</name>
-        <type>Knight</type>
+      <type>Knight</type>
         <squires>
             <knight>
                 <society_precedence>146</society_precedence>
                 <name>Balthazar of Endor</name>
-                <type>Knight</type>
+              <type>Knight</type>
                 <squires>
                     <knight>
                         <society_precedence>168</society_precedence>
                         <name>Simonn of Amber Isle</name>
-                        <type>Knight</type>
+                      <type>Knight</type>
                         <squires>
                             <knight>
                                 <society_precedence>600</society_precedence>
                                 <name>Galen of Bristol</name>
-                                <type>Knight</type>
+                              <type>Knight</type>
                                 <squires>
                                     <knight>
                                         <society_precedence>1028</society_precedence>
@@ -908,44 +899,39 @@
                                     <knight>
                                         <society_precedence>722</society_precedence>
                                         <name>Kein MacEwan</name>
-                                        <type>Knight</type>
+                                      <type>Knight</type>
                                         <squires>
                                             <knight>
                                                 <society_precedence>1786</society_precedence>
                                                 <name>Ysfael Bryndu</name>
-                                                <type>Knight</type>
+                                              <type>Knight</type>
                                                 <squires>
                                                     <knight>
-                                                        <society_precedence>-1</society_precedence>
-                                                        <name>Stefan le Sanglier</name>
-                                                        <type>squire</type>
-                                                        <squires/>
+                                                      <society_precedence>-1</society_precedence>
+                                                      <type>squire</type>
+                                                        <name>Stefan le Sanglier</name><squires/>
                                                     </knight>
                                                     <knight>
-                                                        <society_precedence>-1</society_precedence>
-                                                        <name>Abel</name>
-                                                        <type>squire</type>
-                                                        <squires/>
+                                                      <society_precedence>-1</society_precedence>
+                                                      <type>squire</type>
+                                                        <name>Abel</name><squires/>
                                                     </knight>
                                                     <knight>
-                                                        <society_precedence>-1</society_precedence>
-                                                                                                                <name>Eynon ap Madoc</name>
-
-                                                        <type>squire</type>
-                                                        <squires/>
+                                                      <society_precedence>-1</society_precedence>
+                                                      <type>squire</type>
+                                                        <name>Eynon ap Madoc</name><squires/>
                                                     </knight>
                                                 </squires>
                                             </knight>
                                             <knight>
                                                 <society_precedence>1909</society_precedence>
                                                 <name>Caladin Ironhearth</name>
-                                                <type>Knight</type>
+                                              <type>Knight</type>
                                                 <squires>
                                                     <knight>
-                                                        <society_precedence>-1</society_precedence><name>Emeiliano Sotelo</name>
+                                                        <society_precedence>-1</society_precedence>
                                                         <type>squire</type>
-                                                        
-                                                        <squires/>
+                                                        <name>Emeiliano Sotelo</name><squires/>
                                                     </knight>
                                                 </squires>
                                             </knight>
@@ -962,46 +948,32 @@
                                                 <squires/>
                                             </knight>
                                             <knight>
-                                                <society_precedence>-1</society_precedence><name>Malcolm MacEwan</name>
-                                                <type>squire</type>
-                                                <squires/>
-                                                
+                                              <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                                <name>Malcolm MacEwan</name>
                                             </knight>
                                             <knight>
-                                                <society_precedence>-1</society_precedence><name>Friedrich von Konigsburg</name>
-                                                <type>squire</type>
-                                                <squires/>
-                                                
+                                              <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                                <name>Friedrich von Konigsburg</name>
                                             </knight>
                                             <knight>
-                                                <society_precedence>-1</society_precedence><name>Phelan MacEwan</name>
-                                                <type>squire</type>
-                                                <squires/>
-                                                
+                                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                                <name>Phelan MacEwan</name>
                                             </knight>
                                             <knight>
-                                                <society_precedence>-1</society_precedence><name>Raith Brandburn</name>
-                                                <type>squire</type>
-                                                <squires/>
-                                                
+                                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                                <name>Raith Brandburn</name>
                                             </knight>
                                             <knight>
-                                                <society_precedence>-1</society_precedence> <name>Alaric Styrr called Tuhtahl of the Moritu</name>
-                                                <type>squire</type>
-                                                <squires/>
-                                               
+                                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                                <name>Alaric Styrr called Tuhtahl of the Moritu</name>
                                             </knight>
                                             <knight>
-                                                <society_precedence>-1</society_precedence><name>Jehan D'Aigle</name>
-                                                <type>squire</type>
-                                                <squires/>
-                                                
+                                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                                <name>Jehan D'Aigle</name>
                                             </knight>
                                             <knight>
-                                                <society_precedence>-1</society_precedence><name>Ricardo Esteban de Salamanca</name>
-                                                <type>squire</type>
-                                                <squires/>
-                                                
+                                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                                <name>Ricardo Esteban de Salamanca</name>
                                             </knight>
                                         </squires>
                                     </knight>
@@ -1012,34 +984,24 @@
                                         <squires/>
                                     </knight>
                                     <knight>
-                                        <society_precedence>-1</society_precedence> <name>Daniel Stewart</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                       
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Daniel Stewart</name>
                                     </knight>
                                     <knight>
-                                        <society_precedence>-1</society_precedence><name>Honour DuBois</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                        
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Honour DuBois</name>
                                     </knight>
                                     <knight>
-                                        <society_precedence>-1</society_precedence><name>Wilim Penbras</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                        
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Wilim Penbras</name>
                                     </knight>
                                     <knight>
-                                        <society_precedence>-1</society_precedence><name>Caelin of the Isles</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                        
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Caelin of the Isles</name>
                                     </knight>
                                     <knight>
-                                        <society_precedence>-1</society_precedence><name>Richard Stewart of St. Andrews</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                        
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Richard Stewart of St. Andrews</name>
                                     </knight>
                                 </squires>
                             </knight>
@@ -1052,148 +1014,120 @@
                             <knight>
                                 <society_precedence>1080</society_precedence>
                                 <name>Henri le Hibou du Bois</name>
-                                <type>Knight</type>
+                              <type>Knight</type>
                                 <squires>
                                     <knight>
                                         <society_precedence>1735</society_precedence>
                                         <name>Giotto di Giovanni</name>
-                                        <type>Knight</type>
+                                      <type>Knight</type>
                                         <squires>
                                             <knight>
-                                                <society_precedence>-1</society_precedence><name>Ioannes Dalassenos</name>
-                                                <type>squire</type>
-                                                <squires/>
-                                                
+                                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                                <name>Ioannes Dalassenos</name>
                                             </knight>
                                         </squires>
                                     </knight>
                                     <knight>
-                                        <society_precedence>-1</society_precedence><name>William</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                        
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>William</name>
                                     </knight>
                                     <knight>
-                                        <society_precedence>-1</society_precedence><name>Rayna</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                        
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Rayna</name>
                                     </knight>
                                     <knight>
-                                        <society_precedence>-1</society_precedence> <name>Rosalinda de Salerno</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                       
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Rosalinda de Salerno</name>
                                     </knight>
                                 </squires>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence><name>Uther Blackthorne</name>
-                                <type>squire</type>
-                                <squires/>
-                                
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Uther Blackthorne</name>
                             </knight>
                         </squires>
                     </knight>
                     <knight>
                         <society_precedence>242</society_precedence>
                         <name>William of Weir</name>
-                        <type>Knight</type>
+                      <type>Knight</type>
                         <squires>
                             <knight>
                                 <society_precedence>351</society_precedence>
                                 <name>Dinaris the Wanderer</name>
-                                <type>Knight</type>
+                              <type>Knight</type>
                                 <squires>
                                     <knight>
                                         <society_precedence>512</society_precedence>
                                         <name>Hector Philip Martel</name>
-                                        <type>Knight</type>
+                                      <type>Knight</type>
                                         <squires>
                                             <knight>
                                                 <society_precedence>670</society_precedence>
                                                 <name>Patrick Michael Gordonne</name>
-                                                <type>Knight</type>
+                                              <type>Knight</type>
                                                 <squires>
                                                     <knight>
                                                         <society_precedence>957</society_precedence>
                                                         <name>Jean Richard Malcolmson (Deceased)</name>
-                                                        <type>Knight</type>
+                                                      <type>Knight</type>
                                                         <squires>
                                                             <knight>
-                                                                <society_precedence>-1</society_precedence> <name>Askell de Loucelles</name>
-                                                                <type>squire</type>
-                                                                <squires/>
-                                                               
+                                                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                                                <name>Askell de Loucelles</name>
                                                             </knight>
                                                         </squires>
                                                     </knight>
                                                     <knight>
                                                         <society_precedence>952</society_precedence>
                                                         <name>Rhodri ap Gwythyr</name>
-                                                        <type>Knight</type>
+                                                      <type>Knight</type>
                                                         <squires>
                                                             <knight>
                                                                 <society_precedence>1399</society_precedence>
                                                                 <name>Walstod the Unsteady</name>
-                                                                <type>Knight</type>
+                                                              <type>Knight</type>
                                                                 <squires>
                                                                     <knight>
-                                                                        <society_precedence>-1</society_precedence><name>William of Welewen</name>
-                                                                        <type>squire</type>
-                                                                        <squires/>
-                                                                        
+                                                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                                                        <name>William of Welewen</name>
                                                                     </knight>
                                                                     <knight>
-                                                                        <society_precedence>-1</society_precedence><name>George le Breton</name>
-                                                                        <type>squire</type>
-                                                                        <squires/>
-                                                                        
+                                                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                                                        <name>George le Breton</name>
                                                                     </knight>
                                                                     <knight>
-                                                                        <society_precedence>-1</society_precedence><name>Stephen Crowley</name>
-                                                                        <type>squire</type>
-                                                                        <squires/>
-                                                                        
+                                                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                                                        <name>Stephen Crowley</name>
                                                                     </knight>
                                                                 </squires>
                                                             </knight>
                                                             <knight>
-                                                                <society_precedence>-1</society_precedence><name>Michael of Gravesend</name>
-                                                                <type>squire</type>
-                                                                <squires/>
-                                                                
+                                                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                                                <name>Michael of Gravesend</name>
                                                             </knight>
                                                             <knight>
-                                                                <society_precedence>-1</society_precedence>  <name>Bastion Eisengart</name>
-                                                                <type>squire</type>
-                                                                <squires/>
-                                                              
+                                                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                                                <name>Bastion Eisengart</name>
                                                             </knight>
                                                         </squires>
                                                     </knight>
                                                     <knight>
                                                         <society_precedence>1464</society_precedence>
                                                         <name>Randall der Krieger</name>
-                                                        <type>Knight</type>
+                                                      <type>Knight</type>
                                                         <squires>
                                                             <knight>
-                                                                <society_precedence>-1</society_precedence><name>Eric Morrison</name>
-                                                                <type>squire</type>
-                                                                <squires/>
-                                                                
+                                                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                                                <name>Eric Morrison</name>
                                                             </knight>
                                                             <knight>
-                                                                <society_precedence>-1</society_precedence><name>Geoffrey Tailor</name>
-                                                                <type>squire</type>
-                                                                <squires/>
-                                                                
+                                                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                                                <name>Geoffrey Tailor</name>
                                                             </knight>
                                                             <knight>
-                                                                <society_precedence>-1</society_precedence> <name>Beathan MacDhuibh</name>
-                                                                <type>squire</type>
-                                                                <squires/>
-                                                               
+                                                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                                                <name>Beathan MacDhuibh</name>
                                                             </knight>
                                                         </squires>
                                                     </knight>
@@ -1278,7 +1212,7 @@
     <knight>
         <society_precedence>94</society_precedence>
         <name>Albert von Dreckenveldt</name>
-        <type>Knight</type>
+      <type>Knight</type>
         <squires>
             <knight>
                 <society_precedence>230</society_precedence>
@@ -1301,7 +1235,7 @@
             <knight>
                 <society_precedence>377</society_precedence>
                 <name>Olaf Bjornson</name>
-                <type>Knight</type>
+              <type>Knight</type>
                 <squires>
                     <knight>
                         <society_precedence>960</society_precedence>
@@ -1312,24 +1246,22 @@
                     <knight>
                         <society_precedence>696</society_precedence>
                         <name>Haroun ibn al-Dhi'b al-Abyadh</name>
-                        <type>Knight</type>
+                      <type>Knight</type>
                         <squires>
                             <knight>
                                 <society_precedence>1104</society_precedence>
                                 <name>Nasr ibn 'Isa</name>
                                 <squires>
                                     <knight>
-                                        <society_precedence>-1</society_precedence> <name>Santiago Carillo de Guadalupe</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                       
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Santiago Carillo de Guadalupe</name>
                                     </knight>
                                 </squires>
                             </knight>
                             <knight>
                                 <society_precedence>1249</society_precedence>
                                 <name>Kerold Hoegaarden</name>
-                                <type>Knight</type>
+                              <type>Knight</type>
                                 <squires>
                                     <knight>
                                         <society_precedence>1603</society_precedence>
@@ -1354,57 +1286,41 @@
                             <knight>
                                 <society_precedence>1510</society_precedence>
                                 <name>Mavrikii Andronikov</name>
-                                <type>Knight</type>
+                              <type>Knight</type>
                                 <squires>
                                     <knight>
-                                        <society_precedence>-1</society_precedence><name>Stephen MacDougal</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                        
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Stephen MacDougal</name>
                                     </knight>
                                     <knight>
-                                        <society_precedence>-1</society_precedence><name>Lucius Avisius Seneca</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                        
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Lucius Avisius Seneca</name>
                                     </knight>
                                     <knight>
-                                        <society_precedence>-1</society_precedence><name>Keridwen Androsoun</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                        
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Keridwen Androsoun</name>
                                     </knight>
                                 </squires>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence> <name>Raedwolf</name>
-                                <type>squire</type>
-                                <squires/>
-                               
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Raedwolf</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence><name>Javier de la Santos</name>
-                                <type>squire</type>
-                                <squires/>
-                                
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Javier de la Santos</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence><name>Connor MacInnes</name>
-                                <type>squire</type>
-                                <squires/>
-                                
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Connor MacInnes</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence><name>Nicholas Kennington</name>
-                                <type>squire</type>
-                                <squires/>
-                                
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Nicholas Kennington</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence><name>Isadora del Sol</name>
-                                <type>squire</type>
-                                <squires/>
-                                
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Isadora del Sol</name>
                             </knight>
                         </squires>
                     </knight>
@@ -1417,75 +1333,56 @@
                     <knight>
                         <society_precedence>1364</society_precedence>
                         <name>Rhys Afalwin</name>
-                        <type>Knight</type>
+                      <type>Knight</type>
                         <squires>
                             <knight>
-                                <society_precedence>-1</society_precedence><name>Gwilim de Glamorgan</name>
-                                <type>squire</type>
-                                <squires/>
-                                
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Gwilim de Glamorgan</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence> <name>Sabina Falise</name>
-                                <type>squire</type>
-                                <squires/>
-                               
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Sabina Falise</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence> <name>Eban Littlebrother</name>
-                                <type>squire</type>
-                                <squires/>
-                               
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Eban Littlebrother</name>
                             </knight>
                         </squires>
                     </knight>
                     <knight>
                         <society_precedence>1542</society_precedence>
                         <name>Bjarki Gullbjornsson</name>
-                        <type>Knight</type>
+                      <type>Knight</type>
                         <squires>
                             <knight>
-                                <society_precedence>-1</society_precedence> <name>Heinricus</name>
-                                <type>squire</type>
-                                <squires/>
-                               </knight>
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Heinricus</name>
+                            </knight>
                         </squires>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence><name>Septimus</name>
-                        <type>squire</type>
-                        <squires/>
-                        
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Septimus</name>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence><name>Leif</name>
-                        <type>squire</type>
-                        <squires/>
-                        
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Leif</name>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence><name>Edward</name>
-                        <type>squire</type>
-                        <squires/>
-                        
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Edward</name>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence><name>Torvald</name>
-                        <type>squire</type>
-                        <squires/>
-                        
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Torvald</name>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence><name>Helgar</name>
-                    
-                        <type>squire</type>
-                        <squires/>
-                        </knight>
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Helgar</name>
+                    </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence> <name>Sabrina</name>
-                        <type>squire</type>
-                        <squires/>
-                       
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Sabrina</name>
                     </knight>
                 </squires>
             </knight>
@@ -1496,52 +1393,36 @@
                 <squires/>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence><name>Bruce of Annandale</name>
-                <type>squire</type>
-                <squires/>
-                
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                <name>Bruce of Annandale</name>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence><name>Eric Edmundsson</name>
-                <type>squire</type>
-                <squires/>
-                
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                <name>Eric Edmundsson</name>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence><name>Gerwyn y Tiegr</name>
-                <type>squire</type>
-                <squires/>
-                
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                <name>Gerwyn y Tiegr</name>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence><name>Knut The Inflammable</name>
-                <type>squire</type>
-                <squires/>
-                
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                <name>Knut The Inflammable</name>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence><name>Robert ap Blackwell</name>
-                <type>squire</type>
-                <squires/>
-                
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                <name>Robert ap Blackwell</name>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence><name>Corwyn ap Dracca</name>
-                <type>squire</type>
-                <squires/>
-                
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                <name>Corwyn ap Dracca</name>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence> <name>ThorvadR Thorolfsson</name>
-                <type>squire</type>
-                <squires/>
-               
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                <name>ThorvadR Thorolfsson</name>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence><name>Brutus</name>
-                <type>squire</type>
-                <squires/>
-                
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                <name>Brutus</name>
             </knight>
         </squires>
     </knight>
@@ -1620,12 +1501,12 @@
     <knight>
         <society_precedence>108</society_precedence>
         <name>Koris Natterhelm</name>
-        <type>Knight</type>
+      <type>Knight</type>
         <squires>
             <knight>
                 <society_precedence>144</society_precedence>
                 <name>Sean MacFflam of Ravenswaard</name>
-                <type>Knight</type>
+              <type>Knight</type>
                 <squires>
                     <knight>
                         <society_precedence>184</society_precedence>
@@ -1652,7 +1533,7 @@
     <knight>
         <society_precedence>111</society_precedence>
         <name>Tarl Mapt</name>
-        <type>Knight</type>
+      <type>Knight</type>
         <squires>
             <knight>
                 <society_precedence>312</society_precedence>
@@ -1833,17 +1714,17 @@
     <knight>
         <society_precedence>141</society_precedence>
         <name>Lloyd von Eaker</name>
-        <type>Knight</type>
+      <type>Knight</type>
         <squires>
             <knight>
                 <society_precedence>216</society_precedence>
                 <name>Karl der Gaenger</name>
-                <type>Knight</type>
+              <type>Knight</type>
                 <squires>
                     <knight>
                         <society_precedence>820</society_precedence>
                         <name>William Miesko</name>
-                        <type>Knight</type>
+                      <type>Knight</type>
                         <squires>
                             <knight>
                                 <society_precedence>1900</society_precedence>
@@ -1856,28 +1737,24 @@
                     <knight>
                         <society_precedence>339</society_precedence>
                         <name>Torin Ertheshert</name>
-                        <type>Knight</type>
+                      <type>Knight</type>
                         <squires>
                             <knight>
                                 <society_precedence>1476</society_precedence>
                                 <name>Jan Janowicz Bogdanski</name>
-                                <type>Knight</type>
+                              <type>Knight</type>
                                 <squires>
                                     <knight>
-                                        <society_precedence>-1</society_precedence><name>Arne Ulrichsson</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                        
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Arne Ulrichsson</name>
                                     </knight>
                                 </squires>
                             </knight>
                         </squires>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence> <name>Leif Wadason</name>
-                        <type>squire</type>
-                        <squires/>
-                       
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Leif Wadason</name>
                     </knight>
                 </squires>
             </knight>
@@ -1890,7 +1767,7 @@
             <knight>
                 <society_precedence>594</society_precedence>
                 <name>Mikael of Monmouthshire</name>
-                <type>Knight</type>
+              <type>Knight</type>
                 <squires>
                     <knight>
                         <society_precedence>847</society_precedence>
@@ -1901,17 +1778,15 @@
                     <knight>
                         <society_precedence>882</society_precedence>
                         <name>Dafydd Whitacer</name>
-                        <type>Knight</type>
+                      <type>Knight</type>
                         <squires>
                             <knight>
                                 <name>William Cameron de Blakstan</name>
-                                <type>Knight</type>
+                              <type>Knight</type>
                                 <squires>
                                     <knight>
-                                        <society_precedence>-1</society_precedence><name>Ludowicius von Lichtenstein</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                        
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Ludowicius von Lichtenstein</name>
                                     </knight>
                                 </squires>
                             </knight>
@@ -1924,7 +1799,7 @@
                             <knight>
                                 <society_precedence>1323</society_precedence>
                                 <name>Asoph Hearts</name>
-                                <type>Knight</type>
+                              <type>Knight</type>
                                 <squires>
                                     <knight>
                                         <society_precedence>1998</society_precedence>
@@ -1935,143 +1810,113 @@
                                     <knight>
                                         <society_precedence>1473</society_precedence>
                                         <name>Erasmus Totengraber</name>
-                                        <type>Knight</type>
+                                      <type>Knight</type>
                                         <squires>
                                             <knight>
-                                                <society_precedence>-1</society_precedence><name>Eleanor de Eresby</name>
-                                                <type>squire</type>
-                                                <squires/>
-                                                
+                                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                                <name>Eleanor de Eresby</name>
                                             </knight>
                                         </squires>
                                     </knight>
                                     <knight>
                                         <society_precedence>1584</society_precedence>
                                         <name>Jean Paul de Sens</name>
-                                        <type>Knight</type>
+                                      <type>Knight</type>
                                         <squires>
                                             <knight>
-                                            <society_precedence>-1</society_precedence>
                                                 <name>Vladislav Strelac</name>
-                                                <type>Knight</type>
-                                                <squires/>
+                                              <type>Knight</type>
                                             </knight>
-                                            <knight><society_precedence>-1</society_precedence>
+                                            <knight>
                                                 <name>Peter McIntyre</name>
-                                                <type>Knight</type>
-                                                <squires/>
+                                              <type>Knight</type>
                                             </knight>
-                                            <knight><society_precedence>-1</society_precedence>
+                                            <knight>
                                                 <name>Rikr Foetipper</name>
-                                                <type>Knight</type>
-                                                <squires/>
+                                              <type>Knight</type>
                                             </knight>
                                             <knight>
-                                                <society_precedence>-1</society_precedence>
+                                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
                                                 <name>Julius de Orso</name>
-                                                <type>squire</type>
-                                                <squires/>
+                                                <type>Knight</type>
                                             </knight>
                                             <knight>
-                                                <society_precedence>-1</society_precedence><name>Damon Xanthus</name>
-                                                <type>squire</type>
-                                                <squires/>
-                                                
+                                               <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                                <name>Damon Xanthus</name>
                                             </knight>
                                         </squires>
                                     </knight>
-                                    <knight><society_precedence>-1</society_precedence>
+                                    <knight>
                                         <name>Daniel de Burdon</name>
-                                        <type>Knight</type>
-                                        <squires/>
+                                      <type>Knight</type>
                                     </knight>
                                     <knight>
-                                        <society_precedence>-1</society_precedence><name>Mediocrates</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                        
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Mediocrates</name>
                                     </knight>
                                     <knight>
-                                        <society_precedence>-1</society_precedence><name>Alton de Peto</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                        
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Alton de Peto</name>
                                     </knight>
                                     <knight>
-                                        <society_precedence>-1</society_precedence><name>Yoshi</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                        
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Yoshi</name>
                                     </knight>
                                 </squires>
                             </knight>
                             <knight>
                                 <society_precedence>1948</society_precedence>
                                 <name>John of Severn</name>
-                                <type>Knight</type>
+                              <type>Knight</type>
                                 <squires>
                                     <knight>
-                                        <society_precedence>-1</society_precedence><name>Elena de la Rue</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                        
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Elena de la Rue</name>
                                     </knight>
                                     <knight>
-                                        <society_precedence>-1</society_precedence><name>Miklos Nemeth</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                        
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Miklos Nemeth</name>
                                     </knight>
                                     <knight>
-                                        <society_precedence>-1</society_precedence><name>Vasilii Kostiantinovits</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                        
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Vasilii Kostiantinovits</name>
                                     </knight>
                                 </squires>
                             </knight>
                             <knight>
                                 <society_precedence>1893</society_precedence>
                                 <name>Ulf Arnfinnsson</name>
-                                <type>Knight</type>
+                              <type>Knight</type>
                                 <squires>
                                     <knight>
-                                    <society_precedence>-1</society_precedence>
                                         <name>Sarren the Traveler</name>
-                                        <type>Knight</type>
-                                        <squires/>
+                                      <type>Knight</type>
                                     </knight>
                                 </squires>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence><name>Krag McIntyre (Deceased)</name>
-                                <type>squire</type>
-                                <squires/>
-                                
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Krag McIntyre (Deceased)</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence> <name>Bronwyn</name>
-                                <type>squire</type>
-                                <squires/>
-                               
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Bronwyn</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence> <name>Phelim Gervase called Pug</name>
-                                <type>squire</type>
-                                <squires/>
-                               
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Phelim Gervase called Pug</name>
                             </knight>
                         </squires>
                     </knight>
                     <knight>
                         <society_precedence>870</society_precedence>
                         <name>Barn Silveraxe</name>
-                        <type>Knight</type>
+                      <type>Knight</type>
                         <squires>
                             <knight>
                                 <society_precedence>1180</society_precedence>
                                 <name>Alrek Kanin / Equis Cassius Lepus</name>
-                                <type>Knight</type>
+                              <type>Knight</type>
                                 <squires>
                                     <knight>
                                         <society_precedence>2123</society_precedence>
@@ -2088,78 +1933,64 @@
                                 </squires>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence><name>Aldrek de Kerr</name>
-                                <type>squire</type>
-                                <squires/>
-                                
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Aldrek de Kerr</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence><name>Dougal</name>
-                                <type>squire</type>
-                                <squires/>
-                                
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Dougal</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence><name>Owen Stott</name>
-                                <type>squire</type>
-                                <squires/>
-                                
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Owen Stott</name>
                             </knight>
                         </squires>
                     </knight>
                     <knight>
                         <society_precedence>1291</society_precedence>
                         <name>Timotheos Kalamanos</name>
-                        <type>Knight</type>
+                      <type>Knight</type>
                         <squires>
                             <knight>
-                                <society_precedence>-1</society_precedence>
                                 <name>Lucius Hadrianus Swordbreaker</name>
-                                <type>Knight</type>
+                              <type>Knight</type>
+                            </knight>
+                            <knight>
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
                             </knight>
                         </squires>
                     </knight>
                     <knight>
                         <society_precedence>1223</society_precedence>
                         <name>Balvin Thorfinnsson</name>
-                        <type>Knight</type>
+                      <type>Knight</type>
                         <squires>
                             <knight>
                                 <society_precedence>1835</society_precedence>
                                 <name>Alan Brom O'brien</name>
-                                <type>Knight</type>
+                              <type>Knight</type>
                                 <squires>
                                     <knight>
-                                        <society_precedence>-1</society_precedence> 
                                         <name>Geoffrey de Gournay</name>
-                                        <type>Knight</type>
-                                        <squires/>
+                                      <type>Knight</type>
                                     </knight>
                                 </squires>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence><name>Thorgrim Bjornson</name>
-                                <type>squire</type>
-                                <squires/>
-                                
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Thorgrim Bjornson</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence> <name>Geoffrey Makepeace</name>
-                                <type>squire</type>
-                                <squires/>
-                               
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Geoffrey Makepeace</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence><name>Balomirov Syn Barsukov</name>
-                                <type>squire</type>
-                                <squires/>
-                                
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Balomirov Syn Barsukov</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence><name>Tristan de Fallase</name>
-                                <type>squire</type>
-                                <squires/>
-                                
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Tristan de Fallase</name>
                             </knight>
                         </squires>
                     </knight>
@@ -2170,46 +2001,36 @@
                         <squires/>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence><name>Holly</name>
-                        <type>squire</type>
-                        <squires/>
-                        
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Holly</name>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence><name>Tor</name>
-                        <type>squire</type>
-                        <squires/>
-                        
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Tor</name>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence><name>Elizabeth</name>
-                        <type>squire</type>
-                        <squires/>
-                        
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Elizabeth</name>
                     </knight>
                 </squires>
             </knight>
             <knight>
                 <society_precedence>731</society_precedence>
                 <name>Gunthar Jonsson</name>
-                <type>Knight</type>
+              <type>Knight</type>
                 <squires>
                     <knight>
                         <society_precedence>2044</society_precedence>
                         <name>Alejandro Ramirez Mendoza</name>
-                        <type>Knight</type>
+                      <type>Knight</type>
                         <squires>
                             <knight>
-                                <society_precedence>-1</society_precedence><name>Gerhart Wolfgang der Rote</name>
-                                <type>squire</type>
-                                <squires/>
-                                
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Gerhart Wolfgang der Rote</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence> <name>Edwin de Brus</name>
-                                <type>squire</type>
-                                <squires/>
-                               
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Edwin de Brus</name>
                             </knight>
                         </squires>
                     </knight>
@@ -2218,23 +2039,21 @@
             <knight>
                 <society_precedence>669</society_precedence>
                 <name>Pedaran Glamorgan</name>
-                <type>Knight</type>
+              <type>Knight</type>
                 <squires>
                     <knight>
                         <society_precedence>1181</society_precedence>
                         <name>Corwin von Xanten</name>
-                        <type>Knight</type>
+                      <type>Knight</type>
                         <squires>
                             <knight>
                                 <society_precedence>1626</society_precedence>
                                 <name>Anton Cwith</name>
-                                <type>Knight</type>
+                              <type>Knight</type>
                                 <squires>
                                     <knight>
-                                        <society_precedence>-1</society_precedence> <name>Nymondes</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                       
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Nymondes</name>
                                     </knight>
                                 </squires>
                             </knight>
@@ -2244,22 +2063,16 @@
                                 <type>Knight</type>
                                 <squires>
                                     <knight>
-                                        <society_precedence>-1</society_precedence><name>Rouland Blackwell</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                        
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Rouland Blackwell</name>
                                     </knight>
                                     <knight>
-                                        <society_precedence>-1</society_precedence><name>Alexios</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                        
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Alexios</name>
                                     </knight>
                                     <knight>
-                                        <society_precedence>-1</society_precedence><name>Ulrich von Brixen</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                        
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Ulrich von Brixen</name>
                                     </knight>
                                 </squires>
                             </knight>
@@ -2270,18 +2083,14 @@
                                 <squires/>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence> <name>Sven Sixstrong</name>
-                                <type>squire</type>
-                                <squires/>
-                               
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Sven Sixstrong</name>
                             </knight>
                         </squires>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence><name>Sean</name>
-                        <type>squire</type>
-                        <squires/>
-                        
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Sean</name>
                     </knight>
                 </squires>
             </knight>
@@ -2704,17 +2513,17 @@
     <knight>
         <society_precedence>222</society_precedence>
         <name>Jan w Orzeldom</name>
-        <type>Knight</type>
+      <type>Knight</type>
         <squires>
             <knight>
                 <society_precedence>304</society_precedence>
                 <name>Riccardo di Pisa (Deceased)</name>
-                <type>Knight</type>
+              <type>Knight</type>
                 <squires>
                     <knight>
                         <society_precedence>465</society_precedence>
                         <name>Emrys Shaunnon</name>
-                        <type>Knight</type>
+                      <type>Knight</type>
                         <squires>
                             <knight>
                                 <society_precedence>2087</society_precedence>
@@ -2723,16 +2532,12 @@
                                 <squires/>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence><name>Dominic</name>
-                                <type>squire</type>
-                                <squires/>
-                                
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Dominic</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence><name>Jahlial</name>
-                                <type>squire</type>
-                                <squires/>
-                                
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Jahlial</name>
                             </knight>
                         </squires>
                     </knight>
@@ -3235,7 +3040,7 @@
     <knight>
         <society_precedence>313</society_precedence>
         <name>Sigmund the Wingfooted</name>
-        <type>Knight</type>
+      <type>Knight</type>
         <squires>
             <knight>
                 <society_precedence>756</society_precedence>
@@ -3256,15 +3061,11 @@
                 <squires/>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence>
-                <type>squire</type>
-                <squires/>
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
                 <name>Bors of Lothian</name>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence>
-                <type>squire</type>
-                <squires/>
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
                 <name>Guillaume de Bordeaux</name>
             </knight>
         </squires>
@@ -3968,47 +3769,37 @@
     <knight>
         <society_precedence>441</society_precedence>
         <name>Aaron Breck Gordon</name>
-        <type>Knight</type>
+      <type>Knight</type>
         <squires>
             <knight>
                 <society_precedence>735</society_precedence>
                 <name>Gareth MacGunter of Gordon</name>
-                <type>Knight</type>
+              <type>Knight</type>
                 <squires>
                     <knight>
                         <society_precedence>964</society_precedence>
                         <name>Kenneth MacQuarrie of Tobermory</name>
-                        <type>Knight</type>
+                      <type>Knight</type>
                         <squires>
                             <knight>
-                                <society_precedence>-1</society_precedence><name>Erik Clawhanded</name>
-                                <type>squire</type>
-                                <squires/>
-                                
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Erik Clawhanded</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence> <name>Kolskeggr Thorolfsson</name>
-                                <type>squire</type>
-                                <squires/>
-                               
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Kolskeggr Thorolfsson</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence> <name>Finvladr In Grimi</name>
-                                <type>squire</type>
-                                <squires/>
-                               
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Finvladr In Grimi</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence> <name>Duncan Robertsoun</name>
-                                <type>squire</type>
-                                <squires/>
-                               
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Duncan Robertsoun</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence><name>Anastasia von Eschenbach</name>
-                                <type>squire</type>
-                                <squires/>
-                                
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Anastasia von Eschenbach</name>
                             </knight>
                         </squires>
                     </knight>
@@ -5668,24 +5459,20 @@
             <knight>
                 <society_precedence>504</society_precedence>
                 <name>Ian MacBaird</name>
-                <type>Knight</type>
+              <type>Knight</type>
                 <squires>
                     <knight>
                         <society_precedence>802</society_precedence>
                         <name>Arenvald Kief av Kiersted</name>
-                        <type>Knight</type>
+                      <type>Knight</type>
                         <squires>
                             <knight>
-                                <society_precedence>-1</society_precedence><name>Thoron</name>
-                                <type>squire</type>
-                                <squires/>
-                                
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Thoron</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence><name>Morvin</name>
-                                <type>squire</type>
-                                <squires/>
-                                
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Morvin</name>
                             </knight>
                         </squires>
                     </knight>
@@ -5700,27 +5487,27 @@
             <knight>
                 <society_precedence>489</society_precedence>
                 <name>Hildebrand von Tiel</name>
-                <type>Knight</type>
+              <type>Knight</type>
                 <squires>
                     <knight>
                         <society_precedence>638</society_precedence>
                         <name>Burke Kyriell MacDonald</name>
-                        <type>Knight</type>
+                      <type>Knight</type>
                         <squires>
                             <knight>
                                 <society_precedence>1618</society_precedence>
                                 <name>Owen ap Aeddan</name>
-                                <type>Knight</type>
+                              <type>Knight</type>
                                 <squires>
                                     <knight>
                                         <society_precedence>1803</society_precedence>
                                         <name>Angus MacNokard</name>
-                                        <type>Knight</type>
+                                      <type>Knight</type>
                                         <squires>
                                             <knight>
                                                 <society_precedence>2078</society_precedence>
                                                 <name>Morgan Black Dragon</name>
-                                                <type>Knight</type>
+                                              <type>Knight</type>
                                                 <squires>
                                                     <knight>
                                                         <society_precedence>2196</society_precedence>
@@ -5731,100 +5518,70 @@
                                                 </squires>
                                             </knight>
                                             <knight>
-                                                <society_precedence>-1</society_precedence> <name>Thorvald Egilson</name>
-                                                <type>squire</type>
-                                                <squires/>
-                                               
+                                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                                <name>Thorvald Egilson</name>
                                             </knight>
                                         </squires>
                                     </knight>
                                     <knight>
-                                        <society_precedence>-1</society_precedence><name>Aethelred of the Broken Shield</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                        
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Aethelred of the Broken Shield</name>
                                     </knight>
                                     <knight>
-                                        <society_precedence>-1</society_precedence> <name>Dagr Osvaldrsson</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                       
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Dagr Osvaldrsson</name>
                                     </knight>
                                     <knight>
-                                        <society_precedence>-1</society_precedence>  <name>Marc Antoine de Larue</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                      
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Marc Antoine de Larue</name>
                                     </knight>
                                     <knight>
-                                        <society_precedence>-1</society_precedence><name>Alexander Marcellus</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                        
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Alexander Marcellus</name>
                                     </knight>
                                     <knight>
-                                        <society_precedence>-1</society_precedence><name>Charles the Grey</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                        
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Charles the Grey</name>
                                     </knight>
                                     <knight>
-                                        <society_precedence>-1</society_precedence> <name>Lucas Mor mac Raghnaill</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                       
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Lucas Mor mac Raghnaill</name>
                                     </knight>
                                 </squires>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence> <name>Talen Gustaf von Marienburg</name>
-                                <type>squire</type>
-                                <squires/>
-                               
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Talen Gustaf von Marienburg</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence> <name>Treschen von Asselen</name>
-                                <type>squire</type>
-                                <squires/>
-                               
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Treschen von Asselen</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence> <name>Alarich Iarngard von Thorn</name>
-                                <type>squire</type>
-                                <squires/>
-                               
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Alarich Iarngard von Thorn</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence> <name>Marke von Mainz</name>
-                                <type>squire</type>
-                                <squires/>
-                               
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Marke von Mainz</name>
                             </knight>
                         </squires>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence><name>Katriona MacLaughlin</name>
-                        <type>squire</type>
-                        <squires/>
-                        
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Katriona MacLaughlin</name>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence><name>Gunhilda Amberstar</name>
-                        <type>squire</type>
-                        <squires/>
-                        
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Gunhilda Amberstar</name>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence> <name>WeeLan McGregor</name>
-                        <type>squire</type>
-                        <squires/>
-                       
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>WeeLan McGregor</name>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence><name>Sigrun inn Harfagri</name>
-                        <type>squire</type>
-                        <squires/>
-                        
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Sigrun inn Harfagri</name>
                     </knight>
                 </squires>
             </knight>
@@ -5861,12 +5618,12 @@
             <knight>
                 <society_precedence>966</society_precedence>
                 <name>Abd al-Mahdi Jamal ibn Hakim</name>
-                <type>Knight</type>
+              <type>Knight</type>
                 <squires>
                     <knight>
                         <society_precedence>1275</society_precedence>
                         <name>Alaric Drake</name>
-                        <type>Knight</type>
+                      <type>Knight</type>
                         <squires>
                             <knight>
                                 <society_precedence>1763</society_precedence>
@@ -5889,61 +5646,46 @@
                             <knight>
                                 <society_precedence>1896</society_precedence>
                                 <name>Lochlan Dunn</name>
-                                <type>Knight</type>
+                              <type>Knight</type>
                                 <squires>
                                     <knight>
                                         <society_precedence>2126</society_precedence>
                                         <name>Cathal Finn O'Briain</name>
-                                        <type>Knight</type>
+                                      <type>Knight</type>
                                         <squires>
                                             <knight>
-                                                <society_precedence>-1</society_precedence><name>Fionnagán Mac Giolla t-Seanáin</name>
-                                                <type>squire</type>
-                                                <squires/>
-                                                
+                                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                                <name>Fionnagán Mac Giolla t-Seanáin</name>
                                             </knight>
                                             <knight>
-                                                <society_precedence>-1</society_precedence> <name>Devorix Catumari</name>
-                                                <type>squire</type>
-                                                <squires/>
-                                               
+                                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                                <name>Devorix Catumari</name>
                                             </knight>
                                         </squires>
                                     </knight>
                                     <knight>
-                                    <society_precedence>-1</society_precedence>
                                         <name>Eberhart Sturmaere</name>
+                                      <type>Knight</type>
+                                    </knight>
+                                    <knight>
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Dietrich Wyss</name>
+                                    </knight>
+                                    <knight>
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>John Burgermetzger</name>
+                                    </knight>
+                                    <knight>
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Petrus D'Ansec</name>
+                                    </knight>
+                                    <knight>
+                                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                        <name>Godwin Stonewall</name>
+                                    </knight>
+                                    <knight>
                                         <type>Knight</type>
-                                        <squires/>
-                                    </knight>
-                                    <knight>
-                                        <society_precedence>-1</society_precedence><name>Dietrich Wyss</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                        
-                                    </knight>
-                                    <knight>
-                                        <society_precedence>-1</society_precedence><name>John Burgermetzger</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                        
-                                    </knight>
-                                    <knight>
-                                        <society_precedence>-1</society_precedence> <name>Petrus D'Ansec</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                       
-                                    </knight>
-                                    <knight>
-                                    <society_precedence>-1</society_precedence>
-                                        <society_precedence>-1</society_precedence> <name>Godwin Stonewall</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                       
-                                    </knight>
-                                    <knight> <name>Vincenti da Murano</name>
-                                        <type>Knight</type>
-                                       <squires/>
+                                        <name>Vincenti da Murano</name>
                                     </knight>
                                 </squires>
                             </knight>
@@ -5952,119 +5694,89 @@
                                 <name>Sven Randullsson</name>
                                 <squires>
                                     <knight>
-                                    <society_precedence>-1</society_precedence><name>Ragnar Svensson</name>
                                         <type>Knight</type>
-                                        
-                                        <squires/>
+                                        <name>Ragnar Svensson</name>
                                     </knight>
                                     <knight>
-                                    <society_precedence>-1</society_precedence><name>Creppin L'autruche</name>
                                         <type>Knight</type>
-                                        
-                                        <squires/>
+                                        <name>Creppin L'autruche</name>
                                     </knight>
                                 </squires>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence><name>Gustav Hastings</name>
-                                <type>squire</type>
-                                <squires/>
-                                
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Gustav Hastings</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence> <name>Curnan Ravenshaw</name>
-                                <type>squire</type>
-                                <squires/>
-                               
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Curnan Ravenshaw</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence> <name>Duncan Hepburn</name>
-                                <type>squire</type>
-                                <squires/>
-                               
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Duncan Hepburn</name>
                             </knight>
                         </squires>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence><name>Erik inn Danski</name>
-                        <type>squire</type>
-                        <squires/>
-                        
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Erik inn Danski</name>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence><name>Agilwulf the Loud</name>
-                        <type>squire</type>
-                        <squires/>
-                        
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Agilwulf the Loud</name>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence> <name>Agnarr Svartormr Thorvaldsson</name>
-                        <type>squire</type>
-                        <squires/>
-                       
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Agnarr Svartormr Thorvaldsson</name>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence><name>Llywelyn Gruffydd of Elfsea</name>
-                        <type>squire</type>
-                        <squires/>
-                        
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Llywelyn Gruffydd of Elfsea</name>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence><name>Chiara Francesca Arianna d'Onofrio</name>
-                        <type>squire</type>
-                        <squires/>
-                        
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Chiara Francesca Arianna d'Onofrio</name>
                     </knight>
                 </squires>
             </knight>
             <knight>
-                <society_precedence>1043</society_precedence>
+                <society_precedence>1043</society_precedence><squires/>
                 <name>Lance de Courcy</name>
                 <type>Knight</type>
                 <squires/>
             </knight>
             <knight>
-                <society_precedence>1220</society_precedence>
+                <society_precedence>1220</society_precedence><squires/>
                 <name>Aaron McGregor</name>
-                <type>Knight</type>
+              <type>Knight</type>
                 <squires>
                     <knight>
-                        <society_precedence>1915</society_precedence>
-                        
+                        <society_precedence>1915</society_precedence><squires/>
                         <name>Chiang Ti Lung</name>
                         <type>Knight</type>
                         <squires/>
                     </knight>
                     <knight>
-                        <society_precedence>2146</society_precedence>
-                        
+                        <society_precedence>2146</society_precedence><squires/>
                         <name>Liam Gordon</name>
                         <type>Knight</type>
                         <squires/>
                     </knight>
                     <knight>
-                    <society_precedence>-1</society_precedence>
                         <name>Robert du Bray</name>
-                        <type>Knight</type>
-                        <squires/>
+                      <type>Knight</type>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence><name>Conor na Mara (deceased)</name>
-                        <type>squire</type>
-                        <squires/>
-                        
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Conor na Mara (deceased)</name>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence> <name>Derrick Greywolf</name>
-                        <type>squire</type>
-                        <squires/>
-                       
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Derrick Greywolf</name>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence> <name>Caias</name>
-                        <type>squire</type>
-                        <squires/>
-                       
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Caias</name>
                     </knight>
                 </squires>
             </knight>
@@ -6074,16 +5786,13 @@
                 <type>Knight</type>
                 <squires>
                     <knight>
-                        <society_precedence>-1</society_precedence>
-                        <type>Knight</type>
+                      <society_precedence>-1</society_precedence>
+                      <type>Knight</type>
                         <name>Gavin MacLain</name>
-                        <squires/>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence><name>Gerold von Drachenhohle</name>
-                        <type>squire</type>
-                        <squires/>
-                        
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Gerold von Drachenhohle</name>
                     </knight>
                 </squires>
             </knight>
@@ -6097,7 +5806,7 @@
             <knight>
                 <society_precedence>1176</society_precedence>
                 <name>Dietrich Kempenich von Alts</name>
-                <type>Knight</type>
+              <type>Knight</type>
                 <squires>
                     <knight>
                         <society_precedence>1332</society_precedence>
@@ -6105,16 +5814,12 @@
                         <type>Knight</type>
                         <squires>
                             <knight>
-                                <society_precedence>-1</society_precedence> <name>Armand Dragonetti</name>
-                                <type>squire</type>
-                                <squires/>
-                               
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Armand Dragonetti</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence><name>Stella Silvana</name>
-                                <type>squire</type>
-                                <squires/>
-                                
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Stella Silvana</name>
                             </knight>
                         </squires>
                     </knight>
@@ -6151,27 +5856,21 @@
                 <squires/>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence>
-                <name>Pelagius de Ball</name>
-                <type>Knight</type>
+              <society_precedence>-1</society_precedence>
+              <name>Pelagius de Ball</name>
+              <type>Knight</type>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence><name>Victoria of Reba</name>
-                <type>squire</type>
-                <squires/>
-                
+              <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                <name>Victoria of Reba</name>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence> <name>Jason Michael of Birmingham</name>
-                <type>squire</type>
-                <squires/>
-               
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                <name>Jason Michael of Birmingham</name>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence>  <name>Stephanos Ap Ti Chios</name>
-                <type>squire</type>
-                <squires/>
-              
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                <name>Stephanos Ap Ti Chios</name>
             </knight>
         </squires>
     </knight>
@@ -6196,18 +5895,16 @@
     <knight>
         <society_precedence>784</society_precedence>
         <name>Stephan of Bellatrix</name>
-        <type>Knight</type>
+      <type>Knight</type>
         <squires>
             <knight>
                 <society_precedence>1420</society_precedence>
                 <name>Guy Lestrange</name>
-                <type>Knight</type>
+              <type>Knight</type>
                 <squires>
                     <knight>
-                        <society_precedence>-1</society_precedence><name>John Thorne</name>
-                        <type>squire</type>
-                        <squires/>
-                        
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>John Thorne</name>
                     </knight>
                 </squires>
             </knight>
@@ -6230,84 +5927,61 @@
         <name>Daniel Blackaxe</name>
         <squires>
             <knight>
-                <society_precedence>-1</society_precedence> <name>D'Alder de Cambrey</name>
-                <type>squire</type>
-                <squires/>
-               
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                <name>D'Alder de Cambrey</name>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence><name>Ian Camber</name>
-                <type>squire</type>
-                <squires/>
-                
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                <name>Ian Camber</name>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence> <name>Ahlanna a'Becket</name>
-                <type>squire</type>
-                <squires/>
-               
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                <name>Ahlanna a'Becket</name>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence><name>Brin Dorean Camber</name>
-                <type>squire</type>
-                <squires/>
-                
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                <name>Brin Dorean Camber</name>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence> <name>Sven of Rolling Thunder</name>
-                <type>squire</type>
-                <squires/>
-               
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                <name>Sven of Rolling Thunder</name>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence><name>Rorick</name>
-                <type>squire</type>
-                <squires/>
-                
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                <name>Rorick</name>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence> <name>Morgan Camber</name>
-                <type>squire</type>
-                <squires/>
-               
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                <name>Morgan Camber</name>
             </knight>
         </squires>
     </knight>
     <knight>
         <society_precedence>1189</society_precedence>
         <name>Godwin of Edington</name>
-        <type>Knight</type>
+      <type>Knight</type>
         <squires>
             <knight>
-                <society_precedence>-1</society_precedence><name>Alden Drake</name>
-                <type>squire</type>
-                <squires/>
-                
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                <name>Alden Drake</name>
             </knight>
         </squires>
     </knight>
     <knight>
         <society_precedence>1198</society_precedence>
         <name>Alexis la Bouche</name>
-        <type>Knight</type>
+      <type>Knight</type>
         <squires>
             <knight>
-                <society_precedence>-1</society_precedence>
                 <name>Oliver the Faithful</name>
-                <type>Knight</type>
-                <squires/>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence><name>Dallan of the Loch</name>
-                <type>squire</type>
-                
-                <squires/>
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                <name>Dallan of the Loch</name>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence><name>Edward Fuchyn</name>
-                <type>squire</type>
-                <squires/>
-                
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                <name>Edward Fuchyn</name>
             </knight>
         </squires>
     </knight>
@@ -9452,61 +9126,47 @@
     <knight>
         <society_precedence>1346</society_precedence>
         <name>Duncan Arthur Ross the Black</name>
-        <type>Knight</type>
+      <type>Knight</type>
         <squires>
             <knight>
                 <society_precedence>1706</society_precedence>
                 <name>Morgan Buchanan</name>
-                <type>Knight</type>
+              <type>Knight</type>
                 <squires>
                     <knight>
                         <society_precedence>2108</society_precedence>
                         <name>Fiacha the Blue</name>
-                        <type>Knight</type>
+                      <type>Knight</type>
                         <squires>
                             <knight>
-                                <society_precedence>-1</society_precedence><name>JeanMarc D'Anjou</name>
-                                <type>squire</type>
-                                <squires/>
-                                
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>JeanMarc D'Anjou</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence> <name>Sheamais Mac An T-Saoir</name>
-                                <type>squire</type>
-                                <squires/>
-                               
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Sheamais Mac An T-Saoir</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence> <name>Cambria Darkhorse</name>
-                                <type>squire</type>
-                                <squires/>
-                               
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Cambria Darkhorse</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence><name>Kyuuzou Musashi</name>
-                                <type>squire</type>
-                                <squires/>
-                                
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Kyuuzou Musashi</name>
                             </knight>
                             <knight>
-                                <society_precedence>-1</society_precedence> <name>Dietrich Song-Swert Von Staufen</name>
-                                <type>squire</type>
-                                <squires/>
-                               
+                                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                                <name>Dietrich Song-Swert Von Staufen</name>
                             </knight>
                         </squires>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence><name>Fáelán Maguire</name>
-                        <type>squire</type>
-                        <squires/>
-                        
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Fáelán Maguire</name>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence> <name>Hroderick Kleinstier</name>
-                        <type>squire</type>
-                        <squires/>
-                       
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Hroderick Kleinstier</name>
                     </knight>
                 </squires>
             </knight>
@@ -9517,84 +9177,62 @@
                 <squires/>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence>
                 <name>Finnian Mac Leod</name>
-                <type>Knight</type>
-                <squires/>
+              <type>Knight</type>
             </knight>
             <knight>
                 <society_precedence>1800</society_precedence>
                 <name>Hrafn Olafsson</name>
-                <type>Knight</type>
+              <type>Knight</type>
                 <squires>
                     <knight>
-                        <society_precedence>-1</society_precedence> <name>Rhys Andreus</name>
-                        <type>squire</type>
-                        <squires/>
-                       
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Rhys Andreus</name>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence><name>Amelot Lisette</name>
-                        <type>squire</type>
-                        <squires/>
-                        
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Amelot Lisette</name>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence> <name>Bjorn Hestrverða Haukarson</name>
-                        <type>squire</type>
-                        <squires/>
-                       
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Bjorn Hestrverða Haukarson</name>
                     </knight>
                 </squires>
             </knight>
             <knight>
                 <society_precedence>2074</society_precedence>
                 <name>Gocauo Ramiric</name>
-                <type>Knight</type>
+              <type>Knight</type>
                 <squires>
                     <knight>
-                        <society_precedence>-1</society_precedence><name>Vikarr Bjornsson</name>
-                        <type>squire</type>
-                        <squires/>
-                        
+                        <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                        <name>Vikarr Bjornsson</name>
                     </knight>
                 </squires>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence> <name>Robert MacFarland</name>
-                <type>squire</type>
-                <squires/>
-               
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                <name>Robert MacFarland</name>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence> <name>Tadhg the Wanderer</name>
-                <type>squire</type>
-                <squires/>
-               
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                <name>Tadhg the Wanderer</name>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence> <name>Gavin de Chateau Guaillard</name>
-                <type>squire</type>
-                <squires/>
-               
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                <name>Gavin de Chateau Guaillard</name>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence><name>Brion MacGilroy</name>
-                <type>squire</type>
-                <squires/>
-                
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                <name>Brion MacGilroy</name>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence> <name>Auđun Hroarsson</name>
-                <type>squire</type>
-                <squires/>
-               
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                <name>Auđun Hroarsson</name>
             </knight>
             <knight>
-                <society_precedence>-1</society_precedence> <name>Kenwrec Wulfe</name>
-                <type>squire</type>
-                <squires/>
-               
+                <society_precedence>-1</society_precedence><type>squire</type><squires/>
+                <name>Kenwrec Wulfe</name>
             </knight>
         </squires>
     </knight>

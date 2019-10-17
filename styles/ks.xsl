@@ -92,12 +92,21 @@
                 </span>
             </xsl:when>
             <xsl:otherwise>
-                <span style="color:white; text-shadow: 2px 2px black;">
-                    <xsl:apply-templates select="name"/>
-                </span>
+                <xsl:choose>
+                    <xsl:when test="//type[value='Knight']">
+                        <span style="color:white; text-shadow: 2px 2px black;">
+                            <xsl:apply-templates select="name"/>
+                        </span>
+                    </xsl:when>
+                    <xsl:otherwise>
+                        <span>
+                            <xsl:apply-templates select="name"/>
+                        </span>
+                    </xsl:otherwise>
+                </xsl:choose>
             </xsl:otherwise>
         </xsl:choose>
- | <xsl:apply-templates select="date_elevated"/> | <xsl:apply-templates select="anno_societatous"/> | <xsl:apply-templates select="society_chiv_number"/> | <xsl:apply-templates select="society_knight_number"/> | <xsl:apply-templates select="kingdom_of_elevation"/> | <xsl:apply-templates select="kingdom_chiv_number"/>
+ | <xsl:apply-templates select="date_elevated"/> | <xsl:apply-templates select="anno_societatous"/> | <xsl:apply-templates select="society_precedence"/> | <xsl:apply-templates select="society_knight_number"/> | <xsl:apply-templates select="kingdom_of_elevation"/> | <xsl:apply-templates select="kingdom_precedence"/>
         <xsl:apply-templates select="squires"/>
     </li>
   </xsl:template>
@@ -105,25 +114,7 @@
   <xsl:template match="squires">
     <ul class="nested">
       <xsl:apply-templates select="knight"/>
-      <xsl:apply-templates select="squire"/>
     </ul>
-  </xsl:template>
-
-  <xsl:template match="squire">
-    <li>
-        <xsl:choose>
-            <xsl:when test=".//squires/*">
-                <span style="color:red; text-shadow: 2px 2px black;" class="caret">
-                    <xsl:apply-templates select="name"/>
-                </span>
-            </xsl:when>
-            <xsl:otherwise>
-                <span style="color:red; text-shadow: 2px 2px black;">
-                    <xsl:apply-templates select="name"/>
-                </span>
-            </xsl:otherwise>
-        </xsl:choose>
-    </li>
   </xsl:template>
 
   <xsl:template match="name">

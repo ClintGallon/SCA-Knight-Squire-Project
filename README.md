@@ -6,6 +6,13 @@ Tracking Knight Squire Relationships and Lineages for the SCA
 
 I hope to track the knight-squire relationships throughout the SCA known world.
 
+
+### 17 OCT 2019 - 4:35 AM UPDATE AND UPLOAD 
+
+Jenn not feeling well so i woke up and worked on this some more. Wrote a C# program to create the data file which combines the whitebelt spreadsheet with my relationships XML data. BTW: [Linq to XML](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/linq-to-xml-overview) is badass.I was able to update the doc in memory and spit out the result in xml ... only takes about 30 secs to run.  For some reason the changes i made to the way im storing the xml is causing people ot show up twice ??? Ill look at it a little later today see if i can get the correct results.
+
+-- Clint aka Cathal 
+
 ### How this all started (Once upon a time ...)
 
 A few years ago Carl Chipman (Duke Jean Paul de Sens) created a document where he was tracking the knight - squire relationships of the people he knew. you can see it [here](http://chivalry.ansteorra.org/new/knm.pl). I thought it was pretty cool and intersting to see who trained whom. It also used to tell you alot about what type of fight you would get from the person. Trainers and students all have tendencies.
@@ -25,3 +32,4 @@ Clint Gallon
 Sir Cathal Finn O'Briain
 
 Atenveldt
+
