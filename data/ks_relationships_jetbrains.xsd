@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="society_precedence" type="xs:string"/>
+      <xs:element name="society_knight_number" type="xs:string"/>
+      <xs:element name="society_master_number" type="xs:string"/>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="type">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Knight"/>
+            <xs:enumeration value="squire"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="date_elevated" type="xs:string"/>
+      <xs:element name="kingdom_of_elevation" type="xs:string"/>
+      <xs:element name="kingdom_precedence" type="xs:string"/>
+      <xs:element name="resigned_or_removed" type="xs:string"/>
+      <xs:element name="passed_away" type="xs:string"/>
+      <xs:element name="notes" type="xs:string"/>
+      <xs:element name="squires">
+        <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element ref="knight" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="knight">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded" minOccurs="0">
+        <xs:element ref="society_precedence"/>
+        <xs:element ref="society_knight_number"/>
+        <xs:element ref="name"/>
+        <xs:element ref="type"/>
+        <xs:element ref="squires"/>
+
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="knights">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="knight" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

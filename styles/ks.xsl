@@ -92,21 +92,12 @@
                 </span>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:choose>
-                    <xsl:when test="//type[value='Knight']">
-                        <span style="color:white; text-shadow: 2px 2px black;">
-                            <xsl:apply-templates select="name"/>
-                        </span>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <span>
-                            <xsl:apply-templates select="name"/>
-                        </span>
-                    </xsl:otherwise>
-                </xsl:choose>
+                <span>
+                    <xsl:apply-templates select="name"/>
+                </span>
             </xsl:otherwise>
         </xsl:choose>
- | <xsl:apply-templates select="date_elevated"/> | <xsl:apply-templates select="anno_societatous"/> | <xsl:apply-templates select="society_precedence"/> | <xsl:apply-templates select="society_knight_number"/> | <xsl:apply-templates select="kingdom_of_elevation"/> | <xsl:apply-templates select="kingdom_precedence"/>
+ | <xsl:apply-templates select="date_elevated"/> | <xsl:apply-templates select="anno_societatous"/> | <xsl:apply-templates select="society_precedence"/> | <xsl:apply-templates select="society_knight_number"/> | <xsl:apply-templates select="kingdom_of_elevation"/> | <xsl:apply-templates select="kingdom_precedence"/> | <xsl:apply-templates select="type"/>
         <xsl:apply-templates select="squires"/>
     </li>
   </xsl:template>
@@ -125,7 +116,7 @@
     <xsl:value-of select="."/>
   </xsl:template>
 
-  <xsl:template match="society_chiv_number">
+  <xsl:template match="society_precedence">
     SC#: <xsl:value-of select="."/>
   </xsl:template>
 
@@ -141,8 +132,12 @@
     <xsl:value-of select="."/>
   </xsl:template>
 
-  <xsl:template match="kingdom_chiv_number">
+  <xsl:template match="kingdom_precedence">
     KC#: <xsl:value-of select="."/>
   </xsl:template>
+
+    <xsl:template match="type">
+        TYPE: <xsl:value-of select="."/>
+    </xsl:template>
 
 </xsl:stylesheet>

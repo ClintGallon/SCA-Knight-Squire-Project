@@ -5,7 +5,7 @@ $xmlsettings.IndentChars = "    "
 
 
 # Set the File Name Create The Document
-$XmlWriter = [System.XML.XmlWriter]::Create("..\original\SCA_ChivList-Latest.xml", $xmlsettings)
+$XmlWriter = [System.XML.XmlWriter]::Create("..\SCA_ChivList-Latest.xml", $xmlsettings)
 
 # Write the XML Decleration and set the XSL
 $xmlWriter.WriteStartDocument()

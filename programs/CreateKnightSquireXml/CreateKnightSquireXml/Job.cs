@@ -8,15 +8,8 @@ using System.Linq;
 using System.Xml;  
 using System.Xml.Serialization;
 using System.Xml.Linq;  
-using System.Xml.Schema;  
-using System.Xml.XPath;  
-using System.Xml.Xsl;  
-using System.IO;  
-using System.Threading;  
-using System.Reflection;  
-//using System.IO.Packaging;
-using System.Net.Sockets;
-using System.Security.Permissions;
+using System.Diagnostics;
+using System.IO;
 
 
 namespace CreateKnightSquireXml
@@ -25,16 +18,15 @@ namespace CreateKnightSquireXml
     {
 
         private XElement ksRelationshipsXml;
-        private XElement whitebeltXml;
-        private XElement outputXml;
-        // private string pathFilenameOutputXml;
+        private XElement whiteBeltXml;
+        private XElement outputXml; 
+        private string pathFilenameSerializedOutput;
        
         public Job()
         {
-           
-            ksRelationshipsXml = XElement.Load(@".\ks_relationships.xml");  
-            whitebeltXml = XElement.Load(@".\SCA_ChivList-Latest.xml");
-           // pathFilenameOutputXml = @".\seesharp-output.xml";
+            ksRelationshipsXml = XElement.Load(@"C:\projects\SCA-Knight-Squire-Project\data\ks_relationships.xml");
+            whiteBeltXml = XElement.Load(@"C:\projects\SCA-Knight-Squire-Project\data\SCA_ChivList-Latest.xml");
+            pathFilenameSerializedOutput = @"C:\projects\SCA-Knight-Squire-Project\data\serialized-output.xml";
             outputXml = new XElement("knights");
             
         }
@@ -43,7 +35,7 @@ namespace CreateKnightSquireXml
         {
 
             //Console.WriteLine(ksRelationshipsXml);
-            Console.WriteLine(whitebeltXml);
+           // Console.WriteLine(whitebeltXml);
 
             //IEnumerable<XElement> knights =
             //    from el in whitebeltXml.Elements("knight")
@@ -65,84 +57,90 @@ namespace CreateKnightSquireXml
             //// XPath expression  
             //IEnumerable<XElement> list2 = whitebeltXml.Root.XPathSelectElements("./*");  
 
-            var relationshipKnights = ksRelationshipsXml.Descendants();
+     
+            IEnumerable<XElement> relationshipKnights = 
+                from knight in ksRelationshipsXml.Descendants("knight")  
+                select knight;  
 
-            var relationships = new List<Knight>();
+            var relationships = new DictKnightList();
 
             foreach (var node in relationshipKnights)
             {
-                if (node.Name == "knight")
+                var newKnight = new DictKnight();
+                var nodeElements = node.Descendants();
+                foreach (var el in nodeElements)
                 {
-                    var newKnight = new Knight();
-                    var nodeElements = node.Descendants();
-                    foreach (var el in nodeElements)
+                    switch (el.Name.ToString())
                     {
-                        switch (el.Name.ToString())
-                        {
-                            case "name":
-                                newKnight.Name = el.Value;
-                                break;
+                        case "name":
+                            newKnight.Name = el.Value;
+                            break;
 
-                            case "society_precedence":
-                                newKnight.SocietyPrecedence = int.Parse(el.Value);
-                                break;
+                        case "society_precedence":
+                            newKnight.SocietyPrecedence = int.Parse(el.Value);
+                            break;
 
-                            case "type":
-                                newKnight.Type = el.Value;
-                                break;
+                        case "type":
+                            newKnight.Type = el.Value;
+                            break;
 
-                            case "squires":
-                                var returningSquires = newKnight.ParseSquires(el);
-                                foreach (var rs in returningSquires)
-                                {
-                                    newKnight.Squires.Add(rs);
-                                }
-                                break;
+                        case "squires":
+                            newKnight.Squires = newKnight.ParseSquires(el);
+                            break;
 
-                            default:
-                                break;
-                        }
+                        default:
+                            break;
                     }
-                    relationships.Add(newKnight);
                 }
 
+                if (newKnight.SocietyPrecedence == -1)
+                {
+                    Debug.WriteLine("Name: " + newKnight.Name + " Type: " + newKnight.Type);
+                }
+                relationships.Add(newKnight);
+                if (newKnight.SocietyPrecedence == 83)
+                {
+                    break;
+                }
             }
-            
-            var fortyOne = relationships.First(Knight => Knight.SocietyPrecedence == 1);
-
             
             foreach (var k in relationships)
             {
-                var knights =
-                    from el in whitebeltXml.Elements("knight")
-                    where (string) el.Element("society_precedence") == k.SocietyPrecedence.ToString()
-                    select el;
+                var wbk = whiteBeltXml.Elements("knight").FirstOrDefault(wb => (string) wb.Element("society_precedence") == k.SocietyPrecedence.ToString());
 
-                foreach (var el in knights)
+                if (wbk is null)
                 {
-                    int.TryParse(el.Element("society_knight_number")?.Value, out int kn);
-                    k.KnightNumber = kn;
-                    int.TryParse(el.Element("society_master_number")?.Value, out int mn);
-                    k.MasterNumber = mn;
-                    k.Name = el.Element("name")?.Value;
-                    k.Type = el.Element("type")?.Value;
-                    k.DateElevated = DateTime.Parse(el.Element("date_elevated")?.Value);
-                    int.TryParse(el.Element("anno_societatous")?.Value, out int ass);
-                    k.AnnoSocietatus = ass;
-                    k.Kingdom = el.Element("kingdom_of_elevation")?.Value;
-                    int.TryParse(el.Element("kingdom_precedence")?.Value, out int kp);
-                    k.KingdomPrecedence = kp;
-                    k.ResignedOrRemoved = el.Element("kingdom_precedence")?.Value;
-                    k.PassedAway = el.Element("passed_away")?.Value;
-                    k.Squires = k.ParseSquires(el.Element("squires"));
+                    //Nothing to do
                 }
-
-                Console.WriteLine(k);
+                else
+                {
+                    int.TryParse(wbk.Element("society_knight_number")?.Value, out int kn);
+                    k.KnightNumber = kn;
+                    int.TryParse(wbk.Element("society_master_number")?.Value, out int mn);
+                    k.MasterNumber = mn;
+                    k.Name = wbk.Element("name")?.Value;
+                    k.Type = wbk.Element("type")?.Value;
+                    k.DateElevated = DateTime.Parse(wbk.Element("date_elevated")?.Value);
+                    int.TryParse(wbk.Element("anno_societatous")?.Value, out int ass);
+                    k.AnnoSocietatous = ass;
+                    k.Kingdom = wbk.Element("kingdom_of_elevation")?.Value;
+                    int.TryParse(wbk.Element("kingdom_precedence")?.Value, out int kp);
+                    k.KingdomPrecedence = kp;
+                    k.ResignedOrRemoved = wbk.Element("kingdom_precedence")?.Value;
+                    k.PassedAway = wbk.Element("passed_away")?.Value;
+                    k.Squires = k.ParseSquires(wbk.Element("squires"));
+                }
+               // Debug.WriteLine(k);
             }
 
+            Debug.WriteLine("Serializing ...");
 
-            Console.WriteLine("Ending ...");
+            XmlSerializer serializer = new XmlSerializer(typeof(ArrayKnightList));
+            TextWriter writer = new StreamWriter(pathFilenameSerializedOutput);
+            serializer.Serialize(writer, relationships);
+            writer.Close();
 
+            Debug.WriteLine("Ending ...");
         }
     }
 }

@@ -6,51 +6,54 @@ Function Write-Knight($knightNode){
     Write-Host "Write-Knight knightChildNodes.count: " $knightChildNodes.count -BackgroundColor White -ForegroundColor Black
     foreach ($knightChildNode in $knightChildNodes){
             Write-Host "Write-Knight - knightChildNodes.localname: " $knightChildNode.localname -BackgroundColor White -ForegroundColor Black
-        if ($knightChildNode.localname -eq "society_chiv_number"){
-            Write-Host "Write-Knight looking for society_chiv_number.InnerText: " $knightChildNode.InnerText -BackgroundColor White -ForegroundColor Black
-            [bool]$foundData = $false
-            foreach ($csvRecord in $whiteBeltCSV){
-                if ($csvRecord."PRECEDENCE" -eq $knightChildNode.InnerText){
-                    Write-Host "Write-Knight FOUND" -BackgroundColor White -ForegroundColor Blue
-                    #Write-Host "Write-Knight -----------------------------------------------------------------------------------------------------------------------------" -BackgroundColor White -ForegroundColor Blue
-                    #Write-Host "Write-Knight society_precedence " $csvRecord."PRECEDENCE" -BackgroundColor Black -ForegroundColor White
-                    if($csvRecord."PRECEDENCE") {$xmlWriter.WriteElementString("society_precedence", $csvRecord."PRECEDENCE")}
-                    
-                    #Write-Host "Write-Knight society_knight_number " $csvRecord."KNIGHT" 
-                    if($csvRecord."KNIGHT") {$xmlWriter.WriteElementString("society_knight_number", $csvRecord."KNIGHT")}
-                    
-                    #Write-Host "Write-Knight society_master_number " $csvRecord."MASTER"
-                    if($csvRecord."MASTER") {$xmlWriter.WriteElementString("society_master_number", $csvRecord."MASTER")}
-                    
-                    #Write-Host "Write-Knight type " $csvRecord."TYPE"
-                    if($csvRecord."TYPE") {$xmlWriter.WriteElementString("type", $csvRecord."TYPE")}
-                    
-                    #Write-Host "Write-Knight date_elevated " $csvRecord."DATE ELEVATED" 
-                    if($csvRecord."DATE ELEVATED") {$xmlWriter.WriteElementString("date_elevated", $csvRecord."DATE ELEVATED")}
-                    
-                    #Write-Host "Write-Knight anno_societatous " $csvRecord."A.S."
-                    if($csvRecord."A.S.") {$xmlWriter.WriteElementString("anno_societatous",  $csvRecord."A.S.")}
-                    
-                    #Write-Host "Write-Knight kingdom " $csvRecord."KINGDOM" 
-                    if($csvRecord."KINGDOM") {$XmlWriter.WriteElementString("kingdom_of_elevation", $csvRecord."KINGDOM")}
-                    
-                    #Write-Host "Write-Knight kingdom_precedence " $csvRecord."KINGDOM" 
-                    if($csvRecord."KINGDOM PRECENCE") {$XmlWriter.WriteElementString("kingdom_precedence", $csvRecord."KINGDOM PRECENCE")}
-                    
-                    #Write-Host "Write-Knight resigned_or_removed " $csvRecord."RESIGNED OR REMOVED" 
-                    if($csvRecord."RESIGNED OR REMOVED") {$XmlWriter.WriteElementString("resigned_or_removed", $csvRecord."RESIGNED OR REMOVED")}
-                    
-                    #Write-Host "Write-Knight passed_away " $csvRecord."PASSED AWAY" 
-                    if($csvRecord."PASSED AWAY") {$XmlWriter.WriteElementString("passed_away", $csvRecord."PASSED AWAY")}
-                    
-                    #Write-Host "Write-Knight notes " $csvRecord."NOTES" 
-                    if($csvRecord."NOTES") {$XmlWriter.WriteElementString("notes", $csvRecord."NOTES")}
-                    $foundData = $true
-                    break
-                } 
+        if ($knightChildNode.localname -eq "society_precedence"){
+            Write-Host "Write-Knight looking for society_precedence.InnerText: " $knightChildNode.InnerText -BackgroundColor White -ForegroundColor Black
+ 
+            $knightSPrecedence = $knightChildNode.InnerText
+            $csvRecord = $whiteBeltCSV | Where-Object {$_.PRECEDENCE -eq $knightSPrecedence}
+
+            if ($null -eq $csvRecord){
+                $foundData = $false
             }
+            else {
+
+                Write-Host "Write-Knight FOUND" -BackgroundColor White -ForegroundColor Blue
+                #Write-Host "Write-Knight -----------------------------------------------------------------------------------------------------------------------------" -BackgroundColor White -ForegroundColor Blue
+                #Write-Host "Write-Knight society_precedence " $csvRecord."PRECEDENCE" -BackgroundColor Black -ForegroundColor White
+                if($csvRecord."PRECEDENCE") {$xmlWriter.WriteElementString("society_precedence", $csvRecord."PRECEDENCE")}
+                
+                #Write-Host "Write-Knight society_knight_number " $csvRecord."KNIGHT" 
+                if($csvRecord."KNIGHT") {$xmlWriter.WriteElementString("society_knight_number", $csvRecord."KNIGHT")}
+                
+                #Write-Host "Write-Knight society_master_number " $csvRecord."MASTER"
+                if($csvRecord."MASTER") {$xmlWriter.WriteElementString("society_master_number", $csvRecord."MASTER")}              
+               
+                #Write-Host "Write-Knight date_elevated " $csvRecord."DATE ELEVATED" 
+                if($csvRecord."DATE ELEVATED") {$xmlWriter.WriteElementString("date_elevated", $csvRecord."DATE ELEVATED")}
+                
+                #Write-Host "Write-Knight anno_societatous " $csvRecord."A.S."
+                if($csvRecord."A.S.") {$xmlWriter.WriteElementString("anno_societatous",  $csvRecord."A.S.")}
+                
+                #Write-Host "Write-Knight kingdom " $csvRecord."KINGDOM" 
+                if($csvRecord."KINGDOM") {$XmlWriter.WriteElementString("kingdom_of_elevation", $csvRecord."KINGDOM")}
+                
+                #Write-Host "Write-Knight kingdom_precedence " $csvRecord."KINGDOM" 
+                if($csvRecord."KINGDOM PRECENCE") {$XmlWriter.WriteElementString("kingdom_precedence", $csvRecord."KINGDOM PRECENCE")}
+                
+                #Write-Host "Write-Knight resigned_or_removed " $csvRecord."RESIGNED OR REMOVED" 
+                if($csvRecord."RESIGNED OR REMOVED") {$XmlWriter.WriteElementString("resigned_or_removed", $csvRecord."RESIGNED OR REMOVED")}
+                
+                #Write-Host "Write-Knight passed_away " $csvRecord."PASSED AWAY" 
+                if($csvRecord."PASSED AWAY") {$XmlWriter.WriteElementString("passed_away", $csvRecord."PASSED AWAY")}
+                
+                #Write-Host "Write-Knight notes " $csvRecord."NOTES" 
+                if($csvRecord."NOTES") {$XmlWriter.WriteElementString("notes", $csvRecord."NOTES")}
+                $foundData = $true
+            }
+
+ 
         }
-        if ($knightChildNode.localname -eq "society_chiv_number") {
+        if ($knightChildNode.localname -eq "society_precedence") {
             if ($foundData -eq $false) {
                 if ($knightChildNode.InnerText) {$xmlWriter.WriteElementString("society_precedence", $knightChildNode.InnerText)}
             }
@@ -58,13 +61,16 @@ Function Write-Knight($knightNode){
         if ($knightChildNode.localname -eq "name"){
             if ($knightChildNode.InnerText) {$xmlWriter.WriteElementString("name", $knightChildNode.InnerText)}
         }
+        if ($knightChildNode.localname -eq "type"){
+            if ($knightChildNode.InnerText) {$xmlWriter.WriteElementString("type", $knightChildNode.InnerText)}
+        }        
         if ($knightChildNode.localname -eq "squires"){
             # $squires = $knightChildNode.ChildNodes
             Write-Host "Sending Write-Squires knightChildNode: " $knightChildNode.OuterXml -ForegroundColor White -BackgroundColor Red
             Write-Squires($knightChildNode.OuterXml)
         } 
     }
-    $xmlWriter.WriteEnddElement() #knight
+    $xmlWriter.WriteEndElement() #knight
 }
 
 Function Write-Squires($squiresNode)
@@ -135,18 +141,16 @@ $xmlWriter.WriteProcessingInstruction("xml-stylesheet", "type='text/xsl' href='s
 # create root element "knight" and add some attributes to it
 $xmlWriter.WriteStartElement('knights')
 
-$knightNodes = $xmlRelationships.SelectNodes("//knights/*")
+$knightNodes = $xmlRelationships.SelectNodes("//knights/knight")
 Write-Host "knightNodes.count: " $knightNodes.count
 $counter = 0
 foreach ($knightNode in $knightNodes) {
     Write-Host "node.localname: " $knightNode.localname
+    Write-Host "knightNodes.count: "
     if ($knightNode.localname -eq "knight"){
         $counter = $counter + 1
         Write-Host "Knight.OuterXml: " $knightNode.OuterXml
         Write-Knight($knightNode)
-        if ($counter -eq 43) {
-            break
-        }
     }
 }
 
