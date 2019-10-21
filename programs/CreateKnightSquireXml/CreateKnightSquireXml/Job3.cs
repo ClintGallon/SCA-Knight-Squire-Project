@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -7,6 +9,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Serialization;
 using System.Xml.Linq;
+using System.Xml.XPath;
 
 namespace CreateKnightSquireXml
 {
@@ -20,43 +23,49 @@ namespace CreateKnightSquireXml
 
         public Job3()
         {
-            
-            XElement ksRelationshipsXml = XElement.Load(@"C:\projects\SCA-Knight-Squire-Project\data\ks_relationships.xml");
-            XElement whiteBeltXml = XElement.Load(@"C:\projects\SCA-Knight-Squire-Project\data\SCA_ChivList-Latest.xml");
-            pathFilenameOutputXml = @"C:\projects\SCA-Knight-Squire-Project\data\" + DateTime.Now.ToString("yyyyMMdd-HHmmss") + "-seesharp-output.xml";
-            outputXml = new XElement("knights");
-
+           ksRelationshipsXml = XElement.Load(@"C:\projects\SCA-Knight-Squire-Project\data\ks_relationships.xml");
+           whiteBeltXml = XElement.Load(@"C:\projects\SCA-Knight-Squire-Project\data\SCA_ChivList-Latest.xml"); 
+           pathFilenameOutputXml = @"C:\projects\SCA-Knight-Squire-Project\data\KnightsNotInRelationships.xml";
         }
 
         public void DoWork()
         {
+            var namesNotFound = new List<string>();
+            var namesFound = new List<string>();
+                 
+            IEnumerable<XElement> wbKnights = 
+                from knight in whiteBeltXml.Descendants("knight")  
+                select knight;
 
-/*
-            XElement relationships = ksRelationshipsXml.Element("knights");  
-            XElement newKnights = new XElement("knights",  
-                                               from r in this.ksRelationshipsXml.Element("knight")  
-                                               join w in this.whiteBeltXml.Element("knight").Elements("knight")  
-                                                   on (string) r.Element("society_precedence") equals  
-                                                   (string) w.Element("society_precedence")  
-                                                    select new XElement("knight",  
-                                                                   new XElement("society_precedence", (string) r.Element("society_precedence")),  
-                                                                   new XElement("name", (string) r.Element("name")),  
-                                                                   new XElement("type", (string) r.Element("type")),
-                                                                   new XElement("squires", (string) w.Element("society_knight_number")),
-                                                                   new XElement("squires", (string) w.Element("society_master_number")),
-                                                                   new XElement("squires", (string) w.Element("date_elevated")),
-                                                                   new XElement("squires", (string) w.Element("anno_societatous")),
-                                                                   new XElement("squires", (string) w.Element("kingdom_of_elevation")),
-                                                                   new XElement("squires", (string) w.Element("kingdom_precedence")),
-                                                                   new XElement("squires", (string) w.Element("resigned_or_removed")),
-                                                                   new XElement("squires", (string) w.Element("passed_away")),
-                                                                   new XElement("squires", (string) w.Element("notes")),
-                                                                   new XElement("squires", (XElement) r.Element("squires"))
-                                                                  )  );
-                                                                   Console.WriteLine(newKnights);
-*/
 
-           
+            var relKnights = ksRelationshipsXml.XPathSelectElements("//knight");
+
+            foreach (var wbKnight in wbKnights)
+            {
+                var outputName = wbknight.Descendants("name").FirstOrDefault()?.Value;
+
+                //see if we can find the name in the relationships file ... 
+                
+                IEnumerable<XElement> relationshipKnights = 
+                    from knight in ksRelationshipsXml.XPathSelectElements("//knight")  
+                    select knight;
+
+
+                var firstOrDefault = relationshipKnights.Descendants("name").FirstOrDefault(rk => (string) rk.Element("name") == outputName);
+
+                if (firstOrDefault?.Value == outputName)
+                {
+                    namesFound.Add(outputName);
+                }
+                else
+                {
+                    namesNotFound.Add(outputName);
+                    
+                }
+            }
+            Console.WriteLine("Found: "     + namesFound.Count);
+            Console.WriteLine("Not Found: " + namesNotFound.Count);
+            
         }
     } 
 }

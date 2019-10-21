@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Collections;
 using System.Diagnostics;
@@ -13,31 +14,28 @@ using System.Xml.Serialization;
 namespace CreateKnightSquireXml
 {
     [XmlRoot("KnightList")]
-    public class DictKnightList : IEnumerable
+    public class DictKnightList : IDictionary<int, DictKnight>
     {
         private Dictionary<int, DictKnight> _knights;
 
-        public DictKnightList()
-        {
-            if (_knights is null)
-            {
-                _knights = new Dictionary<int, DictKnight>();
-            }
-        }
+        public ICollection<int> Keys => _knights.Keys;
+
+        public ICollection<DictKnight> Values => _knights.Values;
+
+        public int Count => _knights.Count;
+
+        public bool IsReadOnly => false;
+
+        public DictKnight this[int key] { get => _knights[key]; set => _knights.Add(key, value); }
 
         public bool KnightList(Dictionary<int, DictKnight> kArray)
         {
             _knights = new Dictionary<int, DictKnight>();
-            for (int n = 0, n <= kArray.Count, n++)
+            for (int i = 0; i <= kArray.Count; i++)
             {
-                
+                var current = kArray[i];
+                _knights.Add(i, current);
             }
-            return true;
-        }
-
-        public bool Add(DictKnight addKnight)
-        {
-            _knights.Add(_knights.Count + 1, addKnight);
             return true;
         }
 
@@ -49,6 +47,64 @@ namespace CreateKnightSquireXml
         public DictKnightListEnum GetEnumerator()
         {
             return new DictKnightListEnum(_knights);
+        }
+
+        public bool ContainsKey(int key)
+        {
+            return _knights.ContainsKey(key);
+        }
+
+        public void Add(int key, DictKnight value)
+        {
+            _knights.Add(key, value);
+        }
+
+        public bool Remove(int key)
+        {
+            return _knights.Remove(key);
+        }
+
+        public bool TryGetValue(int key, out DictKnight value)
+        {
+            bool blnReturn = false;
+
+            _knights.TryGetValue(key, out DictKnight outboundvalue);
+
+            value = outboundvalue;
+
+            blnReturn = !(outboundvalue is null);
+
+            return blnReturn;
+        }
+
+        public void Add(KeyValuePair<int, DictKnight> item)
+        {
+            _knights.Add(item.Key, item.Value);
+        }
+
+        public void Clear()
+        {
+            _knights = new Dictionary<int, DictKnight>();
+        }
+
+        public bool Contains(KeyValuePair<int, DictKnight> item)
+        {
+            return _knights.Contains<KeyValuePair<int, DictKnight>>(item);
+        }
+
+        public void CopyTo(KeyValuePair<int, DictKnight>[] array, int arrayIndex)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool Remove(KeyValuePair<int, DictKnight> item)
+        {
+            return _knights.Remove(item.Key);
+        }
+
+        IEnumerator<KeyValuePair<int, DictKnight>> IEnumerable<KeyValuePair<int, DictKnight>>.GetEnumerator()
+        {
+           throw new NotImplementedException();
         }
     }
     
@@ -67,7 +123,7 @@ namespace CreateKnightSquireXml
 
             foreach (var l in dict)
             {
-                _knights.Add(_knights.Count + 1, l);
+                _knights.Add(_knights.Count + 1, l.Value);
             }
 
         }
@@ -91,13 +147,15 @@ namespace CreateKnightSquireXml
 
         object IEnumerator.Current => Current;
 
-        public ArrayKnight Current
+        public Dictionary<int, DictKnight> Current
         {
             get
             {
                 try
                 {
-                    return _knights[position];
+                    Dictionary<int, DictKnight> retDict = new Dictionary<int, DictKnight>();
+                    retDict.Add(retDict.Count + 1, _knights[position]);
+                    return retDict;
                 }
                 catch (IndexOutOfRangeException)
                 {

@@ -10,43 +10,39 @@
         </knights>
     </xsl:template>
 
-    <xsl:template match="squires">
-        <knights>
-            <xsl:apply-templates select="knight"/>
-            <xsl:apply-templates select="squire"/>
-        </knights>
-    </xsl:template>
-
     <xsl:template match="knight">
         <knight>
-            <xsl:apply-templates select="society_chiv_number"/>
+            <xsl:apply-templates select="society_precedence"/>
             <xsl:apply-templates select="name"/>
+            <xsl:apply-templates select="type"/>
+			<xsl:apply-templates select="squire-names"/>
             <xsl:apply-templates select="squires"/>
         </knight>
     </xsl:template>
 
-    <xsl:template match="squire">
-        <squire>
-            <xsl:apply-templates select="name"/>
-        </squire>
-    </xsl:template>
-
-    <xsl:template match="society_chiv_number">
-        <society_chiv_number>
-            <xsl:value-of select="."/>
-        </society_chiv_number>
+    <xsl:template match="society_precedence">
+        <society_precedence><xsl:value-of select="."/></society_precedence>
     </xsl:template>
 
     <xsl:template match="name">
-        <name>
-            <xsl:value-of select="."/>
-        </name>
+        <name><xsl:value-of select="."/></name>
     </xsl:template>
+	
+    <xsl:template match="type">
+        <type><xsl:value-of select="."/></type>
+    </xsl:template>
+
+	<xsl:template match="squire-names">
+		<squire-names>
+            <xsl:for-each select="../squires/knight">
+			    <xsl:value-of select="name"/>|
+            </xsl:for-each>
+		</squire-names>
+	</xsl:template>
 
     <xsl:template match="squires">
         <squires>
             <xsl:apply-templates select="knight"/>
-            <xsl:apply-templates select="squire"/>
         </squires>
     </xsl:template>
 

@@ -18,10 +18,17 @@ namespace CreateKnightSquireXml
     {
         private List<ListKnight> _knights;
 
+        public ListKnightList()
+        {
+            if (_knights is null)
+            {
+                _knights = new List<ListKnight>();
+            }
+        }
         public bool KnightList(List<ListKnight> listArray)
         {
             _knights = new List<ListKnight>();
-            foreach (ListKnight k in listArray)
+            foreach (var k in listArray)
             {
                 _knights.Add(k);
             }
@@ -31,6 +38,7 @@ namespace CreateKnightSquireXml
 
         public bool Add(ListKnight addKnight)
         {
+            if (addKnight == null) throw new ArgumentNullException(nameof(addKnight));
             _knights.Add(addKnight);
 
             return true;
@@ -56,7 +64,7 @@ namespace CreateKnightSquireXml
         // until the first MoveNext() call.
         int position = -1;
 
-        public ListKnightListEnum(ListKnight[] list)
+        public ListKnightListEnum(IEnumerable<ListKnight> list)
         {
             _knights = new List<ListKnight>();
 
@@ -69,6 +77,7 @@ namespace CreateKnightSquireXml
 
         public bool Add(ListKnight addKnight)
         {
+            if (addKnight == null) throw new ArgumentNullException(nameof(addKnight));
             _knights.Add(addKnight);
 
             return true;

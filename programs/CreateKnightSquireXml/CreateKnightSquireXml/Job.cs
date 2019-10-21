@@ -55,18 +55,18 @@ namespace CreateKnightSquireXml
             //IEnumerable<XElement> list1 = data.Elements();
   
             //// XPath expression  
-            //IEnumerable<XElement> list2 = whitebeltXml.Root.XPathSelectElements("./*");  
+            //IEnumerable<XElement> list2 = whiteBeltXml.Root.XPathSelectElements("./*");  
 
      
             IEnumerable<XElement> relationshipKnights = 
                 from knight in ksRelationshipsXml.Descendants("knight")  
                 select knight;  
 
-            var relationships = new DictKnightList();
+            ListKnightList relationships = new ListKnightList();
 
             foreach (var node in relationshipKnights)
             {
-                var newKnight = new DictKnight();
+                var newKnight = new ListKnight();
                 var nodeElements = node.Descendants();
                 foreach (var el in nodeElements)
                 {
@@ -130,7 +130,7 @@ namespace CreateKnightSquireXml
                     k.PassedAway = wbk.Element("passed_away")?.Value;
                     k.Squires = k.ParseSquires(wbk.Element("squires"));
                 }
-               // Debug.WriteLine(k);
+                // Debug.WriteLine(k);
             }
 
             Debug.WriteLine("Serializing ...");

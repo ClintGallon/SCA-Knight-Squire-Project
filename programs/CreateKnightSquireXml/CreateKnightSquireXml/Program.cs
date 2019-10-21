@@ -4,7 +4,7 @@
     {
         public static void Main(string[] args)
         {
-            var newJob = new Job();
+            var newJob = new Job3();
             newJob.DoWork();
         }
     }
