@@ -6,6 +6,10 @@ Tracking Knight Squire Relationships and Lineages for the SCA
 
 I hope to track the knight-squire relationships throughout the SCA known world.
 
+### 24 OCT 2019 - 1:31 PM UPDATE AND UPLOAD
+
+Got my program to actually function the way i want so there aren't multiple entries for people. Woot!! Now to match up the names in the ks_relationship file to the names in the WhiteBelt spreadsheet. Whoever decided to put names in that aren't ascii letters ... i really dislike you.
+
 ### 21 OCT 2019 - 8:06 AM UPDATE AND UPLOAD
 
 More changes from over the weekend. Added contribution instructions and the link to the google form in the readme. Also added new powershell scripts for creating the data needed to make the html file.  Also working on a script to tell me the differences between the people in the ChivList file compared to the file of relationships ... basically a query to ell me who i am missing.

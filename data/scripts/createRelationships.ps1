@@ -13,11 +13,9 @@ function TransformXML{
         $XmlUrlResolver = New-Object System.Xml.XmlUrlResolver;
 		$xslt_settings.EnableScript = 1;
 		
-
         $xslt = New-Object System.Xml.Xsl.XslCompiledTransform;
         $xslt.Load($xsl,$xslt_settings,$XmlUrlResolver);
         $xslt.Transform($xml, $output);
-
     }
 
     Catch

@@ -25,54 +25,72 @@ namespace CreateKnightSquireXml
     {
 
         private string pathFilenameOutputXml;
-        private XElement outputXElement;
-        private XElement ksRelationshipsXml;
-        private XmlTextWriter txtWriter;
-        private XElement outputFile; 
-        private static XDocument outDoc;
+        private string pathFilenameOutputXmlNode;
+        private XmlDocument outDoc;
+        private readonly XmlDocument _ksRelationshipsXml;
+        private XmlWriter _writer;
         
         public Job2()
         {
-            ksRelationshipsXml = XElement.Load(@"C:\projects\SCA-Knight-Squire-Project\data\ks_relationships.xml");
-            pathFilenameOutputXml = @"C:\projects\SCA-Knight-Squire-Project\data\seesharp-output.xml";
-            outputXElement = XElement.Parse(@"<knights></knights>");
-            outputXElement.Save(pathFilenameOutputXml, SaveOptions.None);
             
+            pathFilenameOutputXml = @"C:\projects\SCA-Knight-Squire-Project\data\seesharp-output.xml";
+            pathFilenameOutputXmlNode = @"C:\projects\SCA-Knight-Squire-Project\data\see-sharp-Node.xml";
+            
+            _ksRelationshipsXml = new XmlDocument();
+            _ksRelationshipsXml.Load(@"C:\projects\SCA-Knight-Squire-Project\data\ks_relationships.xml");
         }
+
 
         public void DoWork()
         {
-
-            //Console.WriteLine(ksRelationshipsXml);
-            //Console.WriteLine(whitebeltXml);
-
-            //var relationshipKnights = ksRelationshipsXml.Descendants("knight");
-
-            IEnumerable<XElement> relationshipKnights = 
-                from knight in ksRelationshipsXml.Descendants("knight")  
-                select knight;  
-
+            //First File
+            XmlWriterSettings settings = new XmlWriterSettings();  
+            settings.Indent = true;
+            settings.IndentChars = "    ";
+            settings.ConformanceLevel = ConformanceLevel.Fragment;
+            FileStream fs = new FileStream(pathFilenameOutputXml, FileMode.Create);
             
-            foreach (var rKnight in relationshipKnights)
-            {
-                if (rKnight.Name == "knight")
+            //Node
+            XmlWriterSettings settingsNode = new XmlWriterSettings();  
+            settingsNode.Indent      = true;
+            settingsNode.IndentChars = "    ";
+            settingsNode.ConformanceLevel = ConformanceLevel.Fragment;
+            FileStream fsNode = new FileStream(pathFilenameOutputXmlNode, FileMode.Create);
+            
+            using (XmlWriter writer = XmlWriter.Create(fs, settings)) {  
+                writer.WriteStartElement(string.Empty, "knights", string.Empty);
+
+                var relationshipKnights = _ksRelationshipsXml.GetElementsByTagName("knight");
+                foreach (XmlNode rKnight in relationshipKnights)
                 {
+                    Dictionary<string, XmlNode> rKnightChildren = rKnight.ChildNodes.Cast<XmlNode>().ToDictionary(child => child.Name);
+
                     Debug.WriteLine("----- In: ");
-                    Debug.WriteLine(rKnight);
-                    var newKnight = SingletonKnightParser.Parse(rKnight);
-                   
-                    outDoc = XDocument.Load(pathFilenameOutputXml);
-                    if (outDoc.Root != null && outDoc.Root.HasElements)
+                    Debug.WriteLine(rKnight.OuterXml);
+
+                    XmlNode newKnight = SingletonKnightParser.Parse(rKnight, _ksRelationshipsXml);
+                
+                    Debug.WriteLine("newKnight.OuterXml --------------------------------------");
+                    Debug.WriteLine(newKnight.OuterXml);
+                    
+                    if (rKnightChildren["society_precedence"].InnerText == "42")
                     {
-                        outDoc.Root.LastNode.AddAfterSelf(newKnight);
+                        using (XmlWriter writerNode = XmlWriter.Create(fsNode, settingsNode))
+                        {
+                            //writerNode.Write(newKnight);
+                            writerNode.Flush();
+                            writerNode.Close();
+                        }
                     }
-                    else
-                    {
-                        outDoc.Root.Add(newKnight);
-                    }
-                    outDoc.Save(pathFilenameOutputXml);
+                    
+                    writer.WriteValue(newKnight);
+                    writer.Flush();
                 }
-            }
+                writer.WriteEndElement();  //knights
+                writer.Flush();
+                writer.Close();
+            }  
+            
             Debug.WriteLine("****************** [[[ FINISHED ]]] ******************");
         }
  

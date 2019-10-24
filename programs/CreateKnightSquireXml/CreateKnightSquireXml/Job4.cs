@@ -13,19 +13,22 @@ using System.Xml.XPath;
 
 namespace CreateKnightSquireXml
 {
-    class Job3
+    class Job4
     {
-
-        private XElement ksRelationshipsXml;
+        private XmlDocument relationshipsDoc;
         private XElement whiteBeltXml;
         private XElement outputXml;
+        private string ksRelationshipsXmlFilename;
         private string pathFilenameOutputXml;
 
-        public Job3()
+        public Job4()
         {
-           ksRelationshipsXml = XElement.Load(@"C:\projects\SCA-Knight-Squire-Project\data\ks_relationships-squirenames.xml");
+           ksRelationshipsXmlFilename = @"C:\projects\SCA-Knight-Squire-Project\data\ks_relationships-squirenames.xml";
+           DateTime currentDateTime = DateTime.Now;
+           pathFilenameOutputXml = @"C:\projects\SCA-Knight-Squire-Project\data\SCA_ChivList-Latest_squirenames-" + currentDateTime.ToString("yyyyMMdd-MMss") + ".xml";
            whiteBeltXml = XElement.Load(@"C:\projects\SCA-Knight-Squire-Project\data\SCA_ChivList-Latest.xml"); 
-           pathFilenameOutputXml = @"C:\projects\SCA-Knight-Squire-Project\data\SCA_ChivList-Latest_squirenames.xml";
+           relationshipsDoc = new XmlDocument();
+           relationshipsDoc.Load(ksRelationshipsXmlFilename);
         }
 
         public void DoWork()
@@ -59,26 +62,51 @@ namespace CreateKnightSquireXml
                 writer.WriteElementString("notes", wbKnight.Descendants("notes").FirstOrDefault()?.Value);
 
                 var outputName = wbKnight.Descendants("name").FirstOrDefault()?.Value;
-                var rElementKnight = ksRelationshipsXml.Elements("knight").FirstOrDefault(r => (string) r.Element("name") == outputName);
+                var squiresNames = FindSquireNames(outputName);
+                writer.WriteElementString("squire-names", squiresNames);
 
-                if (rElementKnight is null)
-                {
-                    
-                }
-                else
-                {
-                    var squiresNames = rElementKnight.Descendants("squire-names").FirstOrDefault()?.Value;
-                    writer.WriteElementString("squire-names", squiresNames);
-                }
                 writer.WriteEndElement(); //knight
             }
-            //Debug.WriteLine("Found: " + namesFound.Count);
-            //Debug.WriteLine("Not Found: " + namesNotFound.Count);
 
             writer.WriteEndElement(); //knights
             writer.WriteEndDocument();
             writer.Flush();
             writer.Close();
+
         }
+
+        private string FindSquireNames(string knightName)
+        {
+
+            string strReturn = string.Empty;
+
+            XmlNodeList rKnightsNodeList = relationshipsDoc.GetElementsByTagName("knight");
+            Debug.WriteLine("rKnightsNodeList total: " + rKnightsNodeList.Count);
+            foreach (XmlNode node in rKnightsNodeList)
+            {
+                foreach (XmlNode childNode in node.ChildNodes)
+                {
+                    if (childNode.Name == "name")
+                        if (childNode.InnerText == knightName)
+                        {
+                            Debug.WriteLine("Found: " + knightName);
+
+                            //walk all the childnodes of this node to find the node named "squire-names"
+                            foreach (XmlNode childNode2 in node)
+                            {
+                                if (childNode2.Name == "squire-names")
+                                {
+                                    strReturn = childNode2.InnerText;
+                                    Debug.WriteLine("Returning: " + strReturn);
+                                    return strReturn;
+                                }
+                            }
+                        }
+                }
+            }
+            Debug.WriteLine("Returning: " + strReturn);
+            return strReturn;
+        }
+
     } 
 }
