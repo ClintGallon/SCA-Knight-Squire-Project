@@ -87,35 +87,35 @@
         <li>
             <xsl:choose>
                 <xsl:when test=".//squires/*">
-                    <span style="color:DeepPink; text-shadow: 2px 2px black;" class="caret">
+                    <span style="color:DeepPink; text-shadow: 1px 1px black;" class="caret">
                         <xsl:apply-templates select="name"/>
                     </span>
                     | <xsl:apply-templates select="date_elevated"/> | <xsl:apply-templates select="anno_societatous"/> | <xsl:apply-templates select="society_precedence"/> | <xsl:apply-templates select="society_knight_number"/> | <xsl:apply-templates select="kingdom_of_elevation"/> | <xsl:apply-templates select="kingdom_precedence"/>
                 </xsl:when>
                 <xsl:when test=".//type/text()='Knight'">
-                    <span style="color:white; text-shadow: 2px 2px black;">
+                    <span style="color:white; text-shadow: 1px 1px black;">
                         <xsl:apply-templates select="name"/>
                     </span>
                     | <xsl:apply-templates select="date_elevated"/> | <xsl:apply-templates select="anno_societatous"/> | <xsl:apply-templates select="society_precedence"/> | <xsl:apply-templates select="society_knight_number"/> | <xsl:apply-templates select="kingdom_of_elevation"/> | <xsl:apply-templates select="kingdom_precedence"/>
                 </xsl:when>
                 <xsl:when test=".//type/text()='Master'">
-                    <span style="color:LightSteelBlue; text-shadow: 2px 2px black;">
+                    <span style="color:LightSteelBlue; text-shadow: 1px 1px black;">
                         <xsl:apply-templates select="name"/>
                     </span>
                     | <xsl:apply-templates select="date_elevated"/> | <xsl:apply-templates select="anno_societatous"/> | <xsl:apply-templates select="society_precedence"/> | <xsl:apply-templates select="society_knight_number"/> | <xsl:apply-templates select="kingdom_of_elevation"/> | <xsl:apply-templates select="kingdom_precedence"/>
                 </xsl:when>
                 <xsl:when test=".//type/text()='squire'">
-                    <span style="color:LightCoral; text-shadow: 2px 2px black;">
+                    <span style="color:red; text-shadow: 1px 1px black;">
                         <xsl:apply-templates select="name"/>
                     </span>
                 </xsl:when>
                 <xsl:otherwise>
                     <span>
                         <xsl:apply-templates select="name"/>
-                    </span>
+                </span>
                 </xsl:otherwise>
             </xsl:choose>
-            | <xsl:apply-templates select="type"/>
+           <xsl:apply-templates select="type"/>
             <xsl:apply-templates select="squires"/>
         </li>
     </xsl:template>

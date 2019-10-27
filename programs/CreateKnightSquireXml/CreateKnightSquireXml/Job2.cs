@@ -27,7 +27,7 @@ namespace CreateKnightSquireXml
         private string pathFilenameOutputXml;
         private string pathFilenameOutputXmlNode;
         private XmlDocument outDoc;
-        private readonly XmlDocument _ksRelationshipsXml;
+        private readonly XElement _ksRelationshipsXml;
         private XmlWriter _writer;
         
         public Job2()
@@ -36,8 +36,7 @@ namespace CreateKnightSquireXml
             pathFilenameOutputXml = @"C:\projects\SCA-Knight-Squire-Project\data\seesharp-output.xml";
             pathFilenameOutputXmlNode = @"C:\projects\SCA-Knight-Squire-Project\data\see-sharp-Node.xml";
             
-            _ksRelationshipsXml = new XmlDocument();
-            _ksRelationshipsXml.Load(@"C:\projects\SCA-Knight-Squire-Project\data\ks_relationships.xml");
+            _ksRelationshipsXml = XElement.Load(@"C:\projects\SCA-Knight-Squire-Project\data\ks_relationships.xml");
         }
 
 
@@ -60,28 +59,21 @@ namespace CreateKnightSquireXml
             using (XmlWriter writer = XmlWriter.Create(fs, settings)) {  
                 writer.WriteStartElement(string.Empty, "knights", string.Empty);
 
-                var relationshipKnights = _ksRelationshipsXml.GetElementsByTagName("knight");
-                foreach (XmlNode rKnight in relationshipKnights)
+                IEnumerable<XElement> relationshipKnights =
+                    from knight in _ksRelationshipsXml.Elements("knight")
+                    select knight;
+                
+                foreach (XElement rKnight in relationshipKnights)
                 {
-                    Dictionary<string, XmlNode> rKnightChildren = rKnight.ChildNodes.Cast<XmlNode>().ToDictionary(child => child.Name);
+                    Dictionary<XName, XElement> rKnightChildren = rKnight.Descendants().ToDictionary(child => child.Name);
 
                     Debug.WriteLine("----- In: ");
-                    Debug.WriteLine(rKnight.OuterXml);
+                    Debug.WriteLine(rKnight);
 
-                    XmlNode newKnight = SingletonKnightParser.Parse(rKnight, _ksRelationshipsXml);
+                    XElement newKnight = SingletonKnightParser.Parse(rKnight);
                 
                     Debug.WriteLine("newKnight.OuterXml --------------------------------------");
-                    Debug.WriteLine(newKnight.OuterXml);
-                    
-                    if (rKnightChildren["society_precedence"].InnerText == "42")
-                    {
-                        using (XmlWriter writerNode = XmlWriter.Create(fsNode, settingsNode))
-                        {
-                            //writerNode.Write(newKnight);
-                            writerNode.Flush();
-                            writerNode.Close();
-                        }
-                    }
+                    Debug.WriteLine(newKnight);
                     
                     writer.WriteValue(newKnight);
                     writer.Flush();

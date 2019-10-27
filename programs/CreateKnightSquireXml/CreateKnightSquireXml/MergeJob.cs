@@ -22,8 +22,12 @@ using System.Security.Permissions;
 
 namespace CreateKnightSquireXml
 {
-    public class Job5
+    public class MergeJob
     {
+        private string _wbPathAndFilename;
+        private string _relPathAndFilename;
+        private string _outPathAndFilename;
+        
         private          string        pathFilenameOutputXml;
         private          string        pathFilenameOutputXmlNode;
         private          XmlDocument   outDoc;
@@ -31,22 +35,25 @@ namespace CreateKnightSquireXml
         private          XmlWriter     _writer;
         private          StringBuilder _fileStringBuilder;
 
-        public Job5()
+        public MergeJob(string wbPathAndFilename, string relPathAndFilename, string outPathAndFilename)
         {
-            pathFilenameOutputXml     = @"C:\projects\SCA-Knight-Squire-Project\data\seesharp-output.xml";
-            pathFilenameOutputXmlNode = @"C:\projects\SCA-Knight-Squire-Project\data\see-sharp-Node.xml";
-
+            _wbPathAndFilename = wbPathAndFilename;
+            _relPathAndFilename = relPathAndFilename;
+            _outPathAndFilename = outPathAndFilename;
+            
             _fileStringBuilder = new StringBuilder();
 
             _ksRelationshipsXml = new XmlDocument();
-            _ksRelationshipsXml.Load(@"C:\projects\SCA-Knight-Squire-Project\data\ks_relationships.xml");
+            _ksRelationshipsXml.Load(_relPathAndFilename);
         }
 
 
-        public void DoWork()
+        public int DoWork()
         {
 
-            var xmlheader1 = @"<?xml version=""1.0"" encoding=""utf-8""?>";
+            Debug.WriteLine("MergeJob.DoWork() ...");
+            
+            string xmlheader1 = @"<?xml version=""1.0"" encoding=""utf-8""?>";
             //var xmlheader2 = @"<?xml-stylesheet type=""text/xsl"" href=""./styles/ks.xsl""?>";
 
             _fileStringBuilder.Append(xmlheader1);
@@ -54,33 +61,34 @@ namespace CreateKnightSquireXml
                                                                          
             _fileStringBuilder.Append("<knights>");
 
-            var root = _ksRelationshipsXml.DocumentElement;
+            XmlElement root = _ksRelationshipsXml.DocumentElement;
 
+            SingletonKnightParser.LoadWbXml(_wbPathAndFilename);
+            
             foreach (XmlNode rootChild in root.ChildNodes)
             {
-                if (rootChild.LocalName == "knight")
-                {
-                    XmlDocument xD = new XmlDocument();
-                    xD.LoadXml(rootChild.OuterXml);
-                    XmlNode rKnightNode = xD.FirstChild;
+                if (rootChild.LocalName != "knight") continue;
+                XmlDocument xD = new XmlDocument();
+                xD.LoadXml(rootChild.OuterXml);
+                XmlNode rKnightNode = xD.FirstChild;
 
-                    Dictionary<string, XmlNode> rKnightChildren = rKnightNode.ChildNodes.Cast<XmlNode>().ToDictionary(child => child.Name);
+                //Dictionary<string, XmlNode> rKnightChildren = rKnightNode.ChildNodes.Cast<XmlNode>().ToDictionary(child => child.Name);
+                    
+                StringBuilder newKnightStringBuilder = SingletonKnightParser.Parse(rKnightNode);
 
-                    StringBuilder newKnightStringBuilder = SingletonKnightParser.Parse(rKnightNode);
-
-                    _fileStringBuilder.Append(newKnightStringBuilder);
-
-                }
+                _fileStringBuilder.Append(newKnightStringBuilder);
             }
 
             _fileStringBuilder.Append("</knights>");
 
-            using (StreamWriter swriter = new StreamWriter(pathFilenameOutputXml))
+            using (StreamWriter swriter = new StreamWriter(_outPathAndFilename))
             {
                 swriter.Write(_fileStringBuilder.ToString());
             }
 
             Debug.WriteLine("****************** [[[ FINISHED ]]] ******************");
+
+            return 0;
         }
     }
 }

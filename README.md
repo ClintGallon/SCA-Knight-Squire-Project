@@ -6,6 +6,10 @@ Tracking Knight Squire Relationships and Lineages for the SCA
 
 I hope to track the knight-squire relationships throughout the SCA known world.
 
+### 27 OCT 2019 - 1:45 PM UPDATE and UPLOAD 
+
+Well added a bunch of functionality to my c# program. Essentially creating a command line interface that does everything i need it to do.
+Renamed to application sca-ksp.exe ... it has a few commands. -prepcsv which preps the downloaded csv file from the whitebelt googlesheet. -createwbxml converts the csv file into a xml file. -merge merges the whitebeltxml file and the ks_relationships xml preparing to create the html file. -createhtml creates the resulting html by applying the xsl stylesheet to the merged.xml file. --missing walks the wb.xml file and tells you which people aren't in the rs_relationships.xml. -addrelationships will add the relationships from the spreadsheet to the ks_relationships.xml 
 ### 24 OCT 2019 - 1:31 PM UPDATE AND UPLOAD
 
 Got my program to actually function the way i want so there aren't multiple entries for people. Woot!! Now to match up the names in the ks_relationship file to the names in the WhiteBelt spreadsheet. Whoever decided to put names in that aren't ascii letters ... i really dislike you.

@@ -7,10 +7,27 @@
     <ProjectGuid>{EC2441CF-7A9E-4AED-8D47-B17A597C44E0}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CreateKnightSquireXml</RootNamespace>
-    <AssemblyName>CreateKnightSquireXml</AssemblyName>
+    <RootNamespace>sca-ksp</RootNamespace>
+    <AssemblyName>sca-ksp</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <LangVersion>8</LangVersion>
+    <Nullable>enable</Nullable>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -50,15 +67,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateHtmlJob.cs" />
+    <Compile Include="CreateWbXmlJob.cs" />
     <Compile Include="DictKnight .cs" />
     <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="IJob.cs" />
     <Compile Include="Job.cs" />
     <Compile Include="Job2.cs" />
     <Compile Include="Job4.cs" />
     <Compile Include="Job3.cs" />
     <Compile Include="arrayknight.cs" />
-    <Compile Include="Job5.cs" />
+    <Compile Include="MergeJob.cs" />
     <Compile Include="ListKnight.cs" />
+    <Compile Include="MissingJob.cs" />
+    <Compile Include="PrepCSVJob.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="KnightParser.cs" />
@@ -67,6 +89,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
