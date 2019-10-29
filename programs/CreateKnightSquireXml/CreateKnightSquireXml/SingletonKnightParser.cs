@@ -25,7 +25,6 @@ namespace CreateKnightSquireXml
         public static int LoadWbXml(string wbxml)
         {
             whiteBeltXml = XElement.Load(wbxml);
-
             return 0;
         }
         
@@ -183,9 +182,7 @@ namespace CreateKnightSquireXml
                     Debug.WriteLine(paNode);
 
                     IEnumerable<XElement> squiresDescendants = knightNode.Descendants("squires"); 
-
                     XElement newSquiresNode = new XElement("squires");
-
                     IEnumerable<XElement> squireNodes = squiresDescendants as XElement[] ?? squiresDescendants.ToArray();
                     if (squireNodes.Any())
                     {
@@ -198,16 +195,10 @@ namespace CreateKnightSquireXml
                             newSquiresNode.Descendants().Append(parsedKnight);
 
                         }
-                        retKnight.Descendants().Append(newSquiresNode);
-                        Debug.WriteLine("-----------newSquiresNode------------");
-                        Debug.WriteLine(newSquiresNode);
                     }
-                    else
-                    {
-                        retKnight.Descendants().Append(newSquiresNode);
-                        Debug.WriteLine("-----------newSquiresNode------------");
-                        Debug.WriteLine(newSquiresNode);
-                    }
+                    retKnight.Descendants().Append(newSquiresNode);
+                    Debug.WriteLine("-----------newSquiresNode------------");
+                    Debug.WriteLine(newSquiresNode);
                 }
             }
             Debug.WriteLine(" -- out: ");
@@ -275,19 +266,15 @@ namespace CreateKnightSquireXml
                                 StringBuilder parsedKnight = SingletonKnightParser.Parse(squire);
                                 notFoundSquires.Append(parsedKnight);
                             }
-                            notFoundSquires.Append("</squires>");
-                            retKnightBuilder.Append(notFoundSquires);
-                        }
-                        else
-                        {
-                            notFoundSquires.Append("</squires>");
-                            retKnightBuilder.Append(notFoundSquires);
                         }
                     }
+
+                    notFoundSquires.Append("</squires>");
+                    retKnightBuilder.Append(notFoundSquires);
+
                 }
                 else
                 {
-                    
                     XmlDocument xD = new XmlDocument();
                     xD.LoadXml(wbElementKnight.ToString());
                     XmlNode wbKnightNode = xD.FirstChild;
@@ -407,16 +394,13 @@ namespace CreateKnightSquireXml
                                     StringBuilder parsedKnight = SingletonKnightParser.Parse(squireNode);
                                     newSquiresNode.Append(parsedKnight);
                                 }
-                                newSquiresNode.Append("</squires>");
-                                retKnightBuilder.Append(newSquiresNode);
-                            }
-                            else
-                            {
-                                newSquiresNode.Append("</squires>");
-                                retKnightBuilder.Append(newSquiresNode);
                             }
                         }
                     }
+                    
+                    newSquiresNode.Append("</squires>");
+                    retKnightBuilder.Append(newSquiresNode);
+                    
                 }
             }
             retKnightBuilder.Append("</knight>");

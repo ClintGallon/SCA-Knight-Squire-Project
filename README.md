@@ -34,7 +34,11 @@ So i sat there for a while and thought ... h'm. Wouldn't it be cool to track the
 
 I also wanted to give everyone the ability to contribute. Give everyone the ability to update the data and say "Hey ... soandso is my squire". Instead of creating a bunch of code, webpages, databases and crap ... why dont we just track with updates using GitHub. Then anyone can add a pull request to update the data. Or at the very least post a bug saying hey ... the data on here is wrong please update it. Thats what GitHub is great at.
 
-## How to contribute
+### Results
+
+[knight - squire html](https://rawcdn.githack.com/ClintGallon/SCA-Knight-Squire-Project/2197edec232889f795cc98b4f8cf088a1a9aae61/results/applied.html)
+
+### How to contribute
 
 - Email me: [cgallon@gmail.com](mailto:cgallon@gmail.com)
 

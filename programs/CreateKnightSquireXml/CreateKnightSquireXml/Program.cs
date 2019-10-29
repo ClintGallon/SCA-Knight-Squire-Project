@@ -28,7 +28,7 @@ namespace CreateKnightSquireXml
                         Console.WriteLine("     2) -createwbxml -csv 'wbPathAndFilename.csv' -out 'wbPathAndFilename.xml' ");
                         Console.WriteLine("     This creates the out file.");
                         Console.WriteLine(" ");
-                        Console.WriteLine("     3) -merge -wbxml 'wbPathAndFilename.xml' -relationships 'relationshipsPathAndFilename.xml' -out 'outputPathAndFilename.xml' ");
+                        Console.WriteLine("     3) -merge -wbxml wbPathAndFilename.xml -relationships relationshipsPathAndFilename.xml -out outputPathAndFilename.xml ");
                         Console.WriteLine("     This merges the relationships.xml file with the whitebelt spreadsheet xml creating the file which will output the resulting HTML");
                         Console.WriteLine(" ");
                         Console.WriteLine("     4) -createhtml -mergedrandwb 'mergedRelationshipsWhiteBelt.xml' -xsl 'stylesheet.xsl' -outputhtml 'outPathAndFilename.html' ");
