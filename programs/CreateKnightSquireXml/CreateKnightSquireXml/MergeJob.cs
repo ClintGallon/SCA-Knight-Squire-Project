@@ -1,24 +1,7 @@
-﻿using System;
-using System.CodeDom;
-using System.Diagnostics;
-using System.Collections;
-using System.Collections.Generic;
-using System.Collections.Specialized;
-using System.Configuration;
+﻿using System.Diagnostics;
 using System.Text;
-using System.Linq;
 using System.Xml;
-using System.Xml.Serialization;
-using System.Xml.Linq;
-using System.Xml.Schema;
-using System.Xml.XPath;
-using System.Xml.Xsl;
 using System.IO;
-using System.Threading;
-using System.Reflection;
-//using System.IO.Packaging;
-using System.Net.Sockets;
-using System.Security.Permissions;
 
 namespace CreateKnightSquireXml
 {

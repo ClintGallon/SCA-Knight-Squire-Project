@@ -22,16 +22,16 @@ namespace CreateKnightSquireXml
 
         public static SingletonKnightParser Instance => lazy.Value;
 
+        public SingletonKnightParser()
+        {
+            instanceCounter++;
+            Debug.WriteLine("Instances created: " + instanceCounter);
+        }
+
         public static int LoadWbXml(string wbxml)
         {
             whiteBeltXml = XElement.Load(wbxml);
             return 0;
-        }
-        
-        static SingletonKnightParser()
-        {
-            instanceCounter++;
-            Debug.WriteLine("Instances created: " + instanceCounter);
         }
 
         public static XElement Parse(XElement knightNode)
@@ -49,12 +49,10 @@ namespace CreateKnightSquireXml
                 Dictionary<XName, XElement> childrenList = knightNode.Descendants().ToDictionary(knightChildNode => knightChildNode.Name);
 
                 string sp = childrenList["society_precedence"].Value;
-
                 Debug.WriteLine("-----------sp------------");
                 Debug.WriteLine(sp);
 
                 XElement wbElementKnight = whiteBeltXml.Elements("knight").FirstOrDefault(wb => (string) wb.Element("society_precedence") == sp);
-
                 Debug.WriteLine("-----------wbElementKnight------------");
                 Debug.WriteLine(wbElementKnight);
                 
@@ -63,21 +61,18 @@ namespace CreateKnightSquireXml
 
                     XElement notFoundSocietyPrecedentNode = new XElement("society_precedence") {Value = sp};
                     retKnight.Descendants().Append(notFoundSocietyPrecedentNode);
-
                     Debug.WriteLine("-----------notFoundSocietyPrecedentNode------------");
                     Debug.WriteLine(notFoundSocietyPrecedentNode);
 
                     string notfoundNameValue = childrenList["name"].Value;
                     XElement notFoundNameNode = new XElement("name") {Value = notfoundNameValue};
                     retKnight.Descendants().Append(notFoundNameNode);
-
                     Debug.WriteLine("-----------notFoundNameNode------------");
                     Debug.WriteLine(notFoundNameNode);
 
                     string notFoundTypeValue = childrenList["type"].Value;
                     XElement notFoundTypeNode = new XElement("type") {Value = notFoundTypeValue};
                     retKnight.Descendants().Append(notFoundTypeNode);
-
                     Debug.WriteLine("-----------notFoundTypeNode------------");
                     Debug.WriteLine(notFoundTypeNode);
 
@@ -92,7 +87,7 @@ namespace CreateKnightSquireXml
                         Debug.WriteLine("-----------notFoundSquireNode------------");
                         Debug.WriteLine(notFoundSquireNode);
 
-                        XElement notFoundParsedKnight = SingletonKnightParser.Parse(notFoundSquireNode);
+                        XElement notFoundParsedKnight = Parse(notFoundSquireNode);
                         newNotFoundSquiresNode.Descendants().Append(notFoundParsedKnight);
                     }
 
@@ -107,77 +102,66 @@ namespace CreateKnightSquireXml
                     //Found him in whiteBelt file
                     XElement spNode = new XElement("society_precedence") {Value = sp};
                     retKnight.Descendants().Append(spNode);
-
                     Debug.WriteLine("-----------spNode------------");
                     Debug.WriteLine(spNode);
 
                     string nameValue = childrenList["name"].Value;
                     XElement nameNode = new XElement("name") {Value = nameValue ?? throw new NullReferenceException()};
                     retKnight.Descendants().Append(nameNode);
-
                     Debug.WriteLine("-----------nameNode------------");
                     Debug.WriteLine(nameNode);
 
                     string typeValue = childrenList["type"].Value;
                     XElement typeNode = new XElement("type") {Value = typeValue ?? throw new NullReferenceException()};
                     retKnight.Descendants().Append(typeNode);
-
                     Debug.WriteLine("-----------typeNode------------");
                     Debug.WriteLine(typeNode);
 
                     string sknValue = childrenList["society_knight_number"].Value;
                     XElement skn = new XElement("society_knight_number") {Value = sknValue};
                     retKnight.Descendants().Append(skn);
-
                     Debug.WriteLine("-----------skn------------");
                     Debug.WriteLine(skn);
 
                     string smnValue = childrenList["society_master_number"].Value;
                     XElement smn = new XElement("society_master_number") {Value = smnValue};
                     retKnight.Descendants().Append(smn);
-
                     Debug.WriteLine("-----------smn------------");
                     Debug.WriteLine(smn);
 
                     string dteValue = childrenList["date_elevated"].Value;
                     XElement dte = new XElement("date_elevated") {Value = dteValue};
                     retKnight.Descendants().Append(dte);
-
                     Debug.WriteLine("-----------dte------------");
                     Debug.WriteLine(dte);
 
                     string annoValue = childrenList["anno_societatous"].Value;
                     XElement annoNode = new XElement("anno_societatous") {Value = annoValue};
                     retKnight.Descendants().Append(annoNode);
-
                     Debug.WriteLine("-----------annoNode------------");
                     Debug.WriteLine(annoNode);
 
                     string keValue = childrenList["kingdom_of_elevation"].Value;
                     XElement keNode  = new XElement("kingdom_of_elevation") {Value = keValue};
                     retKnight.Descendants().Append(keNode);
-
                     Debug.WriteLine("-----------keNode------------");
                     Debug.WriteLine(keNode);
 
                     string   kpValue = childrenList["kingdom_precedence"].Value;
                     XElement kpNode  = new XElement("kingdom_precedence") {Value = kpValue};
                     retKnight.Descendants().Append(kpNode);
-
                     Debug.WriteLine("-----------kpNode------------");
                     Debug.WriteLine(kpNode);
                     
                     string   rrValue = childrenList["resigned_or_removed"].Value;
                     XElement rrNode  = new XElement("resigned_or_removed") {Value = rrValue};
                     retKnight.Descendants().Append(rrNode);
-
                     Debug.WriteLine("-----------rrNode------------");
                     Debug.WriteLine(rrNode);
 
                     string   paValue = childrenList["resigned_or_removed"].Value;
                     XElement paNode  = new XElement("resigned_or_removed") {Value = paValue};
                     retKnight.Descendants().Append(paNode);
-
                     Debug.WriteLine("-----------paNode------------");
                     Debug.WriteLine(paNode);
 
@@ -191,7 +175,7 @@ namespace CreateKnightSquireXml
                             Debug.WriteLine("-----------squire------------");
                             Debug.WriteLine(squireNode);
 
-                            XElement parsedKnight = SingletonKnightParser.Parse(squireNode);
+                            XElement parsedKnight = Parse(squireNode);
                             newSquiresNode.Descendants().Append(parsedKnight);
 
                         }
@@ -251,8 +235,21 @@ namespace CreateKnightSquireXml
                     string notFoundTypeNode = "<type>" + notFoundTypeValue + "</type>";
                     retKnightBuilder.Append(notFoundTypeNode);
 
-                    string notesNode = "<notes>Not found whitebelt spreadsheet</notes>";
-                    retKnightBuilder.Append(notesNode);
+                    string notFoundNotes = string.Empty;
+                    if (childrenList.ContainsKey("notes"))
+                    {
+                        notFoundNotes = childrenList["notes"]?.InnerText;
+                    }
+                    string notFoundNotesNode = String.Empty;
+                    if (notFoundNotes != null && !notFoundNotes.Contains("|not found wbxml"))
+                    {
+                        notFoundNotesNode = "<notes>" + notFoundNotes + "|not found wbxml" + "</notes>";
+                    }
+                    else
+                    {
+                        notFoundNotesNode = "<notes>|not found wbxml</notes>";
+                    }
+                    retKnightBuilder.Append(notFoundNotesNode);
 
                     StringBuilder notFoundSquires = new StringBuilder("<squires>");
 
@@ -263,7 +260,7 @@ namespace CreateKnightSquireXml
                             if (knightChildNode.Name != "squires") continue;
                             foreach (XmlNode squire in knightChildNode.ChildNodes)
                             {
-                                StringBuilder parsedKnight = SingletonKnightParser.Parse(squire);
+                                StringBuilder parsedKnight = Parse(squire);
                                 notFoundSquires.Append(parsedKnight);
                             }
                         }
@@ -391,7 +388,7 @@ namespace CreateKnightSquireXml
                             {
                                 foreach (XmlNode squireNode in knightNodeChildren.ChildNodes)
                                 {
-                                    StringBuilder parsedKnight = SingletonKnightParser.Parse(squireNode);
+                                    StringBuilder parsedKnight = Parse(squireNode);
                                     newSquiresNode.Append(parsedKnight);
                                 }
                             }

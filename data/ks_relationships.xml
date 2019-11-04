@@ -6179,9 +6179,18 @@
                                                 <type>Knight</type>
                                                 <squires>
                                                     <knight>
-                                                        <society_precedence>2196</society_precedence>
+                                                        <society_precedence>2211</society_precedence>
+                                                        <society_knight_number>2113</society_knight_number>
+                                                        <society_master_number/>
                                                         <name>Jason Drysdale</name>
                                                         <type>Knight</type>
+                                                        <date_elevated>10/4/2014</date_elevated>
+                                                        <anno_societatous>49</anno_societatous>
+                                                        <kingdom_of_elevation>ANSTEORRA</kingdom_of_elevation>
+                                                        <kingdom_precedence>128</kingdom_precedence>
+                                                        <resigned_or_removed/>
+                                                        <passed_away/>
+                                                        <notes>1</notes>
                                                         <squires/>
                                                     </knight>
                                                 </squires>
@@ -6422,9 +6431,18 @@
                                         <squires/>
                                     </knight>
                                     <knight>
-                                        <society_precedence>-1</society_precedence>
+                                        <society_precedence>2568</society_precedence>
+                                        <society_knight_number>2461</society_knight_number>
+                                        <society_master_number/>
                                         <name>Vincenti da Murano</name>
                                         <type>Knight</type>
+                                        <date_elevated>9/21/2019</date_elevated>
+                                        <anno_societatous>54</anno_societatous>
+                                        <kingdom_of_elevation>ANSTEORRA</kingdom_of_elevation>
+                                        <kingdom_precedence>143</kingdom_precedence>
+                                        <resigned_or_removed/>
+                                        <passed_away/>
+                                        <notes>1</notes>
                                         <squires/>
                                     </knight>
                                 </squires>
@@ -7328,6 +7346,18 @@
                 <society_precedence>1676</society_precedence>
                 <name>Dougal MacPherson the Tall</name>
                 <type>Knight</type>
+                <squires/>
+            </knight>
+            <knight>
+                <society_precedence>-1</society_precedence>
+                <name>Bear</name>
+                <type>squire</type>
+                <squires/>
+            </knight>
+            <knight>
+                <society_precedence>-1</society_precedence>
+                <name>Rob</name>
+                <type>squire</type>
                 <squires/>
             </knight>
         </squires>
@@ -14500,12 +14530,6 @@
         <squires/>
     </knight>
     <knight>
-        <society_precedence>2103</society_precedence>
-        <name>Rikardr Sveinsson</name>
-        <type>Knight</type>
-        <squires/>
-    </knight>
-    <knight>
         <society_precedence>2104</society_precedence>
         <name>Henri de Montferrant</name>
         <type>Knight</type>
@@ -15200,21 +15224,6 @@
         <anno_societatous>49</anno_societatous>
         <kingdom_of_elevation>GLEANN ABHANN</kingdom_of_elevation>
         <kingdom_precedence>19</kingdom_precedence>
-        <resigned_or_removed/>
-        <passed_away/>
-        <notes>1</notes>
-        <squires/>
-    </knight>
-    <knight>
-        <society_precedence>2211</society_precedence>
-        <society_knight_number>2113</society_knight_number>
-        <society_master_number/>
-        <name>Jason Drysdale</name>
-        <type>Knight</type>
-        <date_elevated>10/4/2014</date_elevated>
-        <anno_societatous>49</anno_societatous>
-        <kingdom_of_elevation>ANSTEORRA</kingdom_of_elevation>
-        <kingdom_precedence>128</kingdom_precedence>
         <resigned_or_removed/>
         <passed_away/>
         <notes>1</notes>
@@ -20101,21 +20110,6 @@
         <anno_societatous>54</anno_societatous>
         <kingdom_of_elevation>MERIDIES</kingdom_of_elevation>
         <kingdom_precedence>148</kingdom_precedence>
-        <resigned_or_removed/>
-        <passed_away/>
-        <notes>1</notes>
-        <squires/>
-    </knight>
-    <knight>
-        <society_precedence>2568</society_precedence>
-        <society_knight_number>2461</society_knight_number>
-        <society_master_number/>
-        <name>Vincenti da Murano</name>
-        <type>Knight</type>
-        <date_elevated>9/21/2019</date_elevated>
-        <anno_societatous>54</anno_societatous>
-        <kingdom_of_elevation>ANSTEORRA</kingdom_of_elevation>
-        <kingdom_precedence>143</kingdom_precedence>
         <resigned_or_removed/>
         <passed_away/>
         <notes>1</notes>

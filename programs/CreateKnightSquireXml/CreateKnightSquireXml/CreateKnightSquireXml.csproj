@@ -71,20 +71,14 @@
     <Compile Include="CreateWbXmlJob.cs" />
     <Compile Include="DictKnight .cs" />
     <Compile Include="GlobalSuppressions.cs" />
-    <Compile Include="IJob.cs" />
-    <Compile Include="Job.cs" />
-    <Compile Include="Job2.cs" />
-    <Compile Include="Job4.cs" />
-    <Compile Include="Job3.cs" />
     <Compile Include="arrayknight.cs" />
     <Compile Include="MergeJob.cs" />
     <Compile Include="ListKnight.cs" />
+    <Compile Include="AddRelationships.cs" />
     <Compile Include="MissingJob.cs" />
     <Compile Include="PrepCSVJob.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="KnightParser.cs" />
-    <Compile Include="sample.cs" />
     <Compile Include="SingletonKnightParser.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -68,11 +68,11 @@ namespace CreateKnightSquireXml
         {
             bool blnReturn = false;
 
-            _knights.TryGetValue(key, out DictKnight outboundvalue);
+            _knights.TryGetValue(key, out DictKnight outbound);
 
-            value = outboundvalue;
+            value = outbound;
 
-            blnReturn = !(outboundvalue is null);
+            blnReturn = !(outbound is null);
 
             return blnReturn;
         }
@@ -115,13 +115,13 @@ namespace CreateKnightSquireXml
 
         // Enumerators are positioned before the first element
         // until the first MoveNext() call.
-        int position = -1;
+        private int _position = -1;
 
         public DictKnightListEnum(Dictionary<int, DictKnight> dict)
         {
             _knights = new Dictionary<int, DictKnight>();
 
-            foreach (var l in dict)
+            foreach (KeyValuePair<int, DictKnight> l in dict)
             {
                 _knights.Add(_knights.Count + 1, l.Value);
             }
@@ -136,13 +136,13 @@ namespace CreateKnightSquireXml
 
         public bool MoveNext()
         {
-            position++;
-            return (position < _knights.Count);
+            _position++;
+            return (_position < _knights.Count);
         }
 
         public void Reset()
         {
-            position = -1;
+            _position = -1;
         }
 
         object IEnumerator.Current => Current;
@@ -154,7 +154,7 @@ namespace CreateKnightSquireXml
                 try
                 {
                     Dictionary<int, DictKnight> retDict = new Dictionary<int, DictKnight>();
-                    retDict.Add(retDict.Count + 1, _knights[position]);
+                    retDict.Add(retDict.Count + 1, _knights[_position]);
                     return retDict;
                 }
                 catch (IndexOutOfRangeException)
@@ -258,52 +258,44 @@ namespace CreateKnightSquireXml
         [XmlArrayItem(ElementName = "knight")]
         public Dictionary<int, DictKnight> Squires
         {
-            get
-            {
-                if (_squires != null) return _squires;
-                return new Dictionary<int, DictKnight>();
-            }
+            get => _squires ?? new Dictionary<int, DictKnight>();
             set => _squires = value;
         }
 
         public Dictionary<int, DictKnight> ParseSquires(XElement squiresNode)
         {
-            var retSquires = new Dictionary<int, DictKnight>();
+            Dictionary<int, DictKnight> retSquires = new Dictionary<int, DictKnight>();
 
-            if (squiresNode.HasElements)
+            if (!squiresNode.HasElements) return retSquires;
+            IEnumerable<XElement> descElements = squiresNode.Descendants();
+
+            foreach (var sqXElement in descElements)
             {
-                var descElements = squiresNode.Descendants();
+                if (sqXElement.Name != "knight") continue;
+                var                   newKnight         = new DictKnight();
+                IEnumerable<XElement> knightDescendants = sqXElement.Descendants();
 
-                foreach (var sqXElement in descElements)
+                foreach (var knightDescXElement in knightDescendants)
                 {
-                    if (sqXElement.Name == "knight")
+                    switch (knightDescXElement.Name.ToString())
                     {
-                        var newKnight = new DictKnight();
-                        var knightDescendants = sqXElement.Descendants();
-
-                        foreach (var knightDescXElement in knightDescendants)
-                        {
-                            switch (knightDescXElement.Name.ToString())
-                            {
-                                case "name":
-                                    newKnight.Name = knightDescXElement.Value;
-                                    break;
-                                case "society_precedence":
-                                    newKnight.SocietyPrecedence = int.Parse(knightDescXElement.Value);
-                                    break;
-                                case "type":
-                                    newKnight.Type = knightDescXElement.Value;
-                                    break;
-                                case "squires":
-                                    newKnight.Squires = newKnight.ParseSquires(knightDescXElement);
-                                    break;
-                                default:
-                                    break;
-                            }
-                        }
-                        retSquires.Add(retSquires.Count() + 1, newKnight);
+                        case "name":
+                            newKnight.Name = knightDescXElement.Value;
+                            break;
+                        case "society_precedence":
+                            newKnight.SocietyPrecedence = int.Parse(knightDescXElement.Value);
+                            break;
+                        case "type":
+                            newKnight.Type = knightDescXElement.Value;
+                            break;
+                        case "squires":
+                            newKnight.Squires = newKnight.ParseSquires(knightDescXElement);
+                            break;
+                        default:
+                            break;
                     }
                 }
+                retSquires.Add(retSquires.Count() + 1, newKnight);
             }
             return retSquires;
         }

@@ -1,16 +1,5 @@
 using System;
 using System.Diagnostics;
-using System.Collections;
-using System.Configuration;
-using System.Text;
-using System.Linq;
-using System.Xml;
-using System.Xml.Serialization;
-using System.Xml.Linq;
-using System.Xml.Schema;
-using System.IO;
-using System.Xml.Xsl;
-
 
 namespace CreateKnightSquireXml
 {
@@ -29,33 +18,20 @@ namespace CreateKnightSquireXml
 
         public int DoWork()
         {
-            XElement  xmlDoc  = XElement.Load(_pathFilenameXml);
-            XDocument xmlTree = new XDocument(xmlDoc);
 
-            string xslText = File.ReadAllText(_pathFilenameXsl);
+            Process firstProc = new Process
+                                {
+                                    StartInfo           = {FileName = "C:\\windows\\msxsl.exe", Arguments = _pathFilenameXml + " " + _pathFilenameXsl + " -o " + _pathFilenameOutputHtml, WindowStyle = ProcessWindowStyle.Normal},
+                                    EnableRaisingEvents = true
+                                };
 
-            XDocument newTree = new XDocument();
-            using (XmlWriter writer = newTree.CreateWriter())
-            {
-                // Load the style sheet.  
-                XslCompiledTransform xslt = new XslCompiledTransform();
+            firstProc.Start();
+            firstProc.WaitForExit();
 
-                xslt.Load(XmlReader.Create(new StringReader(xslText)));
-
-                // Execute the transform and output the results to a writer.  
-                xslt.Transform(xmlTree.CreateReader(), writer);
-            }
-
-            XmlWriterSettings settings = new XmlWriterSettings {Indent = true, IndentChars = "    "};
-            using (XmlTextWriter xtw = new XmlTextWriter(_pathFilenameOutputHtml, Encoding.UTF8))
-            {
-                newTree.Save(xtw);
-            }
-
-            Debug.WriteLine(newTree);
-
-
-            return 0;
+            //You may want to perform different actions depending on the exit code.
+            Console.WriteLine("Process exited: " + firstProc.ExitCode);
+            
+            return firstProc.ExitCode;
         }
     }
 }

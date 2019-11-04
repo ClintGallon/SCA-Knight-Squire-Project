@@ -87,22 +87,31 @@
         <li>
             <xsl:choose>
                 <xsl:when test=".//squires/*">
-                    <span style="color:DeepPink; text-shadow: 1px 1px black;" class="caret">
+                    <span style="color:Pink; text-shadow: 1px 1px black;" class="caret">
                         <xsl:apply-templates select="name"/>
                     </span>
-                    | <xsl:apply-templates select="date_elevated"/> | <xsl:apply-templates select="anno_societatous"/> | <xsl:apply-templates select="society_precedence"/> | <xsl:apply-templates select="society_knight_number"/> | <xsl:apply-templates select="kingdom_of_elevation"/> | <xsl:apply-templates select="kingdom_precedence"/>
+                    | <xsl:apply-templates select="date_elevated"/> | <xsl:apply-templates select="anno_societatous"/> | <xsl:apply-templates select="society_precedence"/> | <xsl:apply-templates select="society_knight_number"/> | <xsl:apply-templates select="kingdom_of_elevation"/> | <xsl:apply-templates select="kingdom_precedence"/> | 
+                    <xsl:if test="((.//notes/text()!='') and (.//notes/text()!='1'))">
+                        <xsl:apply-templates select="notes"/>
+                    </xsl:if>
                 </xsl:when>
                 <xsl:when test=".//type/text()='Knight'">
                     <span style="color:white; text-shadow: 1px 1px black;">
                         <xsl:apply-templates select="name"/>
                     </span>
-                    | <xsl:apply-templates select="date_elevated"/> | <xsl:apply-templates select="anno_societatous"/> | <xsl:apply-templates select="society_precedence"/> | <xsl:apply-templates select="society_knight_number"/> | <xsl:apply-templates select="kingdom_of_elevation"/> | <xsl:apply-templates select="kingdom_precedence"/>
+                    | <xsl:apply-templates select="date_elevated"/> | <xsl:apply-templates select="anno_societatous"/> | <xsl:apply-templates select="society_precedence"/> | <xsl:apply-templates select="society_knight_number"/> | <xsl:apply-templates select="kingdom_of_elevation"/> | <xsl:apply-templates select="kingdom_precedence"/> | 
+                    <xsl:if test="((.//notes/text()!='') and (.//notes/text()!='1'))">
+                        <xsl:apply-templates select="notes"/>
+                    </xsl:if>
                 </xsl:when>
                 <xsl:when test=".//type/text()='Master'">
                     <span style="color:LightSteelBlue; text-shadow: 1px 1px black;">
                         <xsl:apply-templates select="name"/>
                     </span>
-                    | <xsl:apply-templates select="date_elevated"/> | <xsl:apply-templates select="anno_societatous"/> | <xsl:apply-templates select="society_precedence"/> | <xsl:apply-templates select="society_knight_number"/> | <xsl:apply-templates select="kingdom_of_elevation"/> | <xsl:apply-templates select="kingdom_precedence"/>
+                    | <xsl:apply-templates select="date_elevated"/> | <xsl:apply-templates select="anno_societatous"/> | <xsl:apply-templates select="society_precedence"/> | <xsl:apply-templates select="society_knight_number"/> | <xsl:apply-templates select="kingdom_of_elevation"/> | <xsl:apply-templates select="kingdom_precedence"/> | 
+                    <xsl:if test="((.//notes/text()!='') and (.//notes/text()!='1'))">
+                        <xsl:apply-templates select="notes"/>
+                    </xsl:if>
                 </xsl:when>
                 <xsl:when test=".//type/text()='squire'">
                     <span style="color:red; text-shadow: 1px 1px black;">
@@ -112,11 +121,11 @@
                 <xsl:otherwise>
                     <span>
                         <xsl:apply-templates select="name"/>
-                </span>
+					</span>
                 </xsl:otherwise>
             </xsl:choose>
            <xsl:apply-templates select="type"/>
-            <xsl:apply-templates select="squires"/>
+           <xsl:apply-templates select="squires"/>
         </li>
     </xsl:template>
 
@@ -164,8 +173,9 @@
     </xsl:template>
 
     <xsl:template match="notes">
-        NOTES:
-        <xsl:value-of select="."/>
+        <xsl:if test=".//text()!='1'">
+            NOTES: <xsl:value-of select="."/>
+        </xsl:if>
     </xsl:template>
 
 </xsl:stylesheet>
