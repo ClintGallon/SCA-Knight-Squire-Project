@@ -10,7 +10,7 @@ namespace CreateKnightSquireXml
         private string _wbPathAndFilename;
         private string _relPathAndFilename;
         private string _outPathAndFilename;
-        
+
         private          string        pathFilenameOutputXml;
         private          string        pathFilenameOutputXmlNode;
         private          XmlDocument   outDoc;
@@ -20,10 +20,10 @@ namespace CreateKnightSquireXml
 
         public MergeJob(string wbPathAndFilename, string relPathAndFilename, string outPathAndFilename)
         {
-            _wbPathAndFilename = wbPathAndFilename;
+            _wbPathAndFilename  = wbPathAndFilename;
             _relPathAndFilename = relPathAndFilename;
             _outPathAndFilename = outPathAndFilename;
-            
+
             _fileStringBuilder = new StringBuilder();
 
             _ksRelationshipsXml = new XmlDocument();
@@ -33,21 +33,20 @@ namespace CreateKnightSquireXml
 
         public int DoWork()
         {
-
             Debug.WriteLine("MergeJob.DoWork() ...");
-            
-            string xmlheader1 = @"<?xml version=""1.0"" encoding=""utf-8""?>";
+
+            const string xmlheader1 = @"<?xml version=""1.0"" encoding=""utf-8""?>";
             //var xmlheader2 = @"<?xml-stylesheet type=""text/xsl"" href=""./styles/ks.xsl""?>";
 
             _fileStringBuilder.Append(xmlheader1);
             //_fileStringBuilder.Append(xmlheader2);
-                                                                         
+
             _fileStringBuilder.Append("<knights>");
 
             XmlElement root = _ksRelationshipsXml.DocumentElement;
 
             SingletonKnightParser.LoadWbXml(_wbPathAndFilename);
-            
+
             foreach (XmlNode rootChild in root.ChildNodes)
             {
                 if (rootChild.LocalName != "knight") continue;
@@ -56,7 +55,7 @@ namespace CreateKnightSquireXml
                 XmlNode rKnightNode = xD.FirstChild;
 
                 //Dictionary<string, XmlNode> rKnightChildren = rKnightNode.ChildNodes.Cast<XmlNode>().ToDictionary(child => child.Name);
-                    
+
                 StringBuilder newKnightStringBuilder = SingletonKnightParser.Parse(rKnightNode);
 
                 _fileStringBuilder.Append(newKnightStringBuilder);

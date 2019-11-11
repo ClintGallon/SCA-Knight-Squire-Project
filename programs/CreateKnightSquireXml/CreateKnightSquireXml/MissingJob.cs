@@ -22,26 +22,26 @@ namespace CreateKnightSquireXml
         private readonly string _pathFilenameOutputfile;
 
         public MissingJob(string wbPathAndFilename, string relPAthAndFilename, string outPathAndFilename)
-        {    
+        {
             _pathFilenameRelationships = relPAthAndFilename;
-            _pathFilenameWbXml        = wbPathAndFilename;
-            _pathFilenameOutputfile = outPathAndFilename;
+            _pathFilenameWbXml         = wbPathAndFilename;
+            _pathFilenameOutputfile    = outPathAndFilename;
         }
 
         public int DoWork()
         {
-            List<string> found = new List<string>();
-            List<string> missing = new List<string>();
-            XElement relationships  = XElement.Load(_pathFilenameRelationships);
-            XElement wbXml = XElement.Load(_pathFilenameWbXml);
+            List<string> found         = new List<string>();
+            List<string> missing       = new List<string>();
+            XElement     relationships = XElement.Load(_pathFilenameRelationships);
+            XElement     wbXml         = XElement.Load(_pathFilenameWbXml);
 
             foreach (XElement knight in wbXml.Elements())
             {
                 string searchName = knight.Descendants("name").FirstOrDefault()?.Value;
-                
+
                 XElement foundKnight = relationships.Elements("knight").FirstOrDefault(r => (string) r.Element("name") == searchName);
 
-                if (foundKnight == null) 
+                if (foundKnight == null)
                 {
                     missing.Add(searchName);
                 }
@@ -56,15 +56,13 @@ namespace CreateKnightSquireXml
                     {
                         file.WriteLine(item);
                     }
-                    
                 }
-                
-                Debug.WriteLine("Total Found: " + found.Count);
-                Debug.WriteLine("Total Missing: " + missing.Count);
 
+                Debug.WriteLine("Total Found: "   + found.Count);
+                Debug.WriteLine("Total Missing: " + missing.Count);
             }
-            
-            
+
+
             return 0;
         }
     }

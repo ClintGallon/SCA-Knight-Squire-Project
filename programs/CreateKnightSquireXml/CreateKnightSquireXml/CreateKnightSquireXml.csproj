@@ -69,11 +69,9 @@
   <ItemGroup>
     <Compile Include="CreateHtmlJob.cs" />
     <Compile Include="CreateWbXmlJob.cs" />
-    <Compile Include="DictKnight .cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="arrayknight.cs" />
     <Compile Include="MergeJob.cs" />
-    <Compile Include="ListKnight.cs" />
     <Compile Include="AddRelationships.cs" />
     <Compile Include="MissingJob.cs" />
     <Compile Include="PrepCSVJob.cs" />

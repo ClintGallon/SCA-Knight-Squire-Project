@@ -956,13 +956,13 @@
         <society_precedence>69</society_precedence>
         <society_knight_number/>
         <society_master_number>8</society_master_number>
-        <name>Joseph of Golden Dragon</name>
-        <type>the Good</type>
-        <date_elevated>Master</date_elevated>
-        <anno_societatous>4/14/1973</anno_societatous>
-        <kingdom_of_elevation>7</kingdom_of_elevation>
-        <kingdom_precedence>ATENVELDT</kingdom_precedence>
-        <resigned_or_removed>8</resigned_or_removed>
+        <name>Joseph of Golden Dragon, the Good</name>
+        <type>Master</type>
+        <date_elevated>4/14/1973</date_elevated>
+        <anno_societatous>7</anno_societatous>
+        <kingdom_of_elevation>ATENVELDT</kingdom_of_elevation>
+        <kingdom_precedence>8</kingdom_precedence>
+        <resigned_or_removed/>
         <passed_away/>
         <notes>Passed away early 2011</notes>
     </knight>
@@ -1138,13 +1138,13 @@
         <society_precedence>82</society_precedence>
         <society_knight_number>72</society_knight_number>
         <society_master_number/>
-        <name>Sven of Vandelaven</name>
-        <type>the Fierce</type>
-        <date_elevated>Knight</date_elevated>
-        <anno_societatous>1/12/1974</anno_societatous>
-        <kingdom_of_elevation>8</kingdom_of_elevation>
-        <kingdom_precedence>ATENVELDT</kingdom_precedence>
-        <resigned_or_removed>10</resigned_or_removed>
+        <name>Sven of Vandelaven, the Fierce</name>
+        <type>Knight</type>
+        <date_elevated>1/12/1974</date_elevated>
+        <anno_societatous>8</anno_societatous>
+        <kingdom_of_elevation>ATENVELDT</kingdom_of_elevation>
+        <kingdom_precedence>10</kingdom_precedence>
+        <resigned_or_removed/>
         <passed_away/>
         <notes/>
     </knight>
@@ -1152,13 +1152,13 @@
         <society_precedence>83</society_precedence>
         <society_knight_number>73</society_knight_number>
         <society_master_number/>
-        <name>Gilrae of Moorburn</name>
-        <type>the Fox</type>
-        <date_elevated>Knight</date_elevated>
-        <anno_societatous>1/13/1974</anno_societatous>
-        <kingdom_of_elevation>8</kingdom_of_elevation>
-        <kingdom_precedence>ATENVELDT</kingdom_precedence>
-        <resigned_or_removed>11</resigned_or_removed>
+        <name>Gilrae of Moorburn, the Fox</name>
+        <type>Knight</type>
+        <date_elevated>1/13/1974</date_elevated>
+        <anno_societatous>8</anno_societatous>
+        <kingdom_of_elevation>ATENVELDT</kingdom_of_elevation>
+        <kingdom_precedence>11</kingdom_precedence>
+        <resigned_or_removed/>
         <passed_away/>
         <notes/>
     </knight>
@@ -32848,13 +32848,13 @@
         <society_precedence>2347</society_precedence>
         <society_knight_number>2241</society_knight_number>
         <society_master_number/>
-        <name>Hosokawa Takeshi (aka Reikoku Takeshi</name>
-        <type>Takeshi Reikoku)</type>
-        <date_elevated>Knight</date_elevated>
-        <anno_societatous>8/27/2016</anno_societatous>
-        <kingdom_of_elevation>51</kingdom_of_elevation>
-        <kingdom_precedence>WEST</kingdom_precedence>
-        <resigned_or_removed>323</resigned_or_removed>
+        <name>Hosokawa Takeshi (aka Reikoku Takeshi, Takeshi Reikoku)</name>
+        <type>Knight</type>
+        <date_elevated>8/27/2016</date_elevated>
+        <anno_societatous>51</anno_societatous>
+        <kingdom_of_elevation>WEST</kingdom_of_elevation>
+        <kingdom_precedence>323</kingdom_precedence>
+        <resigned_or_removed/>
         <passed_away/>
         <notes/>
     </knight>
@@ -33254,13 +33254,13 @@
         <society_precedence>2376</society_precedence>
         <society_knight_number>2270</society_knight_number>
         <society_master_number/>
-        <name>Tomas Egilsson (aka Tuomas Egilsson</name>
-        <type>Duomas Egilsson)</type>
-        <date_elevated>Knight</date_elevated>
-        <anno_societatous>1/7/2017</anno_societatous>
-        <kingdom_of_elevation>51</kingdom_of_elevation>
-        <kingdom_precedence>WEST</kingdom_precedence>
-        <resigned_or_removed>325</resigned_or_removed>
+        <name>Tomas Egilsson (aka Tuomas Egilsson, Duomas Egilsson)</name>
+        <type>Knight</type>
+        <date_elevated>1/7/2017</date_elevated>
+        <anno_societatous>51</anno_societatous>
+        <kingdom_of_elevation>WEST</kingdom_of_elevation>
+        <kingdom_precedence>325</kingdom_precedence>
+        <resigned_or_removed/>
         <passed_away/>
         <notes/>
     </knight>
@@ -33800,14 +33800,14 @@
         <society_precedence>2415</society_precedence>
         <society_knight_number>2309</society_knight_number>
         <society_master_number/>
-        <name>David Bucket (aka James Bucket</name>
-        <type>Bucket of Mac Tir</type>
-        <date_elevated>Bucket of the Lear's Lady)</date_elevated>
-        <anno_societatous>Knight</anno_societatous>
-        <kingdom_of_elevation>7/8/2017</kingdom_of_elevation>
-        <kingdom_precedence>51</kingdom_precedence>
-        <resigned_or_removed>WEST</resigned_or_removed>
-        <passed_away>327</passed_away>
+        <name>David Bucket (aka James Bucket, Bucket of Mac Tir, Bucket of the Lear's Lady)</name>
+        <type>Knight</type>
+        <date_elevated>7/8/2017</date_elevated>
+        <anno_societatous>51</anno_societatous>
+        <kingdom_of_elevation>WEST</kingdom_of_elevation>
+        <kingdom_precedence>327</kingdom_precedence>
+        <resigned_or_removed/>
+        <passed_away/>
         <notes/>
     </knight>
     <knight>
@@ -34682,14 +34682,14 @@
         <society_precedence>2478</society_precedence>
         <society_knight_number>2371</society_knight_number>
         <society_master_number/>
-        <name>Helga skjaldmær (aka Helga Hrossdottir</name>
-        <type>Helga of Stoneguard</type>
-        <date_elevated>Helga Ironfist of Gargoyle's Keep)</date_elevated>
-        <anno_societatous>Knight</anno_societatous>
-        <kingdom_of_elevation>6/23/2018</kingdom_of_elevation>
-        <kingdom_precedence>53</kingdom_precedence>
-        <resigned_or_removed>WEST</resigned_or_removed>
-        <passed_away>329</passed_away>
+        <name>Helga skjaldmær (aka Helga Hrossdottir, Helga of Stoneguard, Helga Ironfist of Gargoyle's Keep)</name>
+        <type>Knight</type>
+        <date_elevated>6/23/2018</date_elevated>
+        <anno_societatous>53</anno_societatous>
+        <kingdom_of_elevation>WEST</kingdom_of_elevation>
+        <kingdom_precedence>329</kingdom_precedence>
+        <resigned_or_removed/>
+        <passed_away/>
         <notes/>
     </knight>
     <knight>

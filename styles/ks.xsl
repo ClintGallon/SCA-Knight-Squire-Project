@@ -124,6 +124,9 @@
 					</span>
                 </xsl:otherwise>
             </xsl:choose>
+            <xsl:if test=".//resigned_or_removed/text()!=''">
+               <xsl:apply-templates select="resigned_or_removed"/> | 
+            </xsl:if>
            <xsl:apply-templates select="type"/>
            <xsl:apply-templates select="squires"/>
         </li>
@@ -172,6 +175,10 @@
         <xsl:value-of select="."/>
     </xsl:template>
 
+    <xsl:template match="resigned_or_removed">
+        <xsl:value-of select="."/>
+    </xsl:template>
+    
     <xsl:template match="notes">
         <xsl:if test=".//text()!='1'">
             NOTES: <xsl:value-of select="."/>

@@ -18,7 +18,6 @@ namespace CreateKnightSquireXml
 
         public int DoWork()
         {
-
             Process firstProc = new Process
                                 {
                                     StartInfo           = {FileName = "C:\\windows\\msxsl.exe", Arguments = _pathFilenameXml + " " + _pathFilenameXsl + " -o " + _pathFilenameOutputHtml, WindowStyle = ProcessWindowStyle.Normal},
@@ -30,7 +29,7 @@ namespace CreateKnightSquireXml
 
             //You may want to perform different actions depending on the exit code.
             Console.WriteLine("Process exited: " + firstProc.ExitCode);
-            
+
             return firstProc.ExitCode;
         }
     }

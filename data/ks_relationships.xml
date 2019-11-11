@@ -2219,7 +2219,7 @@
                         <squires>
                             <knight>
                                 <society_precedence>-1</society_precedence>
-                                <name>William Cameron de Blakstan</name>
+                                <name>William Cameron deBlakstan (AKA Kerry of Windkeep)</name>
                                 <type>Knight</type>
                                 <squires>
                                     <knight>
@@ -2421,7 +2421,7 @@
                         <squires>
                             <knight>
                                 <society_precedence>1180</society_precedence>
-                                <name>Alrek Kanin / Equis Cassius Lepus</name>
+                                <name>Alrek Kanin</name>
                                 <type>Knight</type>
                                 <squires>
                                     <knight>
@@ -4461,7 +4461,7 @@
     <knight>
         <society_precedence>444</society_precedence>
         <name>Asad Ud-Din</name>
-        <type>Knight</type>
+        <type>Master</type>
         <squires/>
     </knight>
     <knight>
@@ -11194,7 +11194,7 @@
     </knight>
     <knight>
         <society_precedence>1519</society_precedence>
-        <name>Helgi Hrafnf�ir</name>
+        <name>Helgi Hrafnfæ¶ir</name>
         <type>Knight</type>
         <squires/>
     </knight>
@@ -11344,7 +11344,7 @@
     </knight>
     <knight>
         <society_precedence>1547</society_precedence>
-        <name>Eir�kr Snorrason</name>
+        <name>Eiríkr Snorrason</name>
         <type>Knight</type>
         <squires/>
     </knight>
@@ -11470,7 +11470,7 @@
     </knight>
     <knight>
         <society_precedence>1569</society_precedence>
-        <name>Tighearnach ua Cath�in �tha Dara</name>
+        <name>Tighearnach ua Catháin Átha Dara</name>
         <type>Knight</type>
         <squires/>
     </knight>
@@ -11792,7 +11792,7 @@
     </knight>
     <knight>
         <society_precedence>1619</society_precedence>
-        <name>Padraig Gliadrach O�Ceallaigh</name>
+        <name>Padraig Gliadrach O´Ceallaigh</name>
         <type>Knight</type>
         <squires/>
     </knight>
@@ -11880,7 +11880,7 @@
     </knight>
     <knight>
         <society_precedence>1632</society_precedence>
-        <name>Tommaltach mac Fiachoc</name>
+        <name>Tommaltach MacFhiachach</name>
         <type>Knight</type>
         <squires/>
     </knight>
@@ -12797,7 +12797,7 @@
     </knight>
     <knight>
         <society_precedence>1784</society_precedence>
-        <name>Haraald Hlatur Dr�ngur</name>
+        <name>Haraald Hlatur Dréngur</name>
         <type>Knight</type>
         <squires/>
     </knight>
@@ -13334,7 +13334,7 @@
     </knight>
     <knight>
         <society_precedence>1883</society_precedence>
-        <name>�l�fr �orvar�arson</name>
+        <name>Óláfr Þorvarðarson</name>
         <type>Knight</type>
         <squires/>
     </knight>
@@ -13538,7 +13538,7 @@
     </knight>
     <knight>
         <society_precedence>1923</society_precedence>
-        <name>S�ren j Alborgh</name>
+        <name>Søren j Alborgh</name>
         <type>Knight</type>
         <squires/>
     </knight>
@@ -13675,12 +13675,6 @@
         <squires/>
     </knight>
     <knight>
-        <society_precedence>1947</society_precedence>
-        <name>�than dal Cais</name>
-        <type>Knight</type>
-        <squires/>
-    </knight>
-    <knight>
         <society_precedence>1949</society_precedence>
         <name>Tarkatai Bahadur</name>
         <type>Knight</type>
@@ -13804,12 +13798,6 @@
     <knight>
         <society_precedence>1971</society_precedence>
         <name>Caleb Hogg</name>
-        <type>Knight</type>
-        <squires/>
-    </knight>
-    <knight>
-        <society_precedence>1972</society_precedence>
-        <name>Loclan Bjornson</name>
         <type>Knight</type>
         <squires/>
     </knight>
@@ -13995,7 +13983,7 @@
     </knight>
     <knight>
         <society_precedence>2004</society_precedence>
-        <name>Thorin vor?r � S�aghdha</name>
+        <name>Thorin vor∂r Ó Séaghdha</name>
         <type>Knight</type>
         <squires/>
     </knight>
@@ -14211,7 +14199,7 @@
     </knight>
     <knight>
         <society_precedence>2041</society_precedence>
-        <name>Kay of Gordon</name>
+        <name>Kaye of Gordon</name>
         <type>Knight</type>
         <squires/>
     </knight>
@@ -14229,7 +14217,7 @@
     </knight>
     <knight>
         <society_precedence>2045</society_precedence>
-        <name>Halvgrimr Aoalradarson</name>
+        <name>Halvgrimr Aoalradarson (Halvgrimr Aðálraðarson)</name>
         <type>Knight</type>
         <squires/>
     </knight>
@@ -14970,7 +14958,7 @@
     </knight>
     <knight>
         <society_precedence>2187</society_precedence>
-        <name>Einarr Skallagr�msson</name>
+        <name>Einarr Skallagrímsson</name>
         <type>Knight</type>
         <squires/>
     </knight>
@@ -15085,12 +15073,6 @@
     <knight>
         <society_precedence>2207</society_precedence>
         <name>Cai Dubhghlas</name>
-        <type>Knight</type>
-        <squires/>
-    </knight>
-    <knight>
-        <society_precedence>2208</society_precedence>
-        <name>Peter Joyner</name>
         <type>Knight</type>
         <squires/>
     </knight>
