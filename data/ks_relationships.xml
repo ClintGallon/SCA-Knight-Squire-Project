@@ -1665,8 +1665,8 @@
                         </squires>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence>
-                        <name>Leifr Vagnsson</name>
+                        <society_precedence>1751</society_precedence>
+                        <name>Leifr Vagnasson</name>
                         <type>Knight</type>
                         <squires/>
                     </knight>
@@ -6714,7 +6714,14 @@
                 <society_precedence>1082</society_precedence>
                 <name>Johannes von Bruckenheim</name>
                 <type>Knight</type>
-                <squires/>
+                <squires>
+                    <knight>
+                        <society_precedence>1697</society_precedence>
+                        <name>Domingo Diaz de la Vega y Martin</name>
+                        <type>Knight</type>
+                        <squires/>
+                    </knight>               
+                </squires>
             </knight>
         </squires>
     </knight>
@@ -8402,11 +8409,25 @@
                 <squires/>
             </knight>
             <knight>
-                <society_precedence>1966</society_precedence>
-                <name>Kazimir Konstantinov</name>
+                <society_precedence>1965</society_precedence>
+                <name>Kazimer Valentov</name>
                 <type>Knight</type>
                 <squires/>
             </knight>
+            <knight>
+                <society_precedence>1570</society_precedence>
+                <name>Tighearain Blackwater</name>
+                <type>Knight</type>
+                <squires>
+                    <knight>
+                        <society_precedence>-1</society_precedence>
+                        <name>Demitrius of crete</name>
+                        <type>knight</type>
+                        <squires/>
+                    </knight>
+                </squires>
+            </knight>
+            
         </squires>
     </knight>
     <knight>
@@ -8905,7 +8926,72 @@
         <society_precedence>1115</society_precedence>
         <name>Mathghamhain MacAlpine</name>
         <type>Knight</type>
-        <squires/>
+        <squires>
+            <knight>
+                <society_precedence>1577</society_precedence>
+                <name>Tristan Dragonheart</name>
+                <type>Knight</type>
+                <squires>
+                    <knight>
+                        <society_precedence>1849</society_precedence>
+                        <name>Morgan Aethelwulf</name>
+                        <type>Knight</type>
+                        <squires>
+                            <knight>
+                                <society_precedence>2383</society_precedence>
+                                <society_knight_number>2277</society_knight_number>
+                                <society_master_number/>
+                                <name>John Ailewrde</name>
+                                <type>Knight</type>
+                                <date_elevated>2/24/2017</date_elevated>
+                                <anno_societatous>51</anno_societatous>
+                                <kingdom_of_elevation>ATENVELDT</kingdom_of_elevation>
+                                <kingdom_precedence>303</kingdom_precedence>
+                                <resigned_or_removed/>
+                                <passed_away/>
+                                <notes>1</notes>
+                                <squires/>
+                            </knight>
+                            <knight>
+                                <society_precedence>-1</society_precedence>
+                                <name>Seved Ribbing</name>
+                                <type>squire</type>
+                                <squires/>
+                            </knight>
+                            <knight>
+                                <society_precedence>-1</society_precedence>
+                                <name>Ulricana of Twin Moons</name>
+                                <type>squire</type>
+                                <squires/>
+                            </knight>
+                        </squires>
+                    </knight>
+                    <knight>
+                        <society_precedence>2085</society_precedence>
+                        <name>Marek the Jew</name>
+                        <type>Knight</type>
+                        <squires>
+                            <knight>
+                                <society_precedence>2345</society_precedence>
+                                <society_knight_number>2240</society_knight_number>
+                                <society_master_number>106</society_master_number>
+                                <name>Gideon the Weary</name>
+                                <type>Knight</type>
+                                <date_elevated>8/27/2016</date_elevated>
+                                <anno_societatous>51</anno_societatous>
+                                <kingdom_of_elevation>ATENVELDT</kingdom_of_elevation>
+                                <kingdom_precedence>302</kingdom_precedence>
+                                <resigned_or_removed/>
+                                <passed_away/>
+                                <notes>1</notes>
+                                <squires/>
+                            </knight>
+                        </squires>
+                    </knight>
+                </squires>
+            </knight>
+
+        </squires>
     </knight>
     <knight>
         <society_precedence>1116</society_precedence>
@@ -11520,19 +11606,6 @@
         <squires/>
     </knight>
     <knight>
-        <society_precedence>1570</society_precedence>
-        <name>Tighearain Blackwater</name>
-        <type>Knight</type>
-        <squires>
-            <knight>
-                <society_precedence>-1</society_precedence>
-                <name>Demitrius of crete</name>
-                <type>knight</type>
-                <squires/>
-            </knight>
-        </squires>
-    </knight>
-    <knight>
         <society_precedence>1571</society_precedence>
         <name>Philip Williams of Aston</name>
         <type>Knight</type>
@@ -11561,69 +11634,6 @@
         <name>Brand Armand of Lancaster</name>
         <type>Knight</type>
         <squires/>
-    </knight>
-    <knight>
-        <society_precedence>1577</society_precedence>
-        <name>Tristan Dragonheart</name>
-        <type>Knight</type>
-        <squires>
-            <knight>
-                <society_precedence>1849</society_precedence>
-                <name>Morgan Aethelwulf</name>
-                <type>Knight</type>
-                <squires>
-                    <knight>
-                        <society_precedence>2383</society_precedence>
-                        <society_knight_number>2277</society_knight_number>
-                        <society_master_number/>
-                        <name>John Ailewrde</name>
-                        <type>Knight</type>
-                        <date_elevated>2/24/2017</date_elevated>
-                        <anno_societatous>51</anno_societatous>
-                        <kingdom_of_elevation>ATENVELDT</kingdom_of_elevation>
-                        <kingdom_precedence>303</kingdom_precedence>
-                        <resigned_or_removed/>
-                        <passed_away/>
-                        <notes>1</notes>
-                        <squires/>
-                    </knight>
-                    <knight>
-                        <society_precedence>-1</society_precedence>
-                        <name>Sevid</name>
-                        <type>squire</type>
-                        <squires/>
-                    </knight>
-                    <knight>
-                        <society_precedence>-1</society_precedence>
-                        <name>Ulricana</name>
-                        <type>squire</type>
-                        <squires/>
-                    </knight>
-                </squires>
-            </knight>
-            <knight>
-                <society_precedence>2085</society_precedence>
-                <name>Marek the Jew</name>
-                <type>Knight</type>
-                <squires>
-                    <knight>
-                        <society_precedence>2345</society_precedence>
-                        <society_knight_number>2240</society_knight_number>
-                        <society_master_number>106</society_master_number>
-                        <name>Gideon the Weary</name>
-                        <type>Knight</type>
-                        <date_elevated>8/27/2016</date_elevated>
-                        <anno_societatous>51</anno_societatous>
-                        <kingdom_of_elevation>ATENVELDT</kingdom_of_elevation>
-                        <kingdom_precedence>302</kingdom_precedence>
-                        <resigned_or_removed/>
-                        <passed_away/>
-                        <notes>1</notes>
-                        <squires/>
-                    </knight>
-                </squires>
-            </knight>
-        </squires>
     </knight>
     <knight>
         <society_precedence>1578</society_precedence>
@@ -12289,8 +12299,8 @@
         <type>Knight</type>
         <squires>
             <knight>
-                <society_precedence>1965</society_precedence>
-                <name>Kazimer Valentov</name>
+                <society_precedence>1966</society_precedence>
+                <name>Kazimir Konstantinov</name>
                 <type>Knight</type>
                 <squires/>
             </knight>
@@ -12380,12 +12390,7 @@
         <type>Knight</type>
         <squires/>
     </knight>
-    <knight>
-        <society_precedence>1697</society_precedence>
-        <name>Domingo Diaz de la Vega y Martin</name>
-        <type>Knight</type>
-        <squires/>
-    </knight>
+
     <knight>
         <society_precedence>1698</society_precedence>
         <name>Tristram of Lindesfarne</name>
@@ -12680,12 +12685,7 @@
         <type>Knight</type>
         <squires/>
     </knight>
-    <knight>
-        <society_precedence>1751</society_precedence>
-        <name>Leifr Vagnasson</name>
-        <type>Knight</type>
-        <squires/>
-    </knight>
+
 
     <knight>
         <society_precedence>1753</society_precedence>
