@@ -500,7 +500,29 @@
                                         <society_precedence>807</society_precedence>
                                         <name>Rorik Galbraith</name>
                                         <type>Knight</type>
-                                        <squires/>
+                                        <squires>
+                                            <knight>
+                                                <society_precedence>1485</society_precedence>
+                                                <name>Aleksandr Yaroslavovich Vyetcikov</name>
+                                                <type>Knight</type>
+                                                <squires/>
+                                            </knight>
+                                            <knight>
+                                                <society_precedence>2406</society_precedence>
+                                                <society_knight_number>2300</society_knight_number>
+                                                <society_master_number/>
+                                                <name>Xandre</name>
+                                                <type>Knight</type>
+                                                <date_elevated>5/20/2017</date_elevated>
+                                                <anno_societatous>52</anno_societatous>
+                                                <kingdom_of_elevation>CALONTIR</kingdom_of_elevation>
+                                                <kingdom_precedence>128</kingdom_precedence>
+                                                <resigned_or_removed/>
+                                                <passed_away/>
+                                                <notes>1</notes>
+                                                <squires/>
+                                            </knight>
+                                        </squires>
                                     </knight>
                                     <knight>
                                         <society_precedence>529</society_precedence>
@@ -5376,7 +5398,47 @@
         <society_precedence>619</society_precedence>
         <name>Johann von Balduinseck</name>
         <type>Knight</type>
-        <squires/>
+        <squires>
+            <knight>
+                <society_precedence>1027</society_precedence>
+                <name>Cyrred of Ashwood</name>
+                <type>Knight</type>
+                <squires>
+                    <knight>
+                        <society_precedence>2011</society_precedence>
+                        <society_knight_number>1915</society_knight_number>
+                        <society_master_number/>
+                        <name>Alrik Boleslavov</name>
+                        <type>Knight</type>
+                        <date_elevated>12/17/2011</date_elevated>
+                        <anno_societatous>46</anno_societatous>
+                        <kingdom_of_elevation>OUTLANDS</kingdom_of_elevation>
+                        <kingdom_precedence>92</kingdom_precedence>
+                        <resigned_or_removed/>
+                        <passed_away/>
+                        <notes>1</notes>
+                    </knight>
+                </squires>
+            </knight>
+            <knight>
+                <society_precedence>-1</society_precedence>
+                <name>Eric of Blaxton</name>
+                <type>squire</type>
+                <squires/>
+            </knight>
+            <knight>
+                <society_precedence>-1</society_precedence>
+                <name>Lore McKay</name>
+                <type>squire</type>
+                <squires/>
+            </knight>
+            <knight>
+                <society_precedence>-1</society_precedence>
+                <name>Mann</name>
+                <type>squire</type>
+                <squires/>                
+            </knight>
+        </squires>
     </knight>
     <knight>
         <society_precedence>620</society_precedence>
@@ -8353,12 +8415,7 @@
         <type>Knight</type>
         <squires/>
     </knight>
-    <knight>
-        <society_precedence>1027</society_precedence>
-        <name>Cyrred of Ashwood</name>
-        <type>Knight</type>
-        <squires/>
-    </knight>
+
     <knight>
         <society_precedence>1029</society_precedence>
         <name>Tarbold Celeris</name>
@@ -10991,12 +11048,6 @@
     <knight>
         <society_precedence>1484</society_precedence>
         <name>Magnus Arktos</name>
-        <type>Knight</type>
-        <squires/>
-    </knight>
-    <knight>
-        <society_precedence>1485</society_precedence>
-        <name>Aleksandr Yaroslavovich Vyetcikov</name>
         <type>Knight</type>
         <squires/>
     </knight>
@@ -14027,12 +14078,7 @@
         <type>Knight</type>
         <squires/>
     </knight>
-    <knight>
-        <society_precedence>2010</society_precedence>
-        <name>Alrik Boleslavov</name>
-        <type>Knight</type>
-        <squires/>
-    </knight>
+
     <knight>
         <society_precedence>2011</society_precedence>
         <name>Laurence de Xaintrailles</name>
@@ -17942,21 +17988,6 @@
         <anno_societatous>52</anno_societatous>
         <kingdom_of_elevation>AN TIR</kingdom_of_elevation>
         <kingdom_precedence>183</kingdom_precedence>
-        <resigned_or_removed/>
-        <passed_away/>
-        <notes>1</notes>
-        <squires/>
-    </knight>
-    <knight>
-        <society_precedence>2406</society_precedence>
-        <society_knight_number>2300</society_knight_number>
-        <society_master_number/>
-        <name>Xandre</name>
-        <type>Knight</type>
-        <date_elevated>5/20/2017</date_elevated>
-        <anno_societatous>52</anno_societatous>
-        <kingdom_of_elevation>CALONTIR</kingdom_of_elevation>
-        <kingdom_precedence>128</kingdom_precedence>
         <resigned_or_removed/>
         <passed_away/>
         <notes>1</notes>
