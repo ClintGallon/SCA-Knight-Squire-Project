@@ -6217,12 +6217,6 @@
                                     </knight>
                                     <knight>
                                         <society_precedence>-1</society_precedence>
-                                        <name>Marc Antoine de Larue</name>
-                                        <type>squire</type>
-                                        <squires/>
-                                    </knight>
-                                    <knight>
-                                        <society_precedence>-1</society_precedence>
                                         <name>Alexander Marcellus</name>
                                         <type>squire</type>
                                         <squires/>
@@ -11954,7 +11948,29 @@
         <society_precedence>1644</society_precedence>
         <name>Walrick Knightwalker</name>
         <type>Knight</type>
-        <squires/>
+        <squires>
+            <knight>
+                <society_precedence>-1</society_precedence>
+                <name>Kendrick MacPherson</name>
+                <type>squire</type>
+                <squires/>
+            </knight>
+            <knight>
+                <society_precedence>2467</society_precedence>
+                <society_knight_number>2360</society_knight_number>
+                <society_master_number/>
+                <name>Marc Antoine de la Rue</name>
+                <type>Knight</type>
+                <date_elevated>4/7/2018</date_elevated>
+                <anno_societatous>52</anno_societatous>
+                <kingdom_of_elevation>OUTLANDS</kingdom_of_elevation>
+                <kingdom_precedence>131</kingdom_precedence>
+                <resigned_or_removed/>
+                <passed_away/>
+                <notes>1</notes>
+                <squires/>
+            </knight>
+        </squires>
     </knight>
     <knight>
         <society_precedence>1645</society_precedence>
@@ -18785,21 +18801,6 @@
         <anno_societatous>52</anno_societatous>
         <kingdom_of_elevation>EALDORMERE</kingdom_of_elevation>
         <kingdom_precedence>26</kingdom_precedence>
-        <resigned_or_removed/>
-        <passed_away/>
-        <notes>1</notes>
-        <squires/>
-    </knight>
-    <knight>
-        <society_precedence>2467</society_precedence>
-        <society_knight_number>2360</society_knight_number>
-        <society_master_number/>
-        <name>Marc Antoine de la Rue</name>
-        <type>Knight</type>
-        <date_elevated>4/7/2018</date_elevated>
-        <anno_societatous>52</anno_societatous>
-        <kingdom_of_elevation>OUTLANDS</kingdom_of_elevation>
-        <kingdom_precedence>131</kingdom_precedence>
         <resigned_or_removed/>
         <passed_away/>
         <notes>1</notes>

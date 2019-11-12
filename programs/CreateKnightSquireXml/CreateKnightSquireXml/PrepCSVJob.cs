@@ -1,8 +1,6 @@
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
 
 namespace CreateKnightSquireXml
 {
@@ -36,8 +34,8 @@ namespace CreateKnightSquireXml
             int       lineCounter         = 0;
             try
             {
-                StreamReader sr = new StreamReader(_csvPathAndFilename);
-                StreamWriter sw = new StreamWriter(_csvPathAndFilenameOut);
+                var sr = new StreamReader(_csvPathAndFilename);
+                var sw = new StreamWriter(_csvPathAndFilenameOut);
 
                 string line = sr.ReadLine();
                 lineCounter++;
@@ -45,15 +43,9 @@ namespace CreateKnightSquireXml
                 {
                     line = sr.ReadLine();
                     lineCounter++;
-                    if (lineCounter == headerLinesToDelete)
-                    {
-                        sw.WriteLine(headerLine);
-                    }
+                    if (lineCounter == headerLinesToDelete) sw.WriteLine(headerLine);
 
-                    if (lineCounter > headerLinesToDelete)
-                    {
-                        sw.WriteLine(line);
-                    }
+                    if (lineCounter > headerLinesToDelete) sw.WriteLine(line);
                 }
 
                 sr.Close();

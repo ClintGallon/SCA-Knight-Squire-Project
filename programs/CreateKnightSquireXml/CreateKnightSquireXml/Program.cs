@@ -6,13 +6,9 @@ namespace CreateKnightSquireXml
     {
         public static void Main(string[] args)
         {
-            if (args.Length == 0)
-            {
-                Console.WriteLine("sca-ksp is the command line utility for the SCA-Knight-Squire-Project to get a list of commands please enter 'sca-ksp -commands'");
-            }
+            if (args.Length == 0) Console.WriteLine("sca-ksp is the command line utility for the SCA-Knight-Squire-Project to get a list of commands please enter 'sca-ksp -commands'");
 
             if (args.Length == 1)
-            {
                 switch (args[0])
                 {
                     case "-commands":
@@ -40,68 +36,67 @@ namespace CreateKnightSquireXml
                         Console.WriteLine("'sca-ksp -commands' for all the commands you can run.");
                         break;
                 }
-            }
 
-            if ((args[0].ToLower() == "-prepcsv") && (args[1].ToLower() == "-csv"))
+            if (args[0].ToLower() == "-prepcsv" && args[1].ToLower() == "-csv")
             {
-                string     csvPathAndFilename = args[2].ToLower();
-                PrepCsvJob job                = new PrepCsvJob(csvPathAndFilename);
-                int        ret                = job.DoWork();
+                string csvPathAndFilename = args[2].ToLower();
+                var    job                = new PrepCsvJob(csvPathAndFilename);
+                int    ret                = job.DoWork();
 
                 Environment.Exit(ret);
             }
 
-            if ((args[0].ToLower() == "-createwbxml") && (args[1].ToLower() == "-csv") && (args[3].ToLower() == "-out"))
+            if (args[0].ToLower() == "-createwbxml" && args[1].ToLower() == "-csv" && args[3].ToLower() == "-out")
             {
-                string         csvPathAndFilename    = args[2].ToLower();
-                string         xmlPathAndFilenameOut = args[4].ToLower();
-                CreateWbXmlJob job                   = new CreateWbXmlJob(csvPathAndFilename, xmlPathAndFilenameOut);
-                int            ret                   = job.DoWork();
+                string csvPathAndFilename    = args[2].ToLower();
+                string xmlPathAndFilenameOut = args[4].ToLower();
+                var    job                   = new CreateWbXmlJob(csvPathAndFilename, xmlPathAndFilenameOut);
+                int    ret                   = job.DoWork();
 
                 Environment.Exit(ret);
             }
 
-            if ((args[0].ToLower() == "-merge") && (args[1].ToLower() == "-wbxml") && (args[3].ToLower() == "-relationships") && (args[5].ToLower() == "-out"))
+            if (args[0].ToLower() == "-merge" && args[1].ToLower() == "-wbxml" && args[3].ToLower() == "-relationships" && args[5].ToLower() == "-out")
             {
                 string wbPathAndFilename  = args[2].ToLower();
                 string relPathAndFilename = args[4].ToLower();
                 string outPathAndFilename = args[6].ToLower();
 
-                MergeJob job = new MergeJob(wbPathAndFilename, relPathAndFilename, outPathAndFilename);
-                int      ret = job.DoWork();
+                var job = new MergeJob(wbPathAndFilename, relPathAndFilename, outPathAndFilename);
+                int ret = job.DoWork();
 
                 Environment.Exit(ret);
             }
 
-            if ((args[0].ToLower() == "-createhtml") && (args[1].ToLower() == "-xsl") && (args[3].ToLower() == "-xml") && (args[5].ToLower() == "-out"))
+            if (args[0].ToLower() == "-createhtml" && args[1].ToLower() == "-xsl" && args[3].ToLower() == "-xml" && args[5].ToLower() == "-out")
             {
-                string        xslPathAndFilename  = args[2].ToLower();
-                string        xmlPathAndFilename  = args[4].ToLower();
-                string        htmlPathAndFilename = args[6].ToLower();
-                CreateHtmlJob job                 = new CreateHtmlJob(xslPathAndFilename, xmlPathAndFilename, htmlPathAndFilename);
-                int           ret                 = job.DoWork();
+                string xslPathAndFilename  = args[2].ToLower();
+                string xmlPathAndFilename  = args[4].ToLower();
+                string htmlPathAndFilename = args[6].ToLower();
+                var    job                 = new CreateHtmlJob(xslPathAndFilename, xmlPathAndFilename, htmlPathAndFilename);
+                int    ret                 = job.DoWork();
 
                 Environment.Exit(ret);
             }
 
-            if ((args[0].ToLower() == "-missing") && (args[1].ToLower() == "-wbxml") && (args[3].ToLower() == "-relationships"))
+            if (args[0].ToLower() == "-missing" && args[1].ToLower() == "-wbxml" && args[3].ToLower() == "-relationships")
             {
-                string     wbPathAndFilename  = args[2].ToLower();
-                string     relPathAndFilename = args[4].ToLower();
-                string     outPathAndFilename = args[6].ToLower();
-                MissingJob job                = new MissingJob(wbPathAndFilename, relPathAndFilename, outPathAndFilename);
-                int        ret                = job.DoWork();
+                string wbPathAndFilename  = args[2].ToLower();
+                string relPathAndFilename = args[4].ToLower();
+                string outPathAndFilename = args[6].ToLower();
+                var    job                = new MissingJob(wbPathAndFilename, relPathAndFilename, outPathAndFilename);
+                int    ret                = job.DoWork();
 
                 Environment.Exit(ret);
             }
 
-            if ((args[0].ToLower() == "-addrelationships") && (args[1].ToLower() == "-relationships") && (args[3].ToLower() == "-newrelss") && (args[5].ToLower() == "-out"))
+            if (args[0].ToLower() == "-addrelationships" && args[1].ToLower() == "-relationships" && args[3].ToLower() == "-newrelss" && args[5].ToLower() == "-out")
             {
-                string              relationshipsPathAndFilename    = args[2].ToLower();
-                string              newRelationshipsPathAndFilename = args[4].ToLower();
-                string              outPathAndFilename              = args[6].ToLower();
-                AddRelationshipsJob job                             = new AddRelationshipsJob(relationshipsPathAndFilename, newRelationshipsPathAndFilename, outPathAndFilename);
-                int                 ret                             = job.DoWork();
+                string relationshipsPathAndFilename    = args[2].ToLower();
+                string newRelationshipsPathAndFilename = args[4].ToLower();
+                string outPathAndFilename              = args[6].ToLower();
+                var    job                             = new AddRelationshipsJob(relationshipsPathAndFilename, newRelationshipsPathAndFilename, outPathAndFilename);
+                int    ret                             = job.DoWork();
 
                 Environment.Exit(ret);
             }

@@ -1,22 +1,22 @@
 ﻿using System.Diagnostics;
+using System.IO;
 using System.Text;
 using System.Xml;
-using System.IO;
 
 namespace CreateKnightSquireXml
 {
     public class MergeJob
     {
-        private string _wbPathAndFilename;
-        private string _relPathAndFilename;
-        private string _outPathAndFilename;
-
-        private          string        pathFilenameOutputXml;
-        private          string        pathFilenameOutputXmlNode;
-        private          XmlDocument   outDoc;
         private readonly XmlDocument   _ksRelationshipsXml;
+        private readonly StringBuilder _fileStringBuilder;
+        private readonly string        _outPathAndFilename;
+        private readonly string        _relPathAndFilename;
+        private readonly string        _wbPathAndFilename;
         private          XmlWriter     _writer;
-        private          StringBuilder _fileStringBuilder;
+        private          XmlDocument   outDoc;
+
+        private string pathFilenameOutputXml;
+        private string pathFilenameOutputXmlNode;
 
         public MergeJob(string wbPathAndFilename, string relPathAndFilename, string outPathAndFilename)
         {
@@ -43,27 +43,27 @@ namespace CreateKnightSquireXml
 
             _fileStringBuilder.Append("<knights>");
 
-            XmlElement root = _ksRelationshipsXml.DocumentElement;
+            var root = _ksRelationshipsXml.DocumentElement;
 
             SingletonKnightParser.LoadWbXml(_wbPathAndFilename);
 
             foreach (XmlNode rootChild in root.ChildNodes)
             {
                 if (rootChild.LocalName != "knight") continue;
-                XmlDocument xD = new XmlDocument();
+                var xD = new XmlDocument();
                 xD.LoadXml(rootChild.OuterXml);
-                XmlNode rKnightNode = xD.FirstChild;
+                var rKnightNode = xD.FirstChild;
 
                 //Dictionary<string, XmlNode> rKnightChildren = rKnightNode.ChildNodes.Cast<XmlNode>().ToDictionary(child => child.Name);
 
-                StringBuilder newKnightStringBuilder = SingletonKnightParser.Parse(rKnightNode);
+                var newKnightStringBuilder = SingletonKnightParser.Parse(rKnightNode);
 
                 _fileStringBuilder.Append(newKnightStringBuilder);
             }
 
             _fileStringBuilder.Append("</knights>");
 
-            using (StreamWriter swriter = new StreamWriter(_outPathAndFilename))
+            using (var swriter = new StreamWriter(_outPathAndFilename))
             {
                 swriter.Write(_fileStringBuilder.ToString());
             }

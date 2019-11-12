@@ -5,9 +5,9 @@ namespace CreateKnightSquireXml
 {
     public class CreateHtmlJob
     {
-        private readonly string _pathFilenameXsl;
-        private readonly string _pathFilenameXml;
         private readonly string _pathFilenameOutputHtml;
+        private readonly string _pathFilenameXml;
+        private readonly string _pathFilenameXsl;
 
         public CreateHtmlJob(string xslPathAndFilename, string xmlPathAndFilename, string htmlPathAndFilename)
         {
@@ -18,11 +18,11 @@ namespace CreateKnightSquireXml
 
         public int DoWork()
         {
-            Process firstProc = new Process
-                                {
-                                    StartInfo           = {FileName = "C:\\windows\\msxsl.exe", Arguments = _pathFilenameXml + " " + _pathFilenameXsl + " -o " + _pathFilenameOutputHtml, WindowStyle = ProcessWindowStyle.Normal},
-                                    EnableRaisingEvents = true
-                                };
+            var firstProc = new Process
+                            {
+                                StartInfo           = {FileName = "C:\\windows\\msxsl.exe", Arguments = _pathFilenameXml + " " + _pathFilenameXsl + " -o " + _pathFilenameOutputHtml, WindowStyle = ProcessWindowStyle.Normal},
+                                EnableRaisingEvents = true
+                            };
 
             firstProc.Start();
             firstProc.WaitForExit();

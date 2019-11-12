@@ -49,9 +49,9 @@ namespace CreateKnightSquireXml
 
         // Enumerators are positioned before the first element
         // until the first MoveNext() call.
-        private int position = -1;
+        private int _position = -1;
 
-        public ArrayKnightListEnum(ArrayKnight[] list)
+        public ArrayKnightListEnum(IEnumerable<ArrayKnight> list)
         {
             _knights = new List<ArrayKnight>();
 
@@ -64,7 +64,7 @@ namespace CreateKnightSquireXml
             {
                 try
                 {
-                    return _knights[position];
+                    return _knights[_position];
                 }
                 catch (IndexOutOfRangeException)
                 {
@@ -75,13 +75,13 @@ namespace CreateKnightSquireXml
 
         public bool MoveNext()
         {
-            position++;
-            return position < _knights.ToArray().Length;
+            _position++;
+            return _position < _knights.ToArray().Length;
         }
 
         public void Reset()
         {
-            position = -1;
+            _position = -1;
         }
 
         object IEnumerator.Current => Current;
@@ -89,7 +89,6 @@ namespace CreateKnightSquireXml
         public bool Add(ArrayKnight addKnight)
         {
             _knights.Add(addKnight);
-
             return true;
         }
     }
@@ -141,8 +140,7 @@ namespace CreateKnightSquireXml
         {
             get
             {
-                if (_squires != null) return _squires;
-                return new ArrayKnight[] { };
+                return _squires ?? new ArrayKnight[] { };
             }
             set => _squires = value;
         }
