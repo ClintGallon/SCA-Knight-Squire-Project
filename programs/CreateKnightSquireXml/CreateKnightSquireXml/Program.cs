@@ -68,6 +68,18 @@ namespace CreateKnightSquireXml
                 Environment.Exit(ret);
             }
 
+            if (args[0].ToLower() == "-merge2" && args[1].ToLower() == "-wbxml" && args[3].ToLower() == "-relationships" && args[5].ToLower() == "-out")
+            {
+                string wbPathAndFilename  = args[2].ToLower();
+                string relPathAndFilename = args[4].ToLower();
+                string outPathAndFilename = args[6].ToLower();
+
+                var job = new Merge2Job(wbPathAndFilename, relPathAndFilename, outPathAndFilename);
+                int ret = job.DoWork();
+
+                Environment.Exit(ret);
+            }
+            
             if (args[0].ToLower() == "-createhtml" && args[1].ToLower() == "-xsl" && args[3].ToLower() == "-xml" && args[5].ToLower() == "-out")
             {
                 string xslPathAndFilename  = args[2].ToLower();

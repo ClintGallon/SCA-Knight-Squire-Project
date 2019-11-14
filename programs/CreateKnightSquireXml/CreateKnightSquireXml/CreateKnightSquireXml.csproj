@@ -71,6 +71,7 @@
     <Compile Include="CreateWbXmlJob.cs" />
     <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="arrayknight.cs" />
+    <Compile Include="Merge2Job.cs" />
     <Compile Include="MergeJob.cs" />
     <Compile Include="AddRelationships.cs" />
     <Compile Include="MissingJob.cs" />

@@ -3344,10 +3344,18 @@
                         </squires>
                     </knight>
                     <knight>
-                        <society_precedence>-1</society_precedence>
-                        <name>Leifr Vagnsson</name>
+                        <society_precedence>1753</society_precedence>
+                        <name>Leifr Vagnasson</name>
                         <type>Knight</type>
-                        <notes>|not found wbxml</notes>
+                        <society_knight_number>1665</society_knight_number>
+                        <society_master_number/>
+                        <date_elevated>2/18/2007</date_elevated>
+                        <anno_societatous>41</anno_societatous>
+                        <kingdom_of_elevation>OUTLANDS</kingdom_of_elevation>
+                        <kingdom_precedence>82</kingdom_precedence>
+                        <resigned_or_removed/>
+                        <passed_away/>
+                        <notes>1</notes>
                         <squires/>
                     </knight>
                     <knight>
@@ -11170,7 +11178,117 @@
         <resigned_or_removed/>
         <passed_away/>
         <notes>1</notes>
-        <squires/>
+        <squires>
+            <knight>
+                <society_precedence>727</society_precedence>
+                <name>Gregor von Heisler</name>
+                <type>Knight</type>
+                <society_knight_number>672</society_knight_number>
+                <society_master_number/>
+                <date_elevated>4/7/1990</date_elevated>
+                <anno_societatous>24</anno_societatous>
+                <kingdom_of_elevation>EAST</kingdom_of_elevation>
+                <kingdom_precedence>82</kingdom_precedence>
+                <resigned_or_removed/>
+                <passed_away/>
+                <notes>1</notes>
+                <squires>
+                    <knight>
+                        <society_precedence>1359</society_precedence>
+                        <name>Griffith FitzWilliam (of Green Mountain)</name>
+                        <type>Knight</type>
+                        <society_knight_number>1279</society_knight_number>
+                        <society_master_number/>
+                        <date_elevated>8/17/2000</date_elevated>
+                        <anno_societatous>35</anno_societatous>
+                        <kingdom_of_elevation>EAST</kingdom_of_elevation>
+                        <kingdom_precedence>137</kingdom_precedence>
+                        <resigned_or_removed/>
+                        <passed_away/>
+                        <notes>1</notes>
+                        <squires>
+                            <knight>
+                                <society_precedence>1792</society_precedence>
+                                <name>Edward Grey of Lochleven</name>
+                                <type>Knight</type>
+                                <society_knight_number>1702</society_knight_number>
+                                <society_master_number/>
+                                <date_elevated>1/5/2008</date_elevated>
+                                <anno_societatous>42</anno_societatous>
+                                <kingdom_of_elevation>EAST</kingdom_of_elevation>
+                                <kingdom_precedence>170</kingdom_precedence>
+                                <resigned_or_removed/>
+                                <passed_away/>
+                                <notes>1</notes>
+                                <squires>
+                                    <knight>
+                                        <society_precedence>2308</society_precedence>
+                                        <name>Hrafn Bonesetter</name>
+                                        <type>Knight</type>
+                                        <society_knight_number>2206</society_knight_number>
+                                        <society_master_number/>
+                                        <date_elevated>1/30/2016</date_elevated>
+                                        <anno_societatous>50</anno_societatous>
+                                        <kingdom_of_elevation>EAST</kingdom_of_elevation>
+                                        <kingdom_precedence>212</kingdom_precedence>
+                                        <resigned_or_removed/>
+                                        <passed_away/>
+                                        <notes>1</notes>
+                                        <squires/>
+                                    </knight>
+                                    <knight>
+                                        <society_precedence>2335</society_precedence>
+                                        <name>Matthias Grunwold</name>
+                                        <type>Knight</type>
+                                        <society_knight_number>2231</society_knight_number>
+                                        <society_master_number/>
+                                        <date_elevated>7/9/2016</date_elevated>
+                                        <anno_societatous>50</anno_societatous>
+                                        <kingdom_of_elevation>EAST</kingdom_of_elevation>
+                                        <kingdom_precedence>214</kingdom_precedence>
+                                        <resigned_or_removed/>
+                                        <passed_away/>
+                                        <notes>1</notes>
+                                        <squires/>
+                                    </knight>
+                                </squires>
+                            </knight>
+                            <knight>
+                                <society_precedence>1614</society_precedence>
+                                <name>Colin MacLachlan</name>
+                                <type>Knight</type>
+                                <society_knight_number>1527</society_knight_number>
+                                <society_master_number/>
+                                <date_elevated>8/18/2004</date_elevated>
+                                <anno_societatous>39</anno_societatous>
+                                <kingdom_of_elevation>CALONTIR</kingdom_of_elevation>
+                                <kingdom_precedence>70</kingdom_precedence>
+                                <resigned_or_removed/>
+                                <passed_away/>
+                                <notes>1</notes>
+                                <squires>
+                                    <knight>
+                                        <society_precedence>2379</society_precedence>
+                                        <name>Kenimathor of Lochleven</name>
+                                        <type>Knight</type>
+                                        <society_knight_number>2273</society_knight_number>
+                                        <society_master_number/>
+                                        <date_elevated>1/28/2017</date_elevated>
+                                        <anno_societatous>51</anno_societatous>
+                                        <kingdom_of_elevation>EAST</kingdom_of_elevation>
+                                        <kingdom_precedence>220</kingdom_precedence>
+                                        <resigned_or_removed/>
+                                        <passed_away/>
+                                        <notes>1</notes>
+                                        <squires/>
+                                    </knight>
+                                </squires>
+                            </knight>
+                        </squires>
+                    </knight>
+                </squires>
+            </knight>
+        </squires>
     </knight>
     <knight>
         <society_precedence>578</society_precedence>
@@ -13192,21 +13310,6 @@
         <anno_societatous>24</anno_societatous>
         <kingdom_of_elevation>CAID</kingdom_of_elevation>
         <kingdom_precedence>33</kingdom_precedence>
-        <resigned_or_removed/>
-        <passed_away/>
-        <notes>1</notes>
-        <squires/>
-    </knight>
-    <knight>
-        <society_precedence>727</society_precedence>
-        <name>Gregor von Heisler</name>
-        <type>Knight</type>
-        <society_knight_number>672</society_knight_number>
-        <society_master_number/>
-        <date_elevated>4/7/1990</date_elevated>
-        <anno_societatous>24</anno_societatous>
-        <kingdom_of_elevation>EAST</kingdom_of_elevation>
-        <kingdom_precedence>82</kingdom_precedence>
         <resigned_or_removed/>
         <passed_away/>
         <notes>1</notes>
@@ -23180,21 +23283,6 @@
         <squires/>
     </knight>
     <knight>
-        <society_precedence>1359</society_precedence>
-        <name>Griffith FitzWilliam (of Green Mountain)</name>
-        <type>Knight</type>
-        <society_knight_number>1279</society_knight_number>
-        <society_master_number/>
-        <date_elevated>8/17/2000</date_elevated>
-        <anno_societatous>35</anno_societatous>
-        <kingdom_of_elevation>EAST</kingdom_of_elevation>
-        <kingdom_precedence>137</kingdom_precedence>
-        <resigned_or_removed/>
-        <passed_away/>
-        <notes>1</notes>
-        <squires/>
-    </knight>
-    <knight>
         <society_precedence>1360</society_precedence>
         <name>Alaric le Fevre</name>
         <type>Knight</type>
@@ -26505,21 +26593,6 @@
         <squires/>
     </knight>
     <knight>
-        <society_precedence>1614</society_precedence>
-        <name>Colin MacLachlan</name>
-        <type>Knight</type>
-        <society_knight_number>1527</society_knight_number>
-        <society_master_number/>
-        <date_elevated>8/18/2004</date_elevated>
-        <anno_societatous>39</anno_societatous>
-        <kingdom_of_elevation>CALONTIR</kingdom_of_elevation>
-        <kingdom_precedence>70</kingdom_precedence>
-        <resigned_or_removed/>
-        <passed_away/>
-        <notes>1</notes>
-        <squires/>
-    </knight>
-    <knight>
         <society_precedence>1615</society_precedence>
         <name>Garrett Shadwell</name>
         <type>Knight</type>
@@ -28562,21 +28635,6 @@
         <squires/>
     </knight>
     <knight>
-        <society_precedence>1753</society_precedence>
-        <name>Leifr Vagnasson</name>
-        <type>Knight</type>
-        <society_knight_number>1665</society_knight_number>
-        <society_master_number/>
-        <date_elevated>2/18/2007</date_elevated>
-        <anno_societatous>41</anno_societatous>
-        <kingdom_of_elevation>OUTLANDS</kingdom_of_elevation>
-        <kingdom_precedence>82</kingdom_precedence>
-        <resigned_or_removed/>
-        <passed_away/>
-        <notes>1</notes>
-        <squires/>
-    </knight>
-    <knight>
         <society_precedence>1755</society_precedence>
         <name>Herold Von Insel</name>
         <type>Knight</type>
@@ -29069,21 +29127,6 @@
         <resigned_or_removed>Resigned</resigned_or_removed>
         <passed_away/>
         <notes/>
-        <squires/>
-    </knight>
-    <knight>
-        <society_precedence>1792</society_precedence>
-        <name>Edward Grey of Lochleven</name>
-        <type>Knight</type>
-        <society_knight_number>1702</society_knight_number>
-        <society_master_number/>
-        <date_elevated>1/5/2008</date_elevated>
-        <anno_societatous>42</anno_societatous>
-        <kingdom_of_elevation>EAST</kingdom_of_elevation>
-        <kingdom_precedence>170</kingdom_precedence>
-        <resigned_or_removed/>
-        <passed_away/>
-        <notes>1</notes>
         <squires/>
     </knight>
     <knight>
@@ -36180,21 +36223,6 @@
         <squires/>
     </knight>
     <knight>
-        <society_precedence>2308</society_precedence>
-        <name>Hrafn Bonesetter</name>
-        <type>Knight</type>
-        <society_knight_number>2206</society_knight_number>
-        <society_master_number/>
-        <date_elevated>1/30/2016</date_elevated>
-        <anno_societatous>50</anno_societatous>
-        <kingdom_of_elevation>EAST</kingdom_of_elevation>
-        <kingdom_precedence>212</kingdom_precedence>
-        <resigned_or_removed/>
-        <passed_away/>
-        <notes>1</notes>
-        <squires/>
-    </knight>
-    <knight>
         <society_precedence>2309</society_precedence>
         <name>Jasen Irenfest</name>
         <type>Knight</type>
@@ -36534,21 +36562,6 @@
         <anno_societatous>51</anno_societatous>
         <kingdom_of_elevation>LOCHAC</kingdom_of_elevation>
         <kingdom_precedence>45</kingdom_precedence>
-        <resigned_or_removed/>
-        <passed_away/>
-        <notes>1</notes>
-        <squires/>
-    </knight>
-    <knight>
-        <society_precedence>2335</society_precedence>
-        <name>Matthias Grunwold</name>
-        <type>Knight</type>
-        <society_knight_number>2231</society_knight_number>
-        <society_master_number/>
-        <date_elevated>7/9/2016</date_elevated>
-        <anno_societatous>50</anno_societatous>
-        <kingdom_of_elevation>EAST</kingdom_of_elevation>
-        <kingdom_precedence>214</kingdom_precedence>
         <resigned_or_removed/>
         <passed_away/>
         <notes>1</notes>
@@ -37164,21 +37177,6 @@
         <anno_societatous>51</anno_societatous>
         <kingdom_of_elevation>EAST</kingdom_of_elevation>
         <kingdom_precedence>219</kingdom_precedence>
-        <resigned_or_removed/>
-        <passed_away/>
-        <notes>1</notes>
-        <squires/>
-    </knight>
-    <knight>
-        <society_precedence>2379</society_precedence>
-        <name>Kenimathor of Lochleven</name>
-        <type>Knight</type>
-        <society_knight_number>2273</society_knight_number>
-        <society_master_number/>
-        <date_elevated>1/28/2017</date_elevated>
-        <anno_societatous>51</anno_societatous>
-        <kingdom_of_elevation>EAST</kingdom_of_elevation>
-        <kingdom_precedence>220</kingdom_precedence>
         <resigned_or_removed/>
         <passed_away/>
         <notes>1</notes>

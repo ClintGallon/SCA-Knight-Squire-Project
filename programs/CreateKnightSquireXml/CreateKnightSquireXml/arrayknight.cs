@@ -149,35 +149,35 @@ namespace CreateKnightSquireXml
         {
             List<ArrayKnight> retSquires = new List<ArrayKnight>();
 
-            if (squiresNode.HasElements)
+            if (!squiresNode.HasElements) return retSquires.ToArray();
+            IEnumerable<XElement> descElements = squiresNode.Descendants();
+
+            foreach (var sqXElement in descElements)
             {
-                IEnumerable<XElement> descElements = squiresNode.Descendants();
+                var newKnight = new ArrayKnight();
+                if (sqXElement.Name != "knight") continue;
+                IEnumerable<XElement> knightDescendants = sqXElement.Descendants();
 
-                foreach (var sqXElement in descElements)
-                    if (sqXElement.Name == "knight")
+                foreach (var knightDescXElement in knightDescendants)
+                    switch (knightDescXElement.Name.ToString())
                     {
-                        var                   newKnight         = new ArrayKnight();
-                        IEnumerable<XElement> knightDescendants = sqXElement.Descendants();
-
-                        foreach (var knightDescXElement in knightDescendants)
-                            switch (knightDescXElement.Name.ToString())
-                            {
-                                case "name":
-                                    newKnight.Name = knightDescXElement.Value;
-                                    break;
-                                case "society_precedence":
-                                    newKnight.SocietyPrecedence = int.Parse(knightDescXElement.Value);
-                                    break;
-                                case "type":
-                                    newKnight.Type = knightDescXElement.Value;
-                                    break;
-                                case "squires":
-                                    newKnight.Squires = newKnight.ParseSquires(knightDescXElement);
-                                    break;
-                            }
-
-                        retSquires.Add(newKnight);
+                        case "name":
+                            newKnight.Name = knightDescXElement.Value;
+                            break;
+                        case "society_precedence":
+                            newKnight.SocietyPrecedence = int.Parse(knightDescXElement.Value);
+                            break;
+                        case "type":
+                            newKnight.Type = knightDescXElement.Value;
+                            break;
+                        case "squires":
+                            newKnight.Squires = newKnight.ParseSquires(knightDescXElement);
+                            break;
+                        default:
+                            break;
                     }
+                
+                retSquires.Add(newKnight);
             }
 
             return retSquires.ToArray();
