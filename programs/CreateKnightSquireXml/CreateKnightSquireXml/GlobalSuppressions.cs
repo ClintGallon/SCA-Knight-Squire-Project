@@ -3,4 +3,8 @@
 // Project-level suppressions either have no target or are given
 // a specific target and scoped to a namespace, type, member, etc.
 
-[assembly: System.Diagnostics.CodeAnalysis.SuppressMessage("Style", "IDE0017:Simplify object initialization", Justification = "<Pending>", Scope = "member", Target = "~M:CreateKnightSquireXml.SingletonKnightParser.Parse(System.Xml.XmlNode,System.Xml.XmlDocument)~System.Xml.XmlNode")]
+using System.Diagnostics.CodeAnalysis;
+
+[assembly:
+    SuppressMessage("Style", "IDE0017:Simplify object initialization", Justification = "<Pending>", Scope = "member",
+        Target                                                                       = "~M:CreateKnightSquireXml.SingletonKnightParser.Parse(System.Xml.XmlNode,System.Xml.XmlDocument)~System.Xml.XmlNode")]

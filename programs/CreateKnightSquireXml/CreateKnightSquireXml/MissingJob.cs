@@ -8,7 +8,7 @@ namespace CreateKnightSquireXml
 {
     public class MissingJob
     {
-        private readonly string _pathFilenameOutputfile;
+        private readonly string _pathFilenameOutputFile;
         private readonly string _pathFilenameRelationships;
         private readonly string _pathFilenameWbXml;
 
@@ -16,7 +16,7 @@ namespace CreateKnightSquireXml
         {
             _pathFilenameRelationships = relPAthAndFilename;
             _pathFilenameWbXml         = wbPathAndFilename;
-            _pathFilenameOutputfile    = outPathAndFilename;
+            _pathFilenameOutputFile = outPathAndFilename;
         }
 
         public int DoWork()
@@ -37,7 +37,7 @@ namespace CreateKnightSquireXml
                 else
                     found.Add(searchName);
 
-                using (var file = new StreamWriter(_pathFilenameOutputfile, false))
+                using (var file = new StreamWriter(_pathFilenameOutputFile, false))
                 {
                     foreach (string item in missing) file.WriteLine(item);
                 }
@@ -45,6 +45,7 @@ namespace CreateKnightSquireXml
                 Debug.WriteLine("Total Found: "   + found.Count);
                 Debug.WriteLine("Total Missing: " + missing.Count);
             }
+
             return 0;
         }
     }

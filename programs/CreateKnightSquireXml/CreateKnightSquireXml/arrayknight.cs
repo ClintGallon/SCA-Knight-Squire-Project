@@ -138,10 +138,7 @@ namespace CreateKnightSquireXml
         [XmlArrayItem(ElementName = "knight")]
         public ArrayKnight[] Squires
         {
-            get
-            {
-                return _squires ?? new ArrayKnight[] { };
-            }
+            get { return _squires ?? new ArrayKnight[] { }; }
             set => _squires = value;
         }
 
@@ -173,10 +170,8 @@ namespace CreateKnightSquireXml
                         case "squires":
                             newKnight.Squires = newKnight.ParseSquires(knightDescXElement);
                             break;
-                        default:
-                            break;
                     }
-                
+
                 retSquires.Add(newKnight);
             }
 

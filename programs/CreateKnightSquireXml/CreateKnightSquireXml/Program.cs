@@ -79,7 +79,7 @@ namespace CreateKnightSquireXml
 
                 Environment.Exit(ret);
             }
-            
+
             if (args[0].ToLower() == "-createhtml" && args[1].ToLower() == "-xsl" && args[3].ToLower() == "-xml" && args[5].ToLower() == "-out")
             {
                 string xslPathAndFilename  = args[2].ToLower();

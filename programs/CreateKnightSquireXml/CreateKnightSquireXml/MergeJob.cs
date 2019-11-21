@@ -7,8 +7,8 @@ namespace CreateKnightSquireXml
 {
     public class MergeJob
     {
-        private readonly XmlDocument   _ksRelationshipsXml;
         private readonly StringBuilder _fileStringBuilder;
+        private readonly XmlDocument   _ksRelationshipsXml;
         private readonly string        _outPathAndFilename;
         private readonly string        _relPathAndFilename;
         private readonly string        _wbPathAndFilename;
@@ -30,21 +30,14 @@ namespace CreateKnightSquireXml
             _ksRelationshipsXml.Load(_relPathAndFilename);
         }
 
-
         public int DoWork()
         {
             Debug.WriteLine("MergeJob.DoWork() ...");
 
             const string xmlheader1 = @"<?xml version=""1.0"" encoding=""utf-8""?>";
-            //var xmlheader2 = @"<?xml-stylesheet type=""text/xsl"" href=""./styles/ks.xsl""?>";
-
             _fileStringBuilder.Append(xmlheader1);
-            //_fileStringBuilder.Append(xmlheader2);
-
             _fileStringBuilder.Append("<knights>");
-
             var root = _ksRelationshipsXml.DocumentElement;
-
             SingletonKnightParser.LoadWbXml(_wbPathAndFilename);
 
             foreach (XmlNode rootChild in root.ChildNodes)
@@ -53,11 +46,7 @@ namespace CreateKnightSquireXml
                 var xD = new XmlDocument();
                 xD.LoadXml(rootChild.OuterXml);
                 var rKnightNode = xD.FirstChild;
-
-                //Dictionary<string, XmlNode> rKnightChildren = rKnightNode.ChildNodes.Cast<XmlNode>().ToDictionary(child => child.Name);
-
                 var newKnightStringBuilder = SingletonKnightParser.Parse(rKnightNode);
-
                 _fileStringBuilder.Append(newKnightStringBuilder);
             }
 

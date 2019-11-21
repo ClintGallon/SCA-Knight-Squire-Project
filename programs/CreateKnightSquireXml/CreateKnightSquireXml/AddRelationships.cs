@@ -52,6 +52,7 @@ namespace CreateKnightSquireXml
                     squiresNode.Descendants().Append(newSquireElement);
                 }
             }
+
             return 0;
         }
     }
