@@ -3,12 +3,21 @@ using System.Xml.Linq;
 
 namespace CreateKnightSquireXml
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class AddRelationshipsJob
     {
         private readonly string _pathFilenameNewRelationships;
         private readonly string _pathFilenameOutput;
         private readonly string _pathFilenameRelationships;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="relationshipsPathAndFilename"></param>
+        /// <param name="newRelationshipsPathAndFilename"></param>
+        /// <param name="outPathAndFilename"></param>
         public AddRelationshipsJob(string relationshipsPathAndFilename, string newRelationshipsPathAndFilename, string outPathAndFilename)
         {
             _pathFilenameRelationships    = relationshipsPathAndFilename;
@@ -16,6 +25,10 @@ namespace CreateKnightSquireXml
             _pathFilenameOutput           = outPathAndFilename;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public int DoWork()
         {
             var relationships    = XElement.Load(_pathFilenameRelationships);

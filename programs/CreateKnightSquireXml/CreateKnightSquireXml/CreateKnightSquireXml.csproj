@@ -78,7 +78,9 @@
     <Compile Include="PrepCSVJob.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SingletonArrayKnightParser.cs" />
     <Compile Include="SingletonKnightParser.cs" />
+    <Compile Include="TestJob.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

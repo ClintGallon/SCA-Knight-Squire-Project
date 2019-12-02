@@ -8,6 +8,9 @@ using System.Xml.Linq;
 
 namespace CreateKnightSquireXml
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public sealed class SingletonKnightParser
     {
         private static int _instanceCounter;
@@ -16,20 +19,36 @@ namespace CreateKnightSquireXml
 
         private static readonly Lazy<SingletonKnightParser> Lazy = new Lazy<SingletonKnightParser>(() => new SingletonKnightParser());
 
+        /// <summary>
+        /// constructor
+        /// </summary>
         public SingletonKnightParser()
         {
             _instanceCounter++;
             Debug.WriteLine("Instances created: " + _instanceCounter);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public static SingletonKnightParser Instance => Lazy.Value;
 
+        /// <summary>
+        /// Loads the whitebelt xml file into memory
+        /// </summary>
+        /// <param name="wbxml"></param>
+        /// <returns></returns>
         public static int LoadWbXml(string wbxml)
         {
             _whiteBeltXml = XElement.Load(wbxml);
             return 0;
         }
 
+        /// <summary>
+        /// Given an XElement of a knight ... parse it all and pass back an XElement
+        /// </summary>
+        /// <param name="knightNode"></param>
+        /// <returns></returns>
         public static XElement Parse(XElement knightNode)
         {
             Debug.WriteLine("Inbound knightNode: " + knightNode);
@@ -97,6 +116,11 @@ namespace CreateKnightSquireXml
             return retKnight;
         }
 
+        /// <summary>
+        /// Pass in an XML Node return back a string.
+        /// </summary>
+        /// <param name="knightNode"></param>
+        /// <returns></returns>
         public static StringBuilder Parse(XmlNode knightNode)
         {
             var retKnightBuilder = new StringBuilder("<knight>");

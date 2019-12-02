@@ -3,12 +3,21 @@ using System.Diagnostics;
 
 namespace CreateKnightSquireXml
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class CreateHtmlJob
     {
         private readonly string _pathFilenameOutputHtml;
         private readonly string _pathFilenameXml;
         private readonly string _pathFilenameXsl;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="xslPathAndFilename"></param>
+        /// <param name="xmlPathAndFilename"></param>
+        /// <param name="htmlPathAndFilename"></param>
         public CreateHtmlJob(string xslPathAndFilename, string xmlPathAndFilename, string htmlPathAndFilename)
         {
             _pathFilenameXsl        = xslPathAndFilename;
@@ -16,6 +25,10 @@ namespace CreateKnightSquireXml
             _pathFilenameOutputHtml = htmlPathAndFilename;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public int DoWork()
         {
             var firstProc = new Process

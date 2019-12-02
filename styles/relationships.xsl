@@ -12,22 +12,22 @@
 
     <xsl:template match="knight">
         <knight>
-            <xsl:apply-templates select="society_precedence"/>
             <xsl:apply-templates select="name"/>
+            <xsl:apply-templates select="date_elevated"/>
             <xsl:apply-templates select="type"/>
 			<xsl:apply-templates select="squire-names"/>
             <xsl:apply-templates select="squires"/>
         </knight>
     </xsl:template>
 
-    <xsl:template match="society_precedence">
-        <society_precedence><xsl:value-of select="."/></society_precedence>
-    </xsl:template>
-
     <xsl:template match="name">
         <name><xsl:value-of select="."/></name>
     </xsl:template>
-	
+
+    <xsl:template match="date_elevated">
+        <date_elevated><xsl:value-of select="."/></date_elevated>
+    </xsl:template>    
+    
     <xsl:template match="type">
         <type><xsl:value-of select="."/></type>
     </xsl:template>

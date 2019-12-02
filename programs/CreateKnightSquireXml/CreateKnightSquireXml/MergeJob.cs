@@ -18,6 +18,12 @@ namespace CreateKnightSquireXml
         private string pathFilenameOutputXml;
         private string pathFilenameOutputXmlNode;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="wbPathAndFilename"></param>
+        /// <param name="relPathAndFilename"></param>
+        /// <param name="outPathAndFilename"></param>
         public MergeJob(string wbPathAndFilename, string relPathAndFilename, string outPathAndFilename)
         {
             _wbPathAndFilename  = wbPathAndFilename;
@@ -30,6 +36,10 @@ namespace CreateKnightSquireXml
             _ksRelationshipsXml.Load(_relPathAndFilename);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public int DoWork()
         {
             Debug.WriteLine("MergeJob.DoWork() ...");

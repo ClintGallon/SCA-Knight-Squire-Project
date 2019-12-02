@@ -4,17 +4,28 @@ using System.IO;
 
 namespace CreateKnightSquireXml
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class PrepCsvJob
     {
         private readonly string _csvPathAndFilename;
         private readonly string _csvPathAndFilenameOut;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="csvPathAndFilename"></param>
         public PrepCsvJob(string csvPathAndFilename)
         {
             _csvPathAndFilename    = csvPathAndFilename;
             _csvPathAndFilenameOut = csvPathAndFilename.Replace(".csv", "-out.csv");
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public int DoWork()
         {
             Debug.WriteLine("PrepCsvJob.DoWork() ...");

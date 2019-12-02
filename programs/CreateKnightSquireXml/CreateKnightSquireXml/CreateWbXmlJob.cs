@@ -4,6 +4,9 @@ using System.IO;
 
 namespace CreateKnightSquireXml
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class CreateWbXmlJob
     {
         private readonly string _csvPathAndFilename;
@@ -15,6 +18,10 @@ namespace CreateKnightSquireXml
             _xmlPathAndFilenameOut = xmlPathAndFilenameOut;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public int DoWork()
         {
             Debug.WriteLine("CreateWbXmlJob.DoWork() ...");

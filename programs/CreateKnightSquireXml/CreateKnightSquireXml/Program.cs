@@ -112,6 +112,18 @@ namespace CreateKnightSquireXml
 
                 Environment.Exit(ret);
             }
+            
+            if (args[0].ToLower() == "-testjob" && args[3].ToLower() == "-wbxml" && args[1].ToLower() == "-relationships" && args[5].ToLower() == "-out")
+            {
+                string wbPathAndFilename  = args[4].ToLower();
+                string relPathAndFilename = args[2].ToLower();
+                string outPathAndFilename = args[6].ToLower();
+
+                var job = new TestJob(wbPathAndFilename, relPathAndFilename, outPathAndFilename);
+                int ret = job.DoWork();
+
+                Environment.Exit(ret);
+            }
         }
     }
 }

@@ -16,6 +16,12 @@ namespace CreateKnightSquireXml
 
         private string pathFilenameOutputXml;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="wbPathAndFilename"></param>
+        /// <param name="relPathAndFilename"></param>
+        /// <param name="outPathAndFilename"></param>
         public Merge2Job(string wbPathAndFilename, string relPathAndFilename, string outPathAndFilename)
         {
             _wbPathAndFilename  = wbPathAndFilename;
@@ -27,9 +33,12 @@ namespace CreateKnightSquireXml
             _out = XElement.Parse(ss);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public int DoWork()
         {
-            //debug.WriteLine("Merge2Job.DoWork() ...");
             var knights = _out.Element("knights");
             SingletonKnightParser.LoadWbXml(_wbPathAndFilename);
 

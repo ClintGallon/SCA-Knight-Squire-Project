@@ -6,12 +6,21 @@ using System.Xml.Linq;
 
 namespace CreateKnightSquireXml
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class MissingJob
     {
         private readonly string _pathFilenameOutputFile;
         private readonly string _pathFilenameRelationships;
         private readonly string _pathFilenameWbXml;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="wbPathAndFilename"></param>
+        /// <param name="relPAthAndFilename"></param>
+        /// <param name="outPathAndFilename"></param>
         public MissingJob(string wbPathAndFilename, string relPAthAndFilename, string outPathAndFilename)
         {
             _pathFilenameRelationships = relPAthAndFilename;
@@ -19,6 +28,10 @@ namespace CreateKnightSquireXml
             _pathFilenameOutputFile = outPathAndFilename;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public int DoWork()
         {
             List<string> found         = new List<string>();
